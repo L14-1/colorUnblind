@@ -1,0 +1,26 @@
+<app-header notForHome />
+
+<div class="description" [style.outline-color]="'#' + hex()">
+  {{ description() }}
+</div>
+
+<div class="codes">
+  <button pButton severity="secondary" (click)="copyToClipboard('#' + hex())">
+    <div class="button-content">
+      <span>#{{ hex() }}</span>
+      <i-tabler name="copy" />
+    </div>
+  </button>
+  <button pButton severity="secondary" (click)="copyToClipboard(rgb())">
+    <div class="button-content">
+      <span>{{ rgb() }}</span>
+      <i-tabler name="copy" />
+    </div>
+  </button>
+  <button pButton severity="secondary" (click)="copyToClipboard(hsl())">
+    <div class="button-content">
+      <span>{{ hsl() }}</span>
+      <i-tabler name="copy" />
+    </div>
+  </button>
+</div>

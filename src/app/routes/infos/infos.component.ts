@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../../shared/components/header/header.component';
 
 @Component({
-  selector: 'app-stats',
+  selector: 'app-infos',
   imports: [HeaderComponent],
-  templateUrl: './stats.component.html',
-  styleUrl: './stats.component.scss',
+  templateUrl: './infos.component.html',
+  styleUrl: './infos.component.scss',
 })
-export class StatsComponent {}
+export class InfosComponent {}

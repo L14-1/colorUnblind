@@ -1,0 +1,9 @@
+@for (color of lastColors(); track color.id) {
+  <button
+    [routerLink]="['detail', color.hex]"
+    class="color"
+    [style.background]="color.hex"
+  >
+    <i-tabler name="eye" class="icon"></i-tabler>
+  </button>
+}

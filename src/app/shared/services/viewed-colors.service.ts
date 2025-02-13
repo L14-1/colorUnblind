@@ -1,8 +1,9 @@
-import { inject, Injectable } from '@angular/core';
+import { computed, inject, Injectable, signal } from '@angular/core';
 import { NgxIndexedDBService } from 'ngx-indexed-db';
 import { lastValueFrom, Observable } from 'rxjs';
 import { dbStore } from '../../constants/db.constants';
 import { ViewedColor } from '../../models/viewed-color.model';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 @Injectable({
   providedIn: 'root',
@@ -16,7 +17,7 @@ export class ViewedColorsService {
    */
   public async save(color: string): Promise<ViewedColor> {
     const colorAlreadyInDb: ViewedColor | undefined = await lastValueFrom(
-      this.dbService.getByIndex(dbStore, 'hex', color)
+      this.dbService.getByIndex(dbStore, 'hex', color),
     );
     if (colorAlreadyInDb) {
       return await lastValueFrom(
@@ -24,14 +25,14 @@ export class ViewedColorsService {
           id: colorAlreadyInDb.id,
           hex: color,
           at: [new Date().getTime(), ...colorAlreadyInDb.at],
-        })
+        }),
       );
     } else {
       return await lastValueFrom(
         this.dbService.add(dbStore, {
           hex: color,
           at: [new Date().getTime()],
-        })
+        }),
       );
     }
   }
@@ -40,19 +41,7 @@ export class ViewedColorsService {
    * Returns all the saved colors.
    */
   public getAll(): Observable<ViewedColor[]> {
-    return this.dbService.getAll(dbStore);
-  }
-
-  /**
-   * Returns the last 10 colors saved by default or more if param count is specified.
-   * @param count The number of results to return;
-   */
-  public async getLast(count: number = 10): Promise<ViewedColor[]> {
-    const allColors = await lastValueFrom(this.getAll());
-    // Since we add the newest date at the beginning of the number[] in the 'at' property,
-    // we can use their first index ([0]) to get the newest value.
-    const sortedColors = allColors.sort((a, b) => b.at[0] - a.at[0]);
-    return sortedColors.slice(0, count);
+    return this.dbService?.getAll(dbStore) ?? [];
   }
 
   /**

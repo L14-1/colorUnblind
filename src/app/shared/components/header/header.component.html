@@ -1,0 +1,13 @@
+@if (notForHome()) {
+  <button pButton severity="secondary" text [routerLink]="''">
+    <i-tabler pButtonIcon name="chevron-left" />
+  </button>
+} @else {
+  <button pButton severity="secondary" text [routerLink]="'infos'">
+    <i-tabler pButtonIcon name="info-square-rounded" />
+  </button>
+}
+<h1>ColorUnblind</h1>
+<button pButton severity="secondary" text [routerLink]="'stats'">
+  <i-tabler pButtonIcon name="chart-histogram" />
+</button>
