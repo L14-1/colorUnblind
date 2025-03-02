@@ -1,11 +1,13 @@
 @for (color of colors(); track $index) {
-  <div class="color" [style.background]="color.hex">
+  <div class="color" [style.background]="color">
     <div class="buttons">
-      <button pButton severity="secondary">{{ color.hex }}</button>
+      <button pButton [appClipboardCopy]="color" severity="secondary">
+        {{ color }}
+      </button>
       <button
         pButton
         severity="secondary"
-        [routerLink]="['/detail', color.hex.replace('#', '')]"
+        [routerLink]="['/detail', color.replace('#', '')]"
       >
         <i-tabler name="eye" />
       </button>

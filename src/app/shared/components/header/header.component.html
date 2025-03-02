@@ -1,13 +1,18 @@
 @if (notForHome()) {
-  <button pButton severity="secondary" text [routerLink]="''">
+  <button pButton severity="secondary" text (click)="location.back()">
     <i-tabler pButtonIcon name="chevron-left" />
   </button>
 } @else {
-  <button pButton severity="secondary" text [routerLink]="'infos'">
+  <button pButton severity="secondary" text [routerLink]="'/infos'">
     <i-tabler pButtonIcon name="info-square-rounded" />
   </button>
 }
-<h1>ColorUnblind</h1>
-<button pButton severity="secondary" text [routerLink]="'stats'">
-  <i-tabler pButtonIcon name="chart-histogram" />
-</button>
+<h1 [routerLink]="'/'">ColorUnblind</h1>
+
+@if (customButton()) {
+  <ng-content />
+} @else {
+  <button pButton severity="secondary" text [routerLink]="'/stats'">
+    <i-tabler pButtonIcon name="history" />
+  </button>
+}

@@ -1,0 +1,3 @@
+@for (color of lastColors(); track color.id) {
+  <app-color [hex]="color.hex ?? ''" />
+}

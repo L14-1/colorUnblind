@@ -1,0 +1,18 @@
+<button pButton severity="secondary" [appClipboardCopy]="hex()">
+  <div class="button-content">
+    <span>{{ hex() }}</span>
+    <i-tabler name="copy" />
+  </div>
+</button>
+<button pButton severity="secondary" [appClipboardCopy]="rgb()">
+  <div class="button-content">
+    <span>{{ rgb() }}</span>
+    <i-tabler name="copy" />
+  </div>
+</button>
+<button pButton severity="secondary" [appClipboardCopy]="hsl()">
+  <div class="button-content">
+    <span>{{ hsl() }}</span>
+    <i-tabler name="copy" />
+  </div>
+</button>

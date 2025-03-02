@@ -1,0 +1,16 @@
+:host {
+  display: block;
+  position: relative;
+  height: 2rem;
+  width: 100%;
+  .indicator {
+    position: absolute;
+    top: -0.25rem;
+    left: 0;
+    height: 2.5rem;
+    width: 0.25rem;
+    background-color: transparent;
+    outline: 1px solid black;
+    transform: translateX(-50%);
+  }
+}

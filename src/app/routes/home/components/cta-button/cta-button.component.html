@@ -4,4 +4,9 @@
   <span><ng-content /></span>
 </div>
 
-<i-tabler name="eye" class="viewing" [style.opacity]="isViewing() ? 1 : 0" />
+<i-tabler
+  name="eye"
+  class="viewing"
+  [style.opacity]="isViewing() ? 1 : 0"
+  [style.transform]="iconPos()"
+/>

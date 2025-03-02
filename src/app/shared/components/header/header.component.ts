@@ -1,10 +1,12 @@
-import { booleanAttribute, Component, input } from '@angular/core';
+import { Location } from '@angular/common';
+import { booleanAttribute, Component, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { provideTablerIcons, TablerIconComponent } from 'angular-tabler-icons';
 import {
-  IconChartHistogram,
   IconChevronLeft,
+  IconHistory,
   IconInfoSquareRounded,
+  IconTrash,
 } from 'angular-tabler-icons/icons';
 import { ButtonModule } from 'primeng/button';
 
@@ -14,8 +16,9 @@ import { ButtonModule } from 'primeng/button';
   providers: [
     provideTablerIcons({
       IconChevronLeft,
-      IconChartHistogram,
+      IconHistory,
       IconInfoSquareRounded,
+      IconTrash,
     }),
   ],
   templateUrl: './header.component.html',
@@ -23,4 +26,7 @@ import { ButtonModule } from 'primeng/button';
 })
 export class HeaderComponent {
   public readonly notForHome = input(false, { transform: booleanAttribute });
+  public readonly customButton = input(false, { transform: booleanAttribute });
+
+  public location = inject(Location);
 }

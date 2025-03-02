@@ -1,9 +1,8 @@
-import { computed, inject, Injectable, signal } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { NgxIndexedDBService } from 'ngx-indexed-db';
 import { lastValueFrom, Observable } from 'rxjs';
 import { dbStore } from '../../constants/db.constants';
 import { ViewedColor } from '../../models/viewed-color.model';
-import { toSignal } from '@angular/core/rxjs-interop';
 
 @Injectable({
   providedIn: 'root',

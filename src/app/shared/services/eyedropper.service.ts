@@ -9,7 +9,6 @@ export class EyedropperService {
       // @ts-ignore
       const eyeDropper = new EyeDropper();
       let picked = await eyeDropper.open();
-      console.log(picked);
       return picked.sRGBHex;
     } else {
       return undefined;

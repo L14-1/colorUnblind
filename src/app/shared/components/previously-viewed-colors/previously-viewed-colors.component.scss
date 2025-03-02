@@ -1,0 +1,9 @@
+:host {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  app-color {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+  }
+}
