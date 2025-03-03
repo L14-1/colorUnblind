@@ -1,6 +1,7 @@
 import { Component, computed, inject, input, signal } from '@angular/core';
 import { provideTablerIcons, TablerIconComponent } from 'angular-tabler-icons';
 import {
+  IconAi,
   IconClipboard,
   IconContrast2,
   IconPalette,
@@ -9,6 +10,7 @@ import { AccordionModule } from 'primeng/accordion';
 
 import { hexDetailed, hexList } from '../../constants/descriptions.constant';
 import { HeaderComponent } from '../../shared/components/header/header.component';
+import { PopoverModule } from 'primeng/popover';
 import { ContrastedTextDirective } from '../../shared/directives/contrasted-text.directive';
 import { ColorFormatService } from '../../shared/services/color-format.service';
 import { ColorHelpersService } from '../../shared/services/color-helpers.service';
@@ -22,6 +24,7 @@ import { PaletteComponent } from './components/palette/palette.component';
   imports: [
     HeaderComponent,
     ContrastedTextDirective,
+    PopoverModule,
     AccordionModule,
     TablerIconComponent,
     ColorDetailComponent,
@@ -29,7 +32,7 @@ import { PaletteComponent } from './components/palette/palette.component';
     PaletteComponent,
   ],
   providers: [
-    provideTablerIcons({ IconContrast2, IconClipboard, IconPalette }),
+    provideTablerIcons({ IconContrast2, IconClipboard, IconPalette, IconAi }),
   ],
   templateUrl: './detail.component.html',
   styleUrl: './detail.component.scss',

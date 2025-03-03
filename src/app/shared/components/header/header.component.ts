@@ -9,10 +9,11 @@ import {
   IconTrash,
 } from 'angular-tabler-icons/icons';
 import { ButtonModule } from 'primeng/button';
+import { BetaComponent } from '../beta/beta.component';
 
 @Component({
   selector: 'app-header',
-  imports: [ButtonModule, TablerIconComponent, RouterLink],
+  imports: [ButtonModule, TablerIconComponent, RouterLink, BetaComponent],
   providers: [
     provideTablerIcons({
       IconChevronLeft,

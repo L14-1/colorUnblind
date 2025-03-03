@@ -72,6 +72,7 @@ export class ColorPaletteService {
     inputColor: string,
     colorArray: string[],
   ): string[] {
+    if (colorArray.length < 3) return colorArray;
     const inputRgb = this.colorFormatService.hexToRgb(inputColor);
     const palette: string[] = [];
 

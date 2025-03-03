@@ -5,7 +5,17 @@
 }
 
 .description {
+  position: relative;
   margin-top: 1.5rem;
   padding: 2rem;
-  text-align: justify;
+  i-tabler {
+    position: absolute;
+    bottom: 0.25rem;
+    right: 0.25rem;
+    opacity: 0.5;
+  }
+}
+
+.ai {
+  font-size: 0.8rem;
 }

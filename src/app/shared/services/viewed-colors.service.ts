@@ -50,4 +50,12 @@ export class ViewedColorsService {
   public delete(id: number): Observable<ViewedColor[]> {
     return this.dbService.delete(dbStore, id);
   }
+
+  /**
+   * Delete all colors from the db.
+   */
+  public deleteAll(colors: ViewedColor[]): Observable<number[]> {
+    const keys = colors.map((color) => color.id ?? 0);
+    return this.dbService.bulkDelete(dbStore, keys);
+  }
 }

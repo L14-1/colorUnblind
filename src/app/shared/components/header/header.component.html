@@ -7,7 +7,10 @@
     <i-tabler pButtonIcon name="info-square-rounded" />
   </button>
 }
-<h1 [routerLink]="'/'">ColorUnblind</h1>
+<h1 [routerLink]="'/'">
+  ColorUnblind
+  <app-beta />
+</h1>
 
 @if (customButton()) {
   <ng-content />

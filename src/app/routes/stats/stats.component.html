@@ -1,7 +1,20 @@
 <app-header notForHome customButton>
-  <button pButton severity="secondary" text>
+  <button
+    pButton
+    severity="secondary"
+    [disabled]="allViewedColors() ? allViewedColors()!.length === 0 : true"
+    text
+    (click)="confirmDeletion()"
+  >
     <i-tabler pButtonIcon name="trash" />
   </button>
 </app-header>
 
+<div class="content">
+  <i-tabler name="info-circle" />
+  <p>These are all the colors you picked using the color picker button.</p>
+</div>
+
 <app-previously-viewed-colors showAll />
+
+<p-confirmdialog key="confirmDialog" position="bottom" />

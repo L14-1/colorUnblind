@@ -15516,10 +15516,6 @@ export const colors = [
       'This color is a soft, light lavender with a slight blue tint.',
   },
   {
-    hex: '#1f3bad',
-    description: 'This is a deep, vivid blue with a hint of indigo.',
-  },
-  {
     hex: '#264ad9',
     description:
       'This is a moderate, mostly desaturated blue with a slight hint of purple.',
@@ -26676,7 +26672,3813 @@ export const colors = [
   { hex: '#ecc6c6', description: 'This is a very light pastel pink color.' },
   { hex: '#f2d9d9', description: 'This is a very light pastel pink color.' },
   { hex: '#f9ecec', description: 'A very light pastel pink, almost white.' },
-  { hex: '#ffffff', description: 'This is a very light pink, almost white.' },
+  { hex: '#ffffff', description: 'This is pure white.' },
+  { hex: '#050505', description: 'Almost black with a hint of gray.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'This is a dark gray, almost black.' },
+  { hex: '#060505', description: 'Very dark red, almost black.' },
+  { hex: '#1c1717', description: 'Very dark red, almost black.' },
+  { hex: '#382e2e', description: 'Very dark red, almost black.' },
+  { hex: '#544545', description: 'Very dark red, almost black.' },
+  { hex: '#060404', description: 'Very dark red, almost black.' },
+  { hex: '#1f1414', description: 'Very dark red, almost black.' },
+  { hex: '#3d2929', description: 'This is a very dark red, almost brown.' },
+  {
+    hex: '#5c3d3d',
+    description: 'This is a dark, desaturated red, almost like a deep maroon.',
+  },
+  { hex: '#070404', description: 'Very dark red, almost black.' },
+  { hex: '#211212', description: 'Very dark red, almost black.' },
+  {
+    hex: '#422424',
+    description: 'This is a dark, desaturated red, almost like a deep maroon.',
+  },
+  { hex: '#633636', description: "That's a dark reddish brown." },
+  { hex: '#070303', description: 'Very dark red, almost black.' },
+  { hex: '#240f0f', description: 'Very dark red, almost black.' },
+  {
+    hex: '#471f1f',
+    description: 'This is a dark, muted red, almost like a deep maroon.',
+  },
+  { hex: '#6b2e2e', description: 'This is a dark, muted red.' },
+  { hex: '#080303', description: 'Very dark red, almost black.' },
+  { hex: '#260d0d', description: 'Very dark red, almost black.' },
+  { hex: '#4d1a1a', description: 'This is a dark red, almost maroon.' },
+  { hex: '#732626', description: 'This is a dark red color.' },
+  { hex: '#050505', description: 'Almost black with a hint of deep red.' },
+  { hex: '#1a1a1a', description: 'Almost black with a hint of deep red.' },
+  { hex: '#333333', description: 'Very dark red, almost black.' },
+  { hex: '#4d4d4d', description: 'Very dark gray, almost black.' },
+  { hex: '#060505', description: 'Extremely dark red, almost black.' },
+  { hex: '#1c1717', description: 'Very dark reddish brown, almost black.' },
+  { hex: '#382f2e', description: 'Very dark reddish brown, almost black.' },
+  { hex: '#544645', description: 'Very dark brown, almost black.' },
+  { hex: '#060404', description: 'Very dark red, almost black.' },
+  { hex: '#1f1514', description: 'Very dark red, almost black.' },
+  { hex: '#3d2b29', description: "That's a very dark red, almost brown." },
+  { hex: '#5c403d', description: "That's a dark reddish-brown." },
+  { hex: '#070404', description: 'Very dark reddish-brown, almost black.' },
+  { hex: '#211312', description: 'Very dark red, almost black.' },
+  { hex: '#422624', description: 'Very dark, almost black, reddish-brown.' },
+  { hex: '#633936', description: 'This is a dark, desaturated reddish-brown.' },
+  { hex: '#070303', description: 'Very dark red, almost black.' },
+  { hex: '#24110f', description: 'Very dark reddish brown, almost black.' },
+  {
+    hex: '#47221f',
+    description:
+      'This is a very dark reddish-brown, almost like a deep mahogany. It has a hint of red but it is so dark that it could be mistaken for black.',
+  },
+  { hex: '#6b332e', description: 'This is a dark reddish-brown color.' },
+  { hex: '#080303', description: 'Extremely dark red, almost black.' },
+  { hex: '#260f0d', description: 'Very dark reddish brown, almost black.' },
+  {
+    hex: '#4d1e1a',
+    description:
+      'This is a very dark reddish-brown, almost like a deep mahogany. It is a shade of red that is so dark that it appears to be a very dark brown with a hint of red.',
+  },
+  { hex: '#732d26', description: "That's a dark reddish-brown." },
+  { hex: '#050505', description: 'Almost black with a hint of warmth.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'This is a very dark gray, almost black.' },
+  { hex: '#060505', description: 'Very dark, almost black, brown.' },
+  { hex: '#1c1817', description: 'Very dark brown, almost black.' },
+  { hex: '#38302e', description: 'Very dark brown, almost black.' },
+  {
+    hex: '#544745',
+    description:
+      "This is a very dark reddish-brown, almost like a deep, rich mahogany. It's a very dark shade that can almost appear as black.",
+  },
+  { hex: '#060404', description: 'Very dark reddish brown, almost black.' },
+  { hex: '#1f1614', description: 'Very dark brown, almost black.' },
+  { hex: '#3d2c29', description: "That's a very dark brown, almost black." },
+  {
+    hex: '#5c423d',
+    description:
+      'This is a very dark reddish-brown, almost like a deep mahogany.',
+  },
+  { hex: '#070404', description: 'Very dark, almost black, yellow.' },
+  { hex: '#211412', description: 'Very dark brown, almost black.' },
+  {
+    hex: '#422924',
+    description:
+      'This is a very dark reddish-brown, almost like a deep mahogany.',
+  },
+  { hex: '#633d36', description: "That's a dark brownish orange." },
+  { hex: '#070403', description: 'Very dark reddish-brown, almost black.' },
+  { hex: '#24130f', description: 'Very dark brown, almost black.' },
+  {
+    hex: '#47251f',
+    description: 'This is a very dark reddish-brown, almost black.',
+  },
+  {
+    hex: '#6b382e',
+    description:
+      'This is a dark reddish-brown color, similar to a deep brick shade.',
+  },
+  { hex: '#080303', description: 'Very dark reddish-brown, almost black.' },
+  { hex: '#26110d', description: 'Very dark brown, almost black.' },
+  {
+    hex: '#4d221a',
+    description: "That's a dark yellow-orange, like a deep amber.",
+  },
+  {
+    hex: '#733326',
+    description: 'This is a dark yellow-orange, like a deep amber.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep blue.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'Very dark gray, almost black.' },
+  { hex: '#060505', description: 'Very dark, almost black, reddish-brown.' },
+  { hex: '#1c1817', description: 'Very dark brown, almost black.' },
+  { hex: '#38302e', description: 'Very dark, almost black, olive green.' },
+  {
+    hex: '#544945',
+    description: "That's a dark, desaturated orange, almost a deep brown.",
+  },
+  { hex: '#060504', description: 'Very dark, almost black, reddish-brown.' },
+  {
+    hex: '#1f1714',
+    description: 'Very dark, almost black, with a hint of warm brown.',
+  },
+  { hex: '#3d2e29', description: 'This is a very dark brown, almost black.' },
+  {
+    hex: '#5c453d',
+    description:
+      'This is a dark, desaturated orange-brown. It is almost like a dimmed down version of an orange color.',
+  },
+  { hex: '#070404', description: 'Almost black with a hint of warm brown.' },
+  { hex: '#211612', description: 'Very dark, almost black, olive green.' },
+  { hex: '#422b24', description: 'It is a dark shade of dark brown.' },
+  { hex: '#634136', description: 'This is a dark, muted orange-brown.' },
+  { hex: '#070403', description: 'Very dark reddish-brown, almost black.' },
+  { hex: '#24140f', description: 'Very dark reddish brown, almost black.' },
+  { hex: '#47291f', description: 'This is a dark reddish brown color.' },
+  {
+    hex: '#6b3d2e',
+    description:
+      'This is a dark reddish-brown color, like a deep rust or bronze.',
+  },
+  { hex: '#080403', description: 'Very dark reddish-brown, almost black.' },
+  { hex: '#26130d', description: 'Very dark olive green, almost black.' },
+  {
+    hex: '#4d261a',
+    description:
+      'This is a dark shade of orange-brown, like a rich, deep bronze.',
+  },
+  {
+    hex: '#733926',
+    description:
+      'This is a dark reddish-brown color, like a deep rust or bronze.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep gray.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a dark shade of gray, almost black.',
+  },
+  { hex: '#060505', description: 'Very dark, almost black, reddish-brown.' },
+  { hex: '#1c1917', description: 'Very dark brown, almost black.' },
+  { hex: '#38312e', description: 'Very dark desaturated red, almost black.' },
+  {
+    hex: '#544a45',
+    description: "That's a very dark, almost black, olive green.",
+  },
+  { hex: '#060504', description: 'Very dark reddish brown, almost black.' },
+  {
+    hex: '#1f1814',
+    description:
+      'Very dark, almost black, with a slight desaturated red-orange tint.',
+  },
+  {
+    hex: '#3d3029',
+    description: "That's a dark, muted red, like a deep maroon.",
+  },
+  { hex: '#5c473d', description: "That's a dark, muted yellow-orange." },
+  { hex: '#070504', description: 'Very dark reddish brown, almost black.' },
+  { hex: '#211712', description: 'Very dark, desaturated red, almost black.' },
+  {
+    hex: '#422e24',
+    description: "That's a dark, muted red with brown undertones.",
+  },
+  { hex: '#634536', description: "That's a dark, muted orange." },
+  { hex: '#070403', description: 'Very dark reddish brown, almost black.' },
+  { hex: '#24160f', description: 'Very dark, muted, and rusty red.' },
+  {
+    hex: '#472c1f',
+    description: 'This is a dark, desaturated red, almost like a deep maroon.',
+  },
+  { hex: '#6b422e', description: 'This is a dark, muted orange color.' },
+  { hex: '#080403', description: 'Very dark reddish brown, almost black.' },
+  { hex: '#26150d', description: 'Very dark brown, almost black.' },
+  {
+    hex: '#4d2b1a',
+    description:
+      "This is a dark, muted reddish-brown. It's like a deep, earthy rust color. It has a little bit of a red hue but it is not bright.",
+  },
+  { hex: '#734026', description: "That's a dark, muted orange." },
+  { hex: '#050505', description: 'Almost black with a hint of dark red.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'Very dark gray, almost black.' },
+  { hex: '#060505', description: 'Very dark reddish brown, almost black.' },
+  { hex: '#1c1917', description: 'Very dark, almost black, reddish-brown.' },
+  {
+    hex: '#38322e',
+    description: 'Very dark, almost black, slight reddish-brown tint.',
+  },
+  {
+    hex: '#544b45',
+    description: "That's a dark, desaturated orange, almost a deep brown.",
+  },
+  { hex: '#060504', description: 'Very dark, almost black, reddish brown.' },
+  { hex: '#1f1914', description: 'Very dark, almost black, reddish-brown.' },
+  { hex: '#3d3129', description: 'It is a dark desaturated orange.' },
+  { hex: '#5c4a3d', description: "That's a dark, muted orange-brown." },
+  { hex: '#070504', description: 'Very dark, almost black, reddish brown.' },
+  { hex: '#211812', description: 'Very dark, almost black, reddish brown.' },
+  { hex: '#423024', description: "That's a dark, muted reddish-brown." },
+  { hex: '#634936', description: 'This is a dark and muted orange-brown.' },
+  { hex: '#070503', description: 'Very dark, almost black, reddish brown.' },
+  {
+    hex: '#24180f',
+    description: 'Very dark, muted orange with a hint of brown.',
+  },
+  { hex: '#47301f', description: 'Dark reddish brown.' },
+  {
+    hex: '#6b472e',
+    description: 'This is a dark and muted orange-brown color.',
+  },
+  { hex: '#080503', description: 'Very dark reddish brown, almost black.' },
+  {
+    hex: '#26170d',
+    description: 'Very dark, desaturated orange, almost brown-black.',
+  },
+  { hex: '#4d2f1a', description: 'This is a dark reddish-brown color.' },
+  {
+    hex: '#734626',
+    description: 'This is a dark and muted orange with a hint of brown.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of brown.' },
+  { hex: '#1a1a1a', description: 'Very dark, almost black, grey.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: "That's a dark, desaturated orange, almost a deep brown.",
+  },
+  { hex: '#060505', description: 'Very dark, almost black, olive green.' },
+  {
+    hex: '#1c1a17',
+    description: 'Very dark, almost black, with a hint of brown.',
+  },
+  {
+    hex: '#38332e',
+    description: "That's a very dark, desaturated orange, almost brown.",
+  },
+  { hex: '#544d45', description: "That's a dark, muted yellow-orange." },
+  {
+    hex: '#060504',
+    description: 'Very dark, almost black, with a hint of warm brown.',
+  },
+  {
+    hex: '#1f1a14',
+    description:
+      "It's a dark, desaturated orange, almost like a deep, warm brown.",
+  },
+  {
+    hex: '#3d3329',
+    description:
+      "That's a dark, desaturated orange, almost like a deep, warm brown.",
+  },
+  { hex: '#5c4d3d', description: "That's a dark, muted orange." },
+  {
+    hex: '#070504',
+    description: 'Very dark, almost black, with a hint of warm orange.',
+  },
+  {
+    hex: '#211a12',
+    description: 'Very dark, desaturated orange, almost brown-black.',
+  },
+  {
+    hex: '#423324',
+    description:
+      "That's a dark, desaturated orange, almost like a deep, muted brown.",
+  },
+  {
+    hex: '#634d36',
+    description:
+      "That's a dark, desaturated orange, almost like a deep, muted brown.",
+  },
+  {
+    hex: '#070503',
+    description: 'Very dark, almost black, with a hint of warm orange.',
+  },
+  {
+    hex: '#241a0f',
+    description: 'Very dark, desaturated orange, almost brown-black.',
+  },
+  {
+    hex: '#47331f',
+    description: 'Dark, desaturated yellow-orange, almost brown.',
+  },
+  {
+    hex: '#6b4d2e',
+    description:
+      "That's a dark, desaturated orange, almost like a deep bronze.",
+  },
+  {
+    hex: '#080503',
+    description:
+      'Very dark, almost black, with a hint of warm, brownish orange.',
+  },
+  {
+    hex: '#261a0d',
+    description: 'Very dark, desaturated orange, almost brown-black.',
+  },
+  {
+    hex: '#4d331a',
+    description:
+      'Dark, desaturated orange-brown, almost like a deep, shadowy bronze.',
+  },
+  { hex: '#734d26', description: "That's a deep, muted orange." },
+  { hex: '#050505', description: 'Almost black with a hint of warmth.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'This is a dark gray.' },
+  { hex: '#060505', description: 'Very dark, almost black, olive green.' },
+  {
+    hex: '#1c1a17',
+    description: 'Very dark, almost black, with a slight olive tint.',
+  },
+  {
+    hex: '#38342e',
+    description: 'Very dark, almost black, with a slight olive tint',
+  },
+  { hex: '#544e45', description: "That's a dark, muted, olive green" },
+  { hex: '#060504', description: 'Very dark, almost black, olive green.' },
+  { hex: '#1f1a14', description: 'Very dark, muted, olive green.' },
+  { hex: '#3d3529', description: "That's a dark, muted, yellowish brown." },
+  { hex: '#5c4f3d', description: "That's a dark, muted orange-brown." },
+  { hex: '#070504', description: 'Very dark, almost black, olive green.' },
+  { hex: '#211b12', description: "That's a dark, muted, orangey brown." },
+  { hex: '#423624', description: "That's a dark, muted, orangey brown." },
+  { hex: '#635036', description: 'This color is a deep, muted orange-brown.' },
+  { hex: '#070503', description: 'Very dark, almost black, olive green.' },
+  { hex: '#241b0f', description: 'This is a dark, muted, olive green' },
+  { hex: '#47361f', description: 'This is a dark, muted, olive green.' },
+  {
+    hex: '#6b522e',
+    description: 'This is a muted, earthy orange with a slight brown tinge.',
+  },
+  { hex: '#080603', description: 'Very dark, almost black, olive green.' },
+  { hex: '#261c0d', description: 'Very dark, almost black, reddish-brown.' },
+  { hex: '#4d371a', description: 'This is a very dark brown, almost black.' },
+  {
+    hex: '#735326',
+    description: 'This is a dark reddish-orange, like a deep, muted sunset.',
+  },
+  {
+    hex: '#050505',
+    description: 'Almost black with a hint of warm undertones.',
+  },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'This is a very dark gray, almost black.' },
+  { hex: '#060505', description: 'Very dark reddish black.' },
+  { hex: '#1c1a17', description: 'Very dark, almost black, reddish-brown.' },
+  {
+    hex: '#38352e',
+    description: 'Very dark, almost black, barely reddish gray.',
+  },
+  {
+    hex: '#544f45',
+    description: "That's a dark, desaturated orange, almost a deep brown.",
+  },
+  { hex: '#060504', description: 'Very dark reddish brown, almost black.' },
+  {
+    hex: '#1f1b14',
+    description: 'Very dark, desaturated orange, almost brown-black.',
+  },
+  {
+    hex: '#3d3629',
+    description: 'Very dark, almost black, with a slight green tint.',
+  },
+  { hex: '#5c523d', description: "That's a dark reddish brown." },
+  { hex: '#070604', description: 'Very dark red, almost black.' },
+  { hex: '#211c12', description: 'Very dark brown, almost black.' },
+  { hex: '#423824', description: "That's a very dark brown, almost black." },
+  { hex: '#635436', description: "That's a dark, muted reddish-brown." },
+  { hex: '#070603', description: 'Very dark red, almost black.' },
+  { hex: '#241d0f', description: 'very dark brown, nearly black.' },
+  { hex: '#473a1f', description: "That's a dark reddish-brown." },
+  { hex: '#6b572e', description: 'This is a dark reddish-brown color.' },
+  {
+    hex: '#080603',
+    description: 'This is a dark, nearly black, reddish-brown.',
+  },
+  { hex: '#261e0d', description: 'Very dark brown, almost black.' },
+  { hex: '#4d3c1a', description: 'Very dark brown, almost black.' },
+  { hex: '#735926', description: 'This is a dark reddish-brown color.' },
+  {
+    hex: '#050505',
+    description: 'Almost black with a hint of warm undertones.',
+  },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: "That's a very dark gray, almost black." },
+  { hex: '#060505', description: 'This is a very dark red, almost black.' },
+  { hex: '#1c1b17', description: 'Very dark brown, almost black.' },
+  {
+    hex: '#38362e',
+    description:
+      "That's a dark, desaturated, warm-toned color, similar to a deep, muted mustard.",
+  },
+  {
+    hex: '#545045',
+    description: "That's a very dark, almost black, reddish-brown.",
+  },
+  { hex: '#060604', description: 'This is a very dark, almost black, red.' },
+  {
+    hex: '#1f1c14',
+    description: 'Very dark, desaturated yellow-orange, almost brown.',
+  },
+  {
+    hex: '#3d3829',
+    description: "That's a dark, muted red, almost like a deep burgundy.",
+  },
+  { hex: '#5c543d', description: "That's a dark, muted red." },
+  {
+    hex: '#070604',
+    description: 'This is a very dark reddish brown, almost black.',
+  },
+  { hex: '#211d12', description: 'Very dark, almost black, reddish-brown.' },
+  {
+    hex: '#423b24',
+    description: "That's a dark, muted red, almost like a deep maroon.",
+  },
+  { hex: '#635836', description: "That's a dark, muted reddish-brown." },
+  { hex: '#070603', description: 'This is a dark shade of red.' },
+  {
+    hex: '#241f0f',
+    description: "That's a deep, muted mustard yellow, almost olive.",
+  },
+  { hex: '#473d1f', description: "That's a dark, muted olive green." },
+  { hex: '#6b5c2e', description: "That's a muted, dark golden yellow." },
+  { hex: '#080603', description: 'This is a dark red color.' },
+  { hex: '#26200d', description: 'Dark olive green with a hint of brown.' },
+  { hex: '#4d401a', description: "That's a deep, muted mustard yellow." },
+  { hex: '#736026', description: 'This is a dark reddish-brown color.' },
+  {
+    hex: '#050505',
+    description: 'Almost black with a hint of warm undertones.',
+  },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'Very dark gray, almost black.' },
+  { hex: '#060505', description: 'Very dark red, almost black.' },
+  { hex: '#1c1b17', description: 'Very dark brown, almost black.' },
+  { hex: '#38362e', description: 'Very dark brown, almost black.' },
+  {
+    hex: '#545245',
+    description:
+      "That's a very dark reddish-brown, almost like a deep mahogany.",
+  },
+  {
+    hex: '#060604',
+    description: 'This is a very dark, almost black, mustard yellow.',
+  },
+  { hex: '#1f1d14', description: 'Very dark, desaturated yellow-green.' },
+  { hex: '#3d3a29', description: 'This is a very dark brown, almost black.' },
+  {
+    hex: '#5c573d',
+    description:
+      "That's a very dark reddish-brown, almost like a deep mahogany.",
+  },
+  { hex: '#070604', description: 'Very dark, almost black, yellowish brown.' },
+  { hex: '#211f12', description: 'Very dark, desaturated yellow-green.' },
+  { hex: '#423d24', description: 'This is a dark, muted yellow-green.' },
+  { hex: '#635c36', description: 'This is a muted yellow-brown color.' },
+  { hex: '#070603', description: 'Very dark, almost black, olive green.' },
+  { hex: '#24200f', description: 'Very dark, desaturated yellow-green.' },
+  {
+    hex: '#47411f',
+    description:
+      'This is a dark reddish-brown color, like a deep, rich mahogany.',
+  },
+  { hex: '#6b612e', description: "That's a dark reddish-brown." },
+  { hex: '#080703', description: 'This is a dark red.' },
+  { hex: '#26220d', description: 'Very dark brown, almost black.' },
+  {
+    hex: '#4d441a',
+    description: 'This is a very dark yellow-orange, almost brown.',
+  },
+  {
+    hex: '#736626',
+    description: 'This is a dark yellow-orange, like a deep amber.',
+  },
+  { hex: '#050505', description: 'This is black.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'This is a very dark gray, almost black.' },
+  { hex: '#060605', description: 'Almost black with a hint of yellow.' },
+  {
+    hex: '#1c1c17',
+    description: 'Very dark, almost black, slight brownish tint.',
+  },
+  {
+    hex: '#38372e',
+    description: 'Very dark, almost black, barely tinted with yellow.',
+  },
+  {
+    hex: '#545345',
+    description:
+      "That's a very dark, almost black, shade of brown with a slight tinge of green.",
+  },
+  { hex: '#060604', description: 'Very dark olive green, almost black.' },
+  {
+    hex: '#1f1e14',
+    description: 'This is a dark olive green with low saturation.',
+  },
+  {
+    hex: '#3d3c29',
+    description: "That's a dark brown with a slight tinge of yellow.",
+  },
+  { hex: '#5c593d', description: "That's a dark, muted yellow-green." },
+  {
+    hex: '#070604',
+    description: 'This is a very dark, almost black, shade of orange.',
+  },
+  {
+    hex: '#212012',
+    description: 'Very dark desaturated orange, almost brown-black.',
+  },
+  {
+    hex: '#424024',
+    description: 'This is a very dark desaturated orange, almost brown.',
+  },
+  { hex: '#636036', description: "That's a dark, muted orange-brown." },
+  {
+    hex: '#070703',
+    description: 'Very dark desaturated orange, almost black.',
+  },
+  { hex: '#24220f', description: 'This is a dark brown, almost black color.' },
+  { hex: '#47441f', description: 'This is a deep, muted olive green.' },
+  { hex: '#6b662e', description: 'This is a dark yellowish-green' },
+  {
+    hex: '#080703',
+    description: 'This is a dark reddish-brown, almost like a deep mahogany.',
+  },
+  { hex: '#26240d', description: 'Very dark brown, almost black.' },
+  { hex: '#4d481a', description: 'This is a dark yellow-brown hue.' },
+  {
+    hex: '#736c26',
+    description: 'This is a dark yellow-orange, like a deep amber.',
+  },
+  { hex: '#050505', description: 'This is black.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'Very dark gray, almost black.' },
+  { hex: '#060605', description: 'Very dark, almost black, reddish-brown.' },
+  { hex: '#1c1c17', description: 'Very dark olive green, almost black.' },
+  { hex: '#38382e', description: 'Very dark olive green, almost black.' },
+  {
+    hex: '#545445',
+    description: 'This is a very dark desaturated orange, almost brown.',
+  },
+  { hex: '#060604', description: 'Very dark olive green, almost black.' },
+  { hex: '#1f1f14', description: 'Very dark olive green, almost black.' },
+  { hex: '#3d3d29', description: 'Dark olive green with a slight brown tint.' },
+  { hex: '#5c5c3d', description: "That's a dark, muted brownish-orange." },
+  { hex: '#070704', description: 'Very dark olive green, almost black.' },
+  { hex: '#212112', description: 'This is a dark, muted yellow-green.' },
+  { hex: '#424224', description: 'This is a dark desaturated reddish-brown.' },
+  {
+    hex: '#636336',
+    description: 'This is a muted brown with a slight orange tint.',
+  },
+  {
+    hex: '#070703',
+    description: 'This is a dark reddish-brown, almost like a deep mahogany.',
+  },
+  { hex: '#24240f', description: "It's a deep, muted olive green." },
+  { hex: '#47471f', description: 'Dark olive green.' },
+  {
+    hex: '#6b6b2e',
+    description: 'This is a muted olive green with a slight yellow undertone.',
+  },
+  {
+    hex: '#080803',
+    description: 'This is a dark reddish-brown, resembling a deep mahogany.',
+  },
+  { hex: '#26260d', description: 'Very dark brown, almost black.' },
+  { hex: '#4d4d1a', description: 'This is a dark and muted yellow-green.' },
+  { hex: '#737326', description: 'This is a muted olive green.' },
+  {
+    hex: '#050505',
+    description: 'Almost black with a hint of very dark green.',
+  },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'Very dark gray, almost black.' },
+  { hex: '#060605', description: 'Very dark olive green, almost black.' },
+  { hex: '#1c1c17', description: 'Very dark olive green, almost black.' },
+  { hex: '#37382e', description: 'Very dark, almost black, olive green.' },
+  {
+    hex: '#535445',
+    description: "That's a dark, muted brown with a slight hint of orange.",
+  },
+  { hex: '#060604', description: 'Very dark olive green, almost black.' },
+  { hex: '#1e1f14', description: 'Very dark, almost black, reddish-brown.' },
+  {
+    hex: '#3c3d29',
+    description:
+      "That's a dark, muted reddish brown. It's like a deep, earthy maroon with low saturation and brightness.",
+  },
+  {
+    hex: '#595c3d',
+    description: 'This is a dark, muted brown with a slight reddish tint.',
+  },
+  { hex: '#060704', description: 'This is a dark shade of orange-red.' },
+  {
+    hex: '#202112',
+    description: "That's a dark brown, almost like a deep bronze.",
+  },
+  {
+    hex: '#404224',
+    description: "That's a dark, muted brown with a hint of orange.",
+  },
+  {
+    hex: '#606336',
+    description: "That's a dark, muted brown with a hint of orange.",
+  },
+  { hex: '#070703', description: 'This is a dark shade of orange.' },
+  {
+    hex: '#22240f',
+    description: 'Very dark, desaturated orange, almost brown-black.',
+  },
+  {
+    hex: '#44471f',
+    description: 'This is a dark brown color with slight yellow undertones.',
+  },
+  {
+    hex: '#666b2e',
+    description: 'This is a dark, muted brown with a slight reddish tint.',
+  },
+  { hex: '#070803', description: 'This is a dark shade of orange-red.' },
+  { hex: '#24260d', description: 'Very dark brown, almost black.' },
+  { hex: '#484d1a', description: 'This is a dark brown color.' },
+  {
+    hex: '#6c7326',
+    description: 'This is a dark brown with a slight orange tint.',
+  },
+  { hex: '#050505', description: 'This is black.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'This is a very dark gray, almost black.' },
+  { hex: '#050605', description: 'Very dark, almost black, reddish-brown.' },
+  {
+    hex: '#1b1c17',
+    description: 'Very dark, almost black, with a hint of warm brown.',
+  },
+  { hex: '#36382e', description: 'Very dark, almost black, olive green.' },
+  {
+    hex: '#525445',
+    description:
+      "That's a dark, desaturated orange, almost like a deep, muted brown.",
+  },
+  { hex: '#060604', description: 'Very dark reddish brown, almost black.' },
+  {
+    hex: '#1d1f14',
+    description:
+      'Very dark, almost black, with a hint of warm, desaturated orange.',
+  },
+  {
+    hex: '#3a3d29',
+    description:
+      "That's a dark, desaturated orange, almost like a deep, muted brown.",
+  },
+  {
+    hex: '#575c3d',
+    description: 'This is a muted olive green with a slight grayish tone.',
+  },
+  { hex: '#060704', description: 'Very dark green, almost black.' },
+  { hex: '#1f2112', description: 'Very dark, muted orange, almost brown.' },
+  { hex: '#3d4224', description: 'This is a deep, muted olive green.' },
+  { hex: '#5c6336', description: 'This is a muted olive green.' },
+  { hex: '#060703', description: 'Very dark green, almost black.' },
+  {
+    hex: '#20240f',
+    description:
+      'This is a dark olive green with low saturation and brightness.',
+  },
+  { hex: '#41471f', description: 'This is a deep, muted olive green.' },
+  {
+    hex: '#616b2e',
+    description: 'This is a muted olive green with a slight yellow undertone.',
+  },
+  { hex: '#070803', description: 'Very dark green, almost black.' },
+  { hex: '#22260d', description: 'Very dark brown, almost black.' },
+  {
+    hex: '#444d1a',
+    description: "That's a dark brown with a slight orange tint",
+  },
+  { hex: '#667326', description: 'This color is a muted olive green.' },
+  { hex: '#050505', description: 'This is black.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a dark gray with a slight green undertone.',
+  },
+  { hex: '#050605', description: 'Extremely dark green, almost black.' },
+  { hex: '#1b1c17', description: 'Very dark green, almost black.' },
+  {
+    hex: '#36382e',
+    description: 'Dark olive green with a slight hint of brown.',
+  },
+  {
+    hex: '#505445',
+    description: "That's a dark olive green with a slight hint of yellow.",
+  },
+  { hex: '#060604', description: 'Very dark green, almost black.' },
+  { hex: '#1c1f14', description: 'This is a dark, muted olive green.' },
+  {
+    hex: '#383d29',
+    description: 'This is a dark, muted green with a slight yellow undertone.',
+  },
+  { hex: '#545c3d', description: "That's a muted olive green." },
+  { hex: '#060704', description: 'Very dark olive green, almost black.' },
+  { hex: '#1d2112', description: 'Very dark, almost black, olive green.' },
+  { hex: '#3b4224', description: 'This is a dark, muted olive green.' },
+  { hex: '#586336', description: 'This is a muted olive green.' },
+  { hex: '#060703', description: 'Very dark green, almost black.' },
+  {
+    hex: '#1f240f',
+    description: 'This is a dark, muted green with a slight yellow undertone.',
+  },
+  { hex: '#3d471f', description: 'This is a dark, muted olive green.' },
+  {
+    hex: '#5c6b2e',
+    description: 'This is a muted olive green with a slight yellow undertone.',
+  },
+  { hex: '#060803', description: 'Very dark olive green, almost black.' },
+  { hex: '#20260d', description: 'This is a dark olive green.' },
+  { hex: '#404d1a', description: 'This is a dark, muted yellow-green.' },
+  { hex: '#607326', description: 'This is a dark reddish-brown color.' },
+  { hex: '#050505', description: 'This is black.' },
+  { hex: '#1a1a1a', description: 'Very dark green, almost black.' },
+  { hex: '#333333', description: 'Very dark green, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a dark gray with a slight green tint.',
+  },
+  { hex: '#050605', description: 'Very dark green, almost black.' },
+  {
+    hex: '#1a1c17',
+    description: 'Very dark, almost black, with a slight reddish tint.',
+  },
+  { hex: '#35382e', description: 'Very dark green, almost black.' },
+  {
+    hex: '#4f5445',
+    description:
+      'A deep, almost black, shade of reddish-brown with a hint of warmth. This color is a very dark and muted reddish color, similar to a very dark maroon or a very deep burgundy. The color has a slight warmth to it due to the reddish undertones, but it is so dark that it may appear almost black in low light. The color has a subtle reddish hue that becomes more apparent when compared to a true black. The low lightness value of 30% makes this color very deep and dark, while the low saturation value of 10% makes it very muted and desaturated.',
+  },
+  { hex: '#050604', description: 'Very dark green, almost black.' },
+  { hex: '#1b1f14', description: 'Very dark, almost black, reddish-brown.' },
+  {
+    hex: '#363d29',
+    description: 'This is a deep, muted green with low brightness.',
+  },
+  { hex: '#525c3d', description: 'This is a deep, muted reddish-brown color.' },
+  {
+    hex: '#060704',
+    description: 'This is a very dark reddish brown, almost black.',
+  },
+  {
+    hex: '#1c2112',
+    description:
+      "This is a very dark, muted, orange-red color, almost like a deep, shadowy rust. It's a very intense and dramatic color, almost like a dark, shadowy, rusty orange. It's a very intense and dramatic color, almost like a dark, shadowy, rusty orange.",
+  },
+  {
+    hex: '#384224',
+    description: 'This is a deep, muted green with a slight yellow undertone.',
+  },
+  {
+    hex: '#546336',
+    description:
+      'This is a muted green with slight yellow undertones, like a deep sage.',
+  },
+  { hex: '#060703', description: 'Very dark green, almost black.' },
+  { hex: '#1d240f', description: 'This is a dark, muted green.' },
+  { hex: '#3a471f', description: "That's a deep, muted green." },
+  { hex: '#576b2e', description: 'This is a muted green with low brightness.' },
+  { hex: '#060803', description: 'Very dark green, almost black.' },
+  { hex: '#1e260d', description: 'This is a dark green.' },
+  { hex: '#3c4d1a', description: 'This is a dark, muted green.' },
+  { hex: '#597326', description: 'This is a muted green with low brightness.' },
+  {
+    hex: '#050505',
+    description: 'Almost black with a hint of very dark green.',
+  },
+  { hex: '#1a1a1a', description: 'Very dark green, almost black.' },
+  { hex: '#333333', description: 'Very dark green, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a shade of dark gray, almost black.',
+  },
+  { hex: '#050605', description: 'Very dark green, almost black.' },
+  { hex: '#1a1c17', description: 'Very dark green, almost black.' },
+  { hex: '#34382e', description: 'This is a very dark green, almost black.' },
+  {
+    hex: '#4e5445',
+    description:
+      "This is a dark, muted green with a slight yellow undertone. It's like a deep, forest green with a hint of olive. This color would blend well with other earthy tones. It's like a dark, verdant color that you can use to create a sense of depth and richness in your design.",
+  },
+  { hex: '#050604', description: 'Very dark green, almost black.' },
+  {
+    hex: '#1a1f14',
+    description: 'This is a dark green color, similar to a deep forest green.',
+  },
+  {
+    hex: '#353d29',
+    description: 'This is a deep, muted green with low saturation.',
+  },
+  {
+    hex: '#4f5c3d',
+    description: 'This is a muted green with low saturation and lightness.',
+  },
+  { hex: '#050704', description: 'Very dark green, almost black.' },
+  {
+    hex: '#1b2112',
+    description:
+      'This is a deep, muted green with a strong hint of black. It looks like a dark forest green.',
+  },
+  {
+    hex: '#364224',
+    description: 'This is a deep, muted green with a slight yellow undertone.',
+  },
+  {
+    hex: '#506336',
+    description: 'This is a muted green with slight yellow undertones.',
+  },
+  { hex: '#050703', description: 'Very dark green, almost black.' },
+  {
+    hex: '#1b240f',
+    description: 'This is a dark, muted green with a slight yellow undertone.',
+  },
+  {
+    hex: '#36471f',
+    description: 'This is a deep, muted green with a slight yellow undertone.',
+  },
+  {
+    hex: '#526b2e',
+    description: 'This is a muted green with earthy undertones.',
+  },
+  { hex: '#060803', description: 'Very dark green, almost black.' },
+  {
+    hex: '#1c260d',
+    description: 'This is a dark green color, like a deep forest green.',
+  },
+  {
+    hex: '#374d1a',
+    description: 'This is a deep, muted green with a strong dark tone.',
+  },
+  { hex: '#537326', description: 'This is a muted green with low brightness.' },
+  {
+    hex: '#050505',
+    description: 'Almost black with a hint of very dark green.',
+  },
+  { hex: '#1a1a1a', description: 'Very dark green, almost black.' },
+  { hex: '#333333', description: 'Very dark green, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a dark green, almost verging on black.',
+  },
+  { hex: '#050605', description: 'Very dark green, almost black.' },
+  { hex: '#1a1c17', description: 'Very dark green, almost black.' },
+  { hex: '#33382e', description: 'This is a very dark green, almost black.' },
+  {
+    hex: '#4d5445',
+    description: 'This is a dark green color with a low intensity.',
+  },
+  { hex: '#050604', description: 'Very dark green, almost black.' },
+  { hex: '#1a1f14', description: 'This is a very dark green, almost black.' },
+  { hex: '#333d29', description: 'This is a dark, muted green.' },
+  {
+    hex: '#4d5c3d',
+    description: 'This is a dark pastel green with a hint of lightness.',
+  },
+  { hex: '#050704', description: 'Very dark green, almost black.' },
+  { hex: '#1a2112', description: "That's a dark green, almost forest-like." },
+  { hex: '#334224', description: 'This is a dark, muted green.' },
+  {
+    hex: '#4d6336',
+    description: 'This is a muted green with low saturation and brightness.',
+  },
+  { hex: '#050703', description: 'Very dark green, almost black.' },
+  {
+    hex: '#1a240f',
+    description: 'This is a dark green; almost a deep forest green.',
+  },
+  { hex: '#33471f', description: 'This is a dark, muted green.' },
+  {
+    hex: '#4d6b2e',
+    description: 'This is a muted green with a slight hint of gray.',
+  },
+  { hex: '#050803', description: 'Very dark green, almost black.' },
+  {
+    hex: '#1a260d',
+    description: 'This is a deep, muted green, almost verging on black.',
+  },
+  {
+    hex: '#334d1a',
+    description: 'This is a deep, muted green, like a dark forest.',
+  },
+  { hex: '#4d7326', description: 'This is a muted green with low brightness.' },
+  { hex: '#050505', description: 'Almost black with a hint of green.' },
+  { hex: '#1a1a1a', description: 'Very dark green, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a dark, desaturated green, almost a deep gray.',
+  },
+  { hex: '#050605', description: 'Very dark green, almost black.' },
+  { hex: '#191c17', description: 'Very dark teal, almost black.' },
+  {
+    hex: '#32382e',
+    description: 'This is a very dark, muted green, almost gray.',
+  },
+  {
+    hex: '#4b5445',
+    description: 'This is a dark, muted green with a slight cyan tint.',
+  },
+  { hex: '#050604', description: 'Very dark green, almost black.' },
+  {
+    hex: '#191f14',
+    description: 'This is a dark, muted green with a slight cyan undertone.',
+  },
+  {
+    hex: '#313d29',
+    description: 'This is a deep, muted green with a slight cyan undertone.',
+  },
+  {
+    hex: '#4a5c3d',
+    description: 'This is a muted teal with a slight greyish tone.',
+  },
+  { hex: '#050704', description: 'Very dark green, almost black.' },
+  { hex: '#182112', description: 'Very dark, muted green.' },
+  {
+    hex: '#304224',
+    description: 'This is a deep, muted green with a slight cyan undertone.',
+  },
+  {
+    hex: '#496336',
+    description: 'This is a muted teal with a slight greyish tone.',
+  },
+  { hex: '#050703', description: 'Very dark green, almost black.' },
+  {
+    hex: '#18240f',
+    description: 'This is a dark, muted green with a slight cyan undertone.',
+  },
+  {
+    hex: '#30471f',
+    description: 'This is a dark, muted green with hints of blue.',
+  },
+  {
+    hex: '#476b2e',
+    description: 'This is a muted teal with a slight lean towards green.',
+  },
+  { hex: '#050803', description: 'Very dark green, almost black.' },
+  { hex: '#17260d', description: 'This is a dark bluish green.' },
+  {
+    hex: '#2f4d1a',
+    description: 'This is a dark teal with a strong green-blue hue.',
+  },
+  { hex: '#467326', description: 'This is a muted green with low brightness.' },
+  { hex: '#050505', description: 'Almost black with a hint of green.' },
+  { hex: '#1a1a1a', description: 'Very dark green, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: "That's a dark gray, almost black." },
+  { hex: '#050605', description: 'Very dark green, almost black.' },
+  { hex: '#191c17', description: 'Very dark muted green.' },
+  { hex: '#31382e', description: 'Very dark, desaturated green.' },
+  { hex: '#4a5445', description: 'This is a dark, muted green.' },
+  { hex: '#050604', description: 'Very dark green, almost black.' },
+  { hex: '#181f14', description: 'Very dark green, almost black.' },
+  { hex: '#303d29', description: 'This is a dark and muted green.' },
+  { hex: '#475c3d', description: 'This is a dark and muted green.' },
+  { hex: '#050704', description: 'Very dark green, almost black.' },
+  { hex: '#172112', description: 'Very dark, muted green.' },
+  {
+    hex: '#2e4224',
+    description: 'This is a deep, muted green, almost a dark teal.',
+  },
+  { hex: '#456336', description: 'This is a dark and muted green.' },
+  { hex: '#040703', description: 'Very dark green, almost black.' },
+  {
+    hex: '#16240f',
+    description: 'This is a dark green color with a hint of blue.',
+  },
+  {
+    hex: '#2c471f',
+    description:
+      'This is a deep, muted green with a slight blue undertone. It has a strong desaturation and a low lightness',
+  },
+  {
+    hex: '#426b2e',
+    description: 'This is a muted green with a slight greyish tone.',
+  },
+  { hex: '#040803', description: 'Very dark, almost black, green.' },
+  {
+    hex: '#15260d',
+    description: 'Dark green with a slight hint of blue, almost black.',
+  },
+  {
+    hex: '#2b4d1a',
+    description: 'This is a deep, muted green, like a dark forest at dusk.',
+  },
+  {
+    hex: '#407326',
+    description:
+      'This is a muted green with low brightness, appearing as a deep, desaturated green.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep green.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'This is a very dark gray, almost black.' },
+  { hex: '#050605', description: 'Very dark bluish gray, almost black.' },
+  { hex: '#181c17', description: 'Very dark teal, almost black.' },
+  { hex: '#30382e', description: 'This is a very dark greyish-green.' },
+  { hex: '#495445', description: "That's a dark, muted green." },
+  { hex: '#050604', description: 'Very dark, almost black, reddish-brown.' },
+  {
+    hex: '#171f14',
+    description: 'This is a very dark, slightly saturated greenish-blue.',
+  },
+  {
+    hex: '#2e3d29',
+    description: 'This is a dark teal with a slight green undertone.',
+  },
+  {
+    hex: '#455c3d',
+    description: 'This is a muted green with a slight cyan tint.',
+  },
+  { hex: '#040704', description: 'Very dark bluish green, almost black.' },
+  { hex: '#162112', description: 'This is a dark teal with a hint of green.' },
+  {
+    hex: '#2b4224',
+    description: 'This is a dark, muted green with a slight cyan tint.',
+  },
+  {
+    hex: '#416336',
+    description: "That's a muted green with a slight cyan tint.",
+  },
+  { hex: '#040703', description: 'Very dark bluish gray, almost black.' },
+  {
+    hex: '#14240f',
+    description: 'This is a dark teal with a strong blue-green hue.',
+  },
+  { hex: '#29471f', description: 'This color is a deep, muted teal.' },
+  {
+    hex: '#3d6b2e',
+    description: 'This color is a muted teal with a slight lean towards green.',
+  },
+  { hex: '#040803', description: 'Very dark blue-green, almost black.' },
+  {
+    hex: '#13260d',
+    description: 'This is a dark teal with a strong green-blue hue.',
+  },
+  {
+    hex: '#264d1a',
+    description: 'This is a dark teal with a strong blue-green hue.',
+  },
+  {
+    hex: '#397326',
+    description:
+      'This is a muted green with a hint of darkness.  It can be compared to a dark pastel green.',
+  },
+  {
+    hex: '#050505',
+    description: 'Almost black with a hint of very dark green.',
+  },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark green, almost black.' },
+  { hex: '#4d4d4d', description: 'This is a very dark gray, almost black.' },
+  { hex: '#050605', description: 'Very dark green, almost black.' },
+  { hex: '#181c17', description: 'Very dark green, almost black.' },
+  { hex: '#30382e', description: 'This is a very dark green, almost black.' },
+  { hex: '#475445', description: "That's a dark, muted green." },
+  { hex: '#040604', description: 'Very dark green, almost black.' },
+  { hex: '#161f14', description: 'Dark greenish-gray, almost black.' },
+  { hex: '#2c3d29', description: 'Dark green with a slight grayish tint.' },
+  {
+    hex: '#425c3d',
+    description: 'This is a deep, muted green with a slight grayish tone.',
+  },
+  { hex: '#040704', description: 'Very dark green, almost black.' },
+  { hex: '#142112', description: 'Dark green with a hint of gray.' },
+  { hex: '#294224', description: 'Dark green with a slight grayish tint.' },
+  {
+    hex: '#3d6336',
+    description:
+      'This is a muted green with slight cyan undertones, similar to a deep sage.',
+  },
+  { hex: '#040703', description: 'Very dark green, almost black.' },
+  { hex: '#13240f', description: 'Very dark, muted red, almost black.' },
+  { hex: '#25471f', description: 'Dark green with a slight blue tint.' },
+  {
+    hex: '#386b2e',
+    description: 'This is a muted green with a slight greyish tone.',
+  },
+  { hex: '#030803', description: 'Very dark green, almost black.' },
+  { hex: '#11260d', description: 'This is a dark red, almost maroon.' },
+  {
+    hex: '#224d1a',
+    description:
+      'This is a dark reddish-brown color, like a deep rust or auburn.',
+  },
+  {
+    hex: '#337326',
+    description: 'This is a dark red color with slight orange undertones.',
+  },
+  {
+    hex: '#050505',
+    description: 'Almost black with a hint of very dark green.',
+  },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark grey, almost black.' },
+  { hex: '#4d4d4d', description: 'This is a very dark gray, almost black.' },
+  { hex: '#050605', description: 'Very dark green, almost black.' },
+  { hex: '#171c17', description: 'Very dark, almost black, reddish-brown.' },
+  { hex: '#2f382e', description: 'Very dark, almost black, reddish-brown.' },
+  {
+    hex: '#465445',
+    description: 'This is a dark, muted green with a slight grayish tint.',
+  },
+  { hex: '#040604', description: 'Very dark green, almost black.' },
+  { hex: '#151f14', description: "That's a dark, muted green." },
+  {
+    hex: '#2b3d29',
+    description: "That's a deep, muted green, like a dark forest floor.",
+  },
+  {
+    hex: '#405c3d',
+    description:
+      'This is a muted green with a slight blue undertone, like a deep, desaturated turquoise.',
+  },
+  { hex: '#040704', description: 'Very dark green, almost black.' },
+  {
+    hex: '#132112',
+    description:
+      'This is a deep, muted green, almost like a dark forest green.',
+  },
+  {
+    hex: '#264224',
+    description: 'This is a deep, muted green with a slight blue undertone.',
+  },
+  {
+    hex: '#396336',
+    description:
+      'This is a muted green with slight cyan undertones, like a deep, desaturated jade.',
+  },
+  { hex: '#030703', description: 'Very dark green, almost black.' },
+  { hex: '#11240f', description: 'Dark greenish-gray.' },
+  {
+    hex: '#22471f',
+    description: 'This is a dark reddish-brown color, like a deep mahogany.',
+  },
+  {
+    hex: '#336b2e',
+    description:
+      'This is a dark reddish-brown color, like a deep rust or bronze.',
+  },
+  { hex: '#030803', description: 'Very dark green, almost black.' },
+  { hex: '#0f260d', description: 'Dark greenish-cyan, almost black.' },
+  { hex: '#1e4d1a', description: 'This is a dark red with brown undertones.' },
+  {
+    hex: '#2d7326',
+    description: 'This color is a muted shade of teal or dark greenish-blue.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of green.' },
+  { hex: '#1a1a1a', description: 'Very dark green, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a very dark shade of reddish-brown, almost black.',
+  },
+  { hex: '#050605', description: 'Very dark reddish brown, almost black.' },
+  { hex: '#171c17', description: 'Very dark green, almost black.' },
+  {
+    hex: '#2e382e',
+    description: "That's a very dark, almost black, shade of orange.",
+  },
+  { hex: '#455445', description: 'This is a dark, muted green.' },
+  { hex: '#040604', description: 'Very dark reddish brown, almost black.' },
+  { hex: '#141f14', description: 'Very dark, almost black, reddish-brown.' },
+  {
+    hex: '#293d29',
+    description:
+      'This is a dark, muted reddish-brown. It has a slight reddish hue.',
+  },
+  { hex: '#3d5c3d', description: 'This is a dark, muted green.' },
+  { hex: '#040704', description: 'This is a very dark red, almost black.' },
+  {
+    hex: '#122112',
+    description: 'Very dark, desaturated orange, almost brown-black.',
+  },
+  {
+    hex: '#244224',
+    description:
+      "This is a dark, muted reddish-brown. It's like a deep, earthy rust color.",
+  },
+  {
+    hex: '#366336',
+    description: "That's a dark, muted orange with a hint of brown.",
+  },
+  { hex: '#030703', description: "It's a dark shade of red." },
+  { hex: '#0f240f', description: 'Very dark, muted orange-brown.' },
+  { hex: '#1f471f', description: 'This is a dark, muted reddish-brown.' },
+  { hex: '#2e6b2e', description: "That's a dark, muted orange-brown." },
+  { hex: '#030803', description: 'Very dark green, almost black.' },
+  { hex: '#0d260d', description: 'Very dark reddish brown, almost black.' },
+  { hex: '#1a4d1a', description: 'Dark reddish brown.' },
+  {
+    hex: '#267326',
+    description: 'This is a dark orange-brown color, like a deep bronze.',
+  },
+  { hex: '#050505', description: 'This is black.' },
+  { hex: '#1a1a1a', description: 'Very dark green, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: "That's a dark shade of gray, almost black." },
+  { hex: '#050605', description: 'Very dark reddish-brown, almost black.' },
+  { hex: '#171c17', description: 'Very dark teal, almost black.' },
+  { hex: '#2e382f', description: 'Very dark, almost black, reddish-brown.' },
+  {
+    hex: '#455446',
+    description: "That's a dark, desaturated orange, almost a deep brown.",
+  },
+  { hex: '#040604', description: 'Very dark muted green, almost black.' },
+  { hex: '#141f15', description: 'Very dark teal, almost black.' },
+  { hex: '#293d2b', description: 'Dark muted green.' },
+  {
+    hex: '#3d5c40',
+    description: 'This is a muted teal with a slight greyish tone.',
+  },
+  { hex: '#040704', description: 'Very dark green, almost black.' },
+  {
+    hex: '#122113',
+    description: 'This is a dark, muted green with a slight cyan tint.',
+  },
+  {
+    hex: '#244226',
+    description: 'This is a deep, muted green with a slight teal undertone.',
+  },
+  {
+    hex: '#366339',
+    description: "It's a muted teal with a slight grey undertone.",
+  },
+  { hex: '#030703', description: 'Very dark green, almost black.' },
+  { hex: '#0f2411', description: 'Dark teal with a hint of green.' },
+  {
+    hex: '#1f4722',
+    description: 'This is a deep, muted green with a slight blue undertone.',
+  },
+  {
+    hex: '#2e6b33',
+    description: 'This is a muted teal with a slight lean towards green.',
+  },
+  { hex: '#030803', description: 'Very dark teal, almost black.' },
+  { hex: '#0d260f', description: 'Dark teal with a hint of green.' },
+  { hex: '#1a4d1e', description: 'Dark teal with a slight hint of green.' },
+  {
+    hex: '#26732d',
+    description: 'This color is a muted teal with a slight greyish tint.',
+  },
+  {
+    hex: '#050505',
+    description: 'Almost black with a hint of very dark green.',
+  },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark green, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: "That's a dark gray with a slight green tint.",
+  },
+  { hex: '#050605', description: 'Very dark green, almost black.' },
+  { hex: '#171c18', description: 'Very dark green, almost black.' },
+  {
+    hex: '#2e3830',
+    description: 'Dark olive green with a slight hint of gray.',
+  },
+  {
+    hex: '#455447',
+    description: "That's a dark, muted green with a hint of gray.",
+  },
+  { hex: '#040604', description: 'Very dark green, almost black.' },
+  { hex: '#141f16', description: 'Very dark green, almost black.' },
+  {
+    hex: '#293d2c',
+    description: "That's a deep, muted green, almost like a dark forest green.",
+  },
+  {
+    hex: '#3d5c42',
+    description: "That's a dark, muted green with a slight cyan tint.",
+  },
+  { hex: '#040704', description: 'Very dark green, almost black.' },
+  { hex: '#122114', description: 'Dark green with a hint of gray.' },
+  {
+    hex: '#244229',
+    description: 'This is a deep, muted green with a slight hint of blue.',
+  },
+  {
+    hex: '#36633d',
+    description: 'This is a muted green with a slight grayish tone.',
+  },
+  { hex: '#030704', description: 'Very dark green, almost black.' },
+  { hex: '#0f2413', description: 'Dark green with a strong blue undertone.' },
+  {
+    hex: '#1f4725',
+    description:
+      'This is a deep, muted green with a slight hint of blue, similar to a dark jade.',
+  },
+  {
+    hex: '#2e6b38',
+    description: 'This is a muted green with a slight hint of darkness.',
+  },
+  { hex: '#030803', description: 'Very dark green, almost black.' },
+  {
+    hex: '#0d2611',
+    description:
+      '130 degrees is a shade of green. 50% saturation means that this color is of average intensity. 10% lightness means that this color is dark. This makes this color a dark and muted green.',
+  },
+  {
+    hex: '#1a4d22',
+    description:
+      'This is a deep, muted green with a noticeable hint of darkness, like a dark forest green.',
+  },
+  {
+    hex: '#267333',
+    description: 'This is a muted green with a slight hint of darkness.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep green.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'This is a dark, desaturated cyan.' },
+  { hex: '#050605', description: 'Very dark teal, almost black.' },
+  { hex: '#171c18', description: 'Very dark teal, almost black.' },
+  { hex: '#2e3830', description: 'Very dark teal, almost black.' },
+  {
+    hex: '#455449',
+    description: 'This is a dark, muted green with a slight cyan tint.',
+  },
+  { hex: '#040605', description: 'Very dark, almost black, green.' },
+  {
+    hex: '#141f17',
+    description: 'This is a deep, muted green, almost like a dark jade.',
+  },
+  {
+    hex: '#293d2e',
+    description: 'This is a deep, muted green with a slight cyan tint.',
+  },
+  { hex: '#3d5c45', description: "That's a deep, muted teal." },
+  { hex: '#040704', description: 'Very dark, muted cyan, almost black.' },
+  { hex: '#122116', description: 'Very dark, muted cyan.' },
+  {
+    hex: '#24422b',
+    description: 'This is a deep, muted teal with a strong green undertone.',
+  },
+  {
+    hex: '#366341',
+    description:
+      'This is a muted tone of teal with a slight greyish influence.',
+  },
+  { hex: '#030704', description: 'Very dark green, almost black.' },
+  {
+    hex: '#0f2414',
+    description: 'This is a muted, dark cyan with a slight green undertone.',
+  },
+  { hex: '#1f4729', description: 'Dark teal with a slight hint of green.' },
+  {
+    hex: '#2e6b3d',
+    description: 'This is a muted teal with a slight lean towards green.',
+  },
+  { hex: '#030804', description: 'Very dark, almost black, teal.' },
+  { hex: '#0d2613', description: 'Dark greenish-cyan, almost black.' },
+  {
+    hex: '#1a4d26',
+    description: 'This is a dark, muted green, like a deep forest shade.',
+  },
+  {
+    hex: '#267339',
+    description: 'This is a muted teal with a slight lean towards green.',
+  },
+  {
+    hex: '#050505',
+    description: 'Almost black with a hint of very dark green.',
+  },
+  { hex: '#1a1a1a', description: 'Very dark green, almost black.' },
+  { hex: '#333333', description: 'Very dark green, almost black.' },
+  { hex: '#4d4d4d', description: "That's a very dark gray, almost black." },
+  { hex: '#050605', description: 'Very dark green, almost black.' },
+  { hex: '#171c19', description: 'Very dark, almost black, green.' },
+  {
+    hex: '#2e3831',
+    description: 'This is a very dark gray with a slight green tint.',
+  },
+  {
+    hex: '#45544a',
+    description: 'This is a dark, muted green with a slight hint of gray.',
+  },
+  { hex: '#040605', description: 'Very dark green, almost black.' },
+  { hex: '#141f18', description: 'Very dark green, almost black.' },
+  {
+    hex: '#293d30',
+    description:
+      'This is a deep, muted green with a slight hint of blue, almost like a dark jade.',
+  },
+  {
+    hex: '#3d5c47',
+    description:
+      "That's a deep, muted green with a slight hint of warmth. Like a dark forest green.",
+  },
+  { hex: '#040705', description: 'Very dark green, almost black.' },
+  {
+    hex: '#122117',
+    description: 'This is a dark, muted green with a slight cyan tint.',
+  },
+  {
+    hex: '#24422e',
+    description:
+      'This is a deep, muted green with a slight hint of blue, similar to a dark teal.',
+  },
+  {
+    hex: '#366345',
+    description:
+      'This is a muted green with low saturation and lightness, resembling a soft, deep sage green.',
+  },
+  { hex: '#030704', description: 'Very dark green, almost black.' },
+  { hex: '#0f2416', description: 'Dark green with a slight hint of teal.' },
+  { hex: '#1f472c', description: 'Dark green with a slight blue tint.' },
+  {
+    hex: '#2e6b42',
+    description:
+      'This is a muted green with slight cyan undertones, similar to a deep sage.',
+  },
+  { hex: '#030804', description: 'Very dark green, almost black.' },
+  { hex: '#0d2615', description: 'Dark green with a slight hint of teal.' },
+  { hex: '#1a4d2b', description: 'Dark green with a hint of blue.' },
+  {
+    hex: '#267340',
+    description: 'This is a muted green with a slight hint of darkness.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep green.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark desaturated cyan, almost black.' },
+  { hex: '#4d4d4d', description: 'Very dark gray, almost black.' },
+  { hex: '#050605', description: 'Very dark, almost black, green.' },
+  { hex: '#171c19', description: 'Very dark, muted cyan.' },
+  { hex: '#2e3832', description: 'This is a very dark grayish-green.' },
+  { hex: '#45544b', description: 'This is a deep, muted teal.' },
+  { hex: '#040605', description: 'Very dark, almost black, bluish green.' },
+  { hex: '#141f19', description: 'Very dark, muted cyan.' },
+  { hex: '#293d31', description: 'This is a deep, muted teal.' },
+  {
+    hex: '#3d5c4a',
+    description: 'This is a deep, muted teal with a slight hint of green.',
+  },
+  { hex: '#040705', description: 'Very dark, almost black, bluish green.' },
+  { hex: '#122118', description: 'Dark, muted teal with a hint of green.' },
+  {
+    hex: '#244230',
+    description: 'This is a deep, muted blue-green, like a dark teal.',
+  },
+  {
+    hex: '#366349',
+    description: 'This is a muted teal with a slight greyish tint.',
+  },
+  { hex: '#030705', description: 'Very dark, almost black, bluish green.' },
+  { hex: '#0f2418', description: 'Dark, muted teal with a hint of green.' },
+  {
+    hex: '#1f4730',
+    description:
+      'This is a deep, muted teal with a strong blue-green presence.',
+  },
+  {
+    hex: '#2e6b47',
+    description: 'This color is a muted teal with a slight lean towards green.',
+  },
+  { hex: '#030805', description: 'Very dark, almost black, bluish-green.' },
+  { hex: '#0d2617', description: 'Dark bluish green.' },
+  { hex: '#1a4d2f', description: 'Dark teal with a hint of green.' },
+  {
+    hex: '#267346',
+    description: 'This is a muted teal with a noticeable green undertone.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep green.' },
+  { hex: '#1a1a1a', description: 'Very dark green, almost black.' },
+  { hex: '#333333', description: 'Very dark green, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: "That's a dark, desaturated green, almost a deep gray.",
+  },
+  { hex: '#050605', description: 'Very dark green, almost black.' },
+  { hex: '#171c1a', description: 'Very dark green, almost black.' },
+  { hex: '#2e3833', description: 'This is a very dark greenish-gray.' },
+  { hex: '#45544d', description: "That's a deep, muted green." },
+  { hex: '#040605', description: 'Very dark, muted green, almost black.' },
+  { hex: '#141f1a', description: 'Dark greenish-gray.' },
+  {
+    hex: '#293d33',
+    description: 'This is a deep, muted green with a slight cyan undertone.',
+  },
+  {
+    hex: '#3d5c4d',
+    description: 'This is a deep, muted green with a slight blue undertone.',
+  },
+  { hex: '#040705', description: 'Very dark, muted green, almost black.' },
+  { hex: '#12211a', description: 'Dark, muted green with a hint of blue.' },
+  {
+    hex: '#244233',
+    description: 'Dark, muted green with a slight teal undertone.',
+  },
+  {
+    hex: '#36634d',
+    description: "That's a muted green with a slight cyan tint.",
+  },
+  { hex: '#030705', description: 'Very dark green, almost black.' },
+  { hex: '#0f241a', description: 'Dark greenish-cyan.' },
+  { hex: '#1f4733', description: "It's a deep, muted green." },
+  {
+    hex: '#2e6b4d',
+    description: 'It is a muted teal with a slight lean towards green.',
+  },
+  { hex: '#030805', description: 'Very dark green, almost black.' },
+  { hex: '#0d261a', description: 'Dark greenish-cyan, almost black.' },
+  { hex: '#1a4d33', description: 'Dark green with a slight blue tint.' },
+  {
+    hex: '#26734d',
+    description:
+      'This is a muted green with a slight cyan undertone, similar to a deep sea green.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep blue.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark teal, almost black.' },
+  { hex: '#4d4d4d', description: "That's a very dark gray, almost black." },
+  { hex: '#050605', description: 'Very dark, almost black, teal.' },
+  { hex: '#171c1a', description: 'Very dark, muted cyan.' },
+  { hex: '#2e3834', description: 'Dark, muted green with a hint of blue.' },
+  {
+    hex: '#45544e',
+    description: "That's a dark, muted green with a slight cyan tint.",
+  },
+  { hex: '#040605', description: 'Very dark, muted cyan, almost black.' },
+  {
+    hex: '#141f1a',
+    description: 'This is a dark, muted green with a slight cyan tint.',
+  },
+  {
+    hex: '#293d35',
+    description: "That's a deep, muted green with a slight cyan tint.",
+  },
+  { hex: '#3d5c4f', description: "That's a deep, muted teal." },
+  { hex: '#040705', description: 'Very dark, almost black, teal.' },
+  { hex: '#12211b', description: "That's a deep, muted cyan." },
+  { hex: '#244236', description: 'This is a deep, muted teal.' },
+  { hex: '#366350', description: "That's a deep, muted cyan." },
+  { hex: '#030705', description: 'Very dark, muted cyan, almost black.' },
+  { hex: '#0f241b', description: 'Dark teal with a strong blue-green hue.' },
+  { hex: '#1f4736', description: 'Dark teal with a slight hint of blue.' },
+  {
+    hex: '#2e6b52',
+    description: "That's a muted teal with a slight lean towards green.",
+  },
+  { hex: '#030806', description: 'Very dark teal, almost black.' },
+  { hex: '#0d261c', description: 'Dark grayish cyan.' },
+  { hex: '#1a4d37', description: 'Dark teal with a slight hint of green.' },
+  {
+    hex: '#267353',
+    description: "It's a muted teal with a slight lean towards green.",
+  },
+  { hex: '#050505', description: 'Very dark green, almost black.' },
+  { hex: '#1a1a1a', description: 'Very dark green, almost black.' },
+  { hex: '#333333', description: 'Very dark desaturated green, almost black.' },
+  { hex: '#4d4d4d', description: "That's a very dark gray, almost black." },
+  { hex: '#050605', description: 'Very dark, almost black, green.' },
+  { hex: '#171c1a', description: 'Very dark green, almost black.' },
+  {
+    hex: '#2e3835',
+    description: 'This is a very dark, dull green, almost gray.',
+  },
+  {
+    hex: '#45544f',
+    description: 'This is a dark, muted green with a slight grayish tint.',
+  },
+  { hex: '#040605', description: 'Very dark, muted green, almost black.' },
+  {
+    hex: '#141f1b',
+    description: 'This is a deep, muted green, almost like a dark jade.',
+  },
+  {
+    hex: '#293d36',
+    description:
+      'This is a deep, muted green with a slight hint of blue, almost like a dark jade.',
+  },
+  {
+    hex: '#3d5c52',
+    description: "That's a deep, muted green with a slight blue undertone.",
+  },
+  { hex: '#040706', description: 'Very dark, muted green, almost black.' },
+  {
+    hex: '#12211c',
+    description:
+      'This is a deep, muted green with a strong dark tone, almost like a dark forest green.',
+  },
+  {
+    hex: '#244238',
+    description:
+      'This is a deep, muted green with a slight hint of blue, like a dark jade.',
+  },
+  {
+    hex: '#366354',
+    description: 'This is a muted dark green with a slight cyan undertone.',
+  },
+  { hex: '#030706', description: 'Very dark, muted green, almost black.' },
+  { hex: '#0f241d', description: 'Dark green almost black.' },
+  {
+    hex: '#1f473a',
+    description: 'This is a deep, muted green with a slight blue undertone.',
+  },
+  {
+    hex: '#2e6b57',
+    description: 'This is a muted dark green with a slight cyan tint.',
+  },
+  { hex: '#030806', description: 'Very dark, muted green, almost black.' },
+  {
+    hex: '#0d261e',
+    description:
+      'This is a deep, muted green with a strong dark tone, almost like a dark forest green. It has a low saturation.',
+  },
+  { hex: '#1a4d3b', description: 'Dark green with a slight blue tint.' },
+  {
+    hex: '#267359',
+    description:
+      'This is a muted green with a slight blue tinge, similar to a deep sea green.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep navy.' },
+  { hex: '#1a1a1a', description: 'Very dark cyan, almost black.' },
+  { hex: '#333333', description: 'Very dark, muted cyan.' },
+  {
+    hex: '#4d4d4d',
+    description: "That's a very dark shade of cyan, almost appearing black.",
+  },
+  { hex: '#050605', description: 'Very dark, almost black, bluish-green.' },
+  {
+    hex: '#171c1b',
+    description: 'This is a very dark shade of cyan, almost appearing black.',
+  },
+  { hex: '#2e3836', description: 'This is a very dark, muted cyan.' },
+  {
+    hex: '#455450',
+    description: 'This is a dark, muted cyan with a strong blue undertone.',
+  },
+  { hex: '#040606', description: 'Very dark, almost black, bluish green.' },
+  {
+    hex: '#141f1c',
+    description: 'This is a deep, muted teal, almost a dark gray-blue.',
+  },
+  { hex: '#293d38', description: 'This is a deep, muted teal.' },
+  {
+    hex: '#3d5c54',
+    description: 'This is a muted, deep teal with a slight hint of gray.',
+  },
+  { hex: '#040706', description: 'Very dark, almost black, bluish green.' },
+  {
+    hex: '#12211d',
+    description: 'This is a deep, muted teal, almost a dark blue-green.',
+  },
+  { hex: '#24423b', description: 'Dark teal with a hint of blue.' },
+  {
+    hex: '#366358',
+    description: 'This is a muted teal with a slight greyish tone.',
+  },
+  { hex: '#030706', description: 'Very dark, almost black, bluish green.' },
+  { hex: '#0f241f', description: 'This is a dark, muted cyan.' },
+  { hex: '#1f473d', description: "That's a deep, muted teal." },
+  {
+    hex: '#2e6b5c',
+    description: "That's a muted teal with a slight lean towards green.",
+  },
+  { hex: '#030806', description: 'Very dark, almost black, bluish green.' },
+  { hex: '#0d2620', description: 'This is a dark, muted cyan.' },
+  { hex: '#1a4d40', description: 'Dark teal with a hint of blue.' },
+  {
+    hex: '#267360',
+    description: 'This is a muted teal with a slight lean towards blue.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep navy.' },
+  { hex: '#1a1a1a', description: 'This is a very dark cyan, almost black.' },
+  {
+    hex: '#333333',
+    description:
+      'This is a very dark desaturated cyan, almost appearing as a deep gray or near-black with a slight blue tint.',
+  },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a very dark shade of cyan, almost appearing black.',
+  },
+  { hex: '#050605', description: 'Very dark, almost black, bluish-green.' },
+  { hex: '#171c1b', description: 'Very dark, muted teal, almost black.' },
+  {
+    hex: '#2e3836',
+    description: 'This is a very dark blue-green, almost a deep teal.',
+  },
+  {
+    hex: '#455452',
+    description: 'This is a deep, muted blue-green, almost a dark teal.',
+  },
+  { hex: '#040606', description: 'Very dark, almost black, bluish-green.' },
+  {
+    hex: '#141f1d',
+    description: 'This is a deep, muted blue-green, almost a dark teal.',
+  },
+  {
+    hex: '#293d3a',
+    description: "That's a deep, muted blue-green, almost like a dark teal.",
+  },
+  {
+    hex: '#3d5c57',
+    description: 'This is a deep, muted teal with a slight lean towards green.',
+  },
+  { hex: '#040706', description: 'Very dark, muted teal, almost black.' },
+  {
+    hex: '#12211f',
+    description: 'This is a deep, muted blue-green, almost like a dark teal.',
+  },
+  {
+    hex: '#24423d',
+    description:
+      'This is a deep, muted teal with a strong blue-green base. It has a slight hint of gray due to its low saturation.',
+  },
+  { hex: '#36635c', description: "That's a deep, muted teal." },
+  { hex: '#030706', description: 'Very dark, muted teal, almost black.' },
+  { hex: '#0f2420', description: 'This is a dark, muted teal.' },
+  {
+    hex: '#1f4741',
+    description:
+      'This is a deep, muted teal with a strong blue-green presence.',
+  },
+  {
+    hex: '#2e6b61',
+    description: 'This is a muted teal with a slight lean towards green.',
+  },
+  { hex: '#030807', description: 'Very dark, almost black, bluish-green.' },
+  { hex: '#0d2622', description: 'Dark teal with a hint of blue.' },
+  {
+    hex: '#1a4d44',
+    description:
+      'This is a deep, muted teal with a strong blue-green influence.',
+  },
+  {
+    hex: '#267366',
+    description: 'This is a muted teal with a slight lean towards green.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep blue.' },
+  { hex: '#1a1a1a', description: 'Very dark cyan, almost black.' },
+  { hex: '#333333', description: 'Very dark cyan, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a very dark shade of cyan, almost appearing black.',
+  },
+  { hex: '#050606', description: 'Extremely dark teal, almost black.' },
+  { hex: '#171c1c', description: 'Very dark, muted cyan.' },
+  { hex: '#2e3837', description: 'This is a very dark teal, almost black.' },
+  {
+    hex: '#455453',
+    description:
+      'This is a dark, muted cyan with a strong blue-green undertone.',
+  },
+  { hex: '#040606', description: 'Very dark, muted teal, almost black.' },
+  { hex: '#141f1e', description: 'Dark teal with a hint of green.' },
+  { hex: '#293d3c', description: "That's a deep, muted teal." },
+  { hex: '#3d5c59', description: "That's a deep, muted teal." },
+  { hex: '#040706', description: 'Very dark, almost black, bluish green.' },
+  { hex: '#122120', description: 'This is a dark, muted cyan.' },
+  { hex: '#244240', description: 'This is a deep, muted teal.' },
+  { hex: '#366360', description: "That's a dark, muted teal." },
+  { hex: '#030707', description: 'Very dark, almost black, bluish green.' },
+  { hex: '#0f2422', description: 'This is a dark, muted teal.' },
+  {
+    hex: '#1f4744',
+    description:
+      'This is a deep, muted teal with a strong blue-green base. It reminds of a dark ocean color.',
+  },
+  {
+    hex: '#2e6b66',
+    description: 'This is a muted teal with a slight lean towards blue.',
+  },
+  { hex: '#030807', description: 'Very dark, muted cyan.' },
+  { hex: '#0d2624', description: 'Dark, muted teal with a hint of green.' },
+  { hex: '#1a4d48', description: 'This is a deep, muted teal.' },
+  {
+    hex: '#26736c',
+    description: 'This is a muted teal with a slight lean towards blue.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep blue.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  {
+    hex: '#333333',
+    description:
+      'This is a very dark desaturated cyan, almost appearing as a deep, nearly-black shade with a slight cyan tint.',
+  },
+  { hex: '#4d4d4d', description: 'This is a dark, muted blue.' },
+  { hex: '#050606', description: 'Almost black with a hint of deep blue.' },
+  { hex: '#171c1c', description: "It's a very dark cyan." },
+  { hex: '#2e3838', description: 'This is a very dark cyan, almost black.' },
+  { hex: '#455454', description: 'This is a dark, muted cyan.' },
+  { hex: '#040606', description: 'Very dark, almost black, blue.' },
+  { hex: '#141f1f', description: 'Very dark, almost black, teal.' },
+  { hex: '#293d3d', description: 'Dark desaturated cyan.' },
+  { hex: '#3d5c5c', description: "That's a deep, muted teal." },
+  { hex: '#040707', description: 'Very dark, almost black, bluish green.' },
+  {
+    hex: '#122121',
+    description: 'Dark, muted blue-green, almost a deep teal.',
+  },
+  {
+    hex: '#244242',
+    description: 'This is a deep, muted blue, almost like a dark navy.',
+  },
+  { hex: '#366363', description: "That's a dark, muted cyan." },
+  { hex: '#030707', description: 'Very dark, almost black, bluish green.' },
+  { hex: '#0f2424', description: '180 40% 10%: Muted dark green.' },
+  { hex: '#1f4747', description: 'This is a dark, muted cyan.' },
+  { hex: '#2e6b6b', description: 'This is a muted dark cyan.' },
+  { hex: '#030808', description: 'Very dark, almost black, bluish-green.' },
+  { hex: '#0d2626', description: 'This is a dark, muted cyan.' },
+  { hex: '#1a4d4d', description: 'This is a dark, desaturated cyan.' },
+  {
+    hex: '#267373',
+    description: 'This is a muted teal with a noticeable gray influence.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep blue.' },
+  { hex: '#1a1a1a', description: 'Very dark blue, almost black.' },
+  {
+    hex: '#333333',
+    description: 'This is a very dark shade of cyan, almost appearing black.',
+  },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a very dark shade of cyan, almost appearing black.',
+  },
+  { hex: '#050606', description: 'Very dark, almost black, blue.' },
+  { hex: '#171c1c', description: 'Very dark, almost black, blue.' },
+  { hex: '#2e3738', description: "That's a very dark blue, almost navy." },
+  {
+    hex: '#455354',
+    description: 'This is a very dark grayish-blue, almost like a deep ink.',
+  },
+  { hex: '#040606', description: 'Very dark, almost black, blue.' },
+  { hex: '#141e1f', description: 'This is a very dark blue, almost indigo.' },
+  { hex: '#293c3d', description: 'Dark teal with a slight hint of blue.' },
+  {
+    hex: '#3d595c',
+    description: 'This is a deep, desaturated blue, almost like a dark denim.',
+  },
+  { hex: '#040607', description: 'Very dark, almost black, bluish gray.' },
+  {
+    hex: '#122021',
+    description: 'Dark, muted blue with a slight hint of cyan.',
+  },
+  {
+    hex: '#244042',
+    description: 'This is a deep, muted blue, almost like a dark denim.',
+  },
+  { hex: '#366063', description: "That's a dark, muted blue." },
+  { hex: '#030707', description: 'Very dark, almost black, bluish color.' },
+  {
+    hex: '#0f2224',
+    description: "That's a dark blue with a slight hint of cyan.",
+  },
+  {
+    hex: '#1f4447',
+    description:
+      'This is a dark, muted blue-violet color, like a deep indigo shadow.',
+  },
+  {
+    hex: '#2e666b',
+    description:
+      "This is a moderate shade of blue with a slight hint of darkness also it's moderate in vividness.",
+  },
+  { hex: '#030708', description: 'Very dark, almost black, bluish color.' },
+  {
+    hex: '#0d2426',
+    description: 'This is a dark blue with a slight hint of cyan.',
+  },
+  {
+    hex: '#1a484d',
+    description: 'Dark, desaturated blue with a slight hint of cyan.',
+  },
+  {
+    hex: '#266c73',
+    description:
+      'This is a moderate shade of blue with a slight hint of darkness.',
+  },
+  {
+    hex: '#050505',
+    description: 'Almost black with a hint of deep navy blue.',
+  },
+  { hex: '#1a1a1a', description: 'Very dark blue, almost black.' },
+  { hex: '#333333', description: 'Very dark blue, almost navy.' },
+  {
+    hex: '#4d4d4d',
+    description: "That's a dark blue, almost like a deep navy.",
+  },
+  { hex: '#050506', description: 'Very dark, almost black, blue.' },
+  { hex: '#171b1c', description: 'Very dark, almost black, blue.' },
+  { hex: '#2e3638', description: 'Very deep, almost-black navy blue.' },
+  {
+    hex: '#455254',
+    description: "That's a deep, desaturated blue, almost like a dark navy.",
+  },
+  { hex: '#040606', description: 'Very dark, almost black, blue.' },
+  { hex: '#141d1f', description: 'Very deep, almost navy blue.' },
+  {
+    hex: '#293a3d',
+    description: 'This is a deep, desaturated blue, almost like a dark navy.',
+  },
+  {
+    hex: '#3d575c',
+    description: "That's a deep, desaturated blue, almost like a dark denim.",
+  },
+  { hex: '#040607', description: 'Very dark, almost black, blue.' },
+  { hex: '#121f21', description: 'Very dark, muted blue-green.' },
+  {
+    hex: '#243d42',
+    description: 'This is a deep, desaturated blue, almost like a dark denim.',
+  },
+  {
+    hex: '#365c63',
+    description: 'This is a deep, desaturated blue, almost like a dark denim.',
+  },
+  { hex: '#030607', description: 'Very dark, almost black, blue.' },
+  {
+    hex: '#0f2024',
+    description: 'This is a deep, muted blue, almost like a dark denim.',
+  },
+  {
+    hex: '#1f4147',
+    description: 'This is a dark, muted blue with a slight hint of cyan.',
+  },
+  {
+    hex: '#2e616b',
+    description: "That's a deep, muted blue, like a dark denim.",
+  },
+  { hex: '#030708', description: 'Very dark, almost black, bluish color.' },
+  {
+    hex: '#0d2226',
+    description: 'Deep, desaturated dark blue, almost like a dark navy.',
+  },
+  {
+    hex: '#1a444d',
+    description: 'This is a dark, desaturated blue, almost like a deep navy.',
+  },
+  {
+    hex: '#266673',
+    description: "That's a deep, muted blue, like a dark denim.",
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep blue.' },
+  { hex: '#1a1a1a', description: 'Very dark blue, almost black.' },
+  { hex: '#333333', description: 'This is a very dark gray, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a very dark shade of blue, almost navy.',
+  },
+  { hex: '#050506', description: 'Very dark, almost black, blue.' },
+  { hex: '#171b1c', description: 'Very dark, almost black, blue.' },
+  { hex: '#2e3638', description: 'This is a very dark grayish blue.' },
+  {
+    hex: '#455054',
+    description:
+      'This is a dark, desaturated blue, almost like a very deep navy.',
+  },
+  { hex: '#040606', description: 'Very dark, almost black, navy blue.' },
+  {
+    hex: '#141c1f',
+    description: 'This is a deep, desaturated blue, almost like a dark navy.',
+  },
+  { hex: '#29383d', description: 'Dark grayish blue.' },
+  {
+    hex: '#3d545c',
+    description: 'This is a deep, desaturated blue, almost like a dark denim.',
+  },
+  { hex: '#040607', description: 'This is a very dark, almost black, blue.' },
+  {
+    hex: '#121d21',
+    description: 'This is a dark, muted blue with a hint of cyan.',
+  },
+  { hex: '#243b42', description: "That's a dark, muted blue." },
+  {
+    hex: '#365863',
+    description:
+      "That's a dark, muted blue, like deep ocean colors on a cloudy day.",
+  },
+  { hex: '#030607', description: 'Very dark, almost black, blue.' },
+  { hex: '#0f1f24', description: 'Deep, muted navy blue.' },
+  {
+    hex: '#1f3d47',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  {
+    hex: '#2e5c6b',
+    description: 'This is a moderate dark blue with a slight hint of purple.',
+  },
+  { hex: '#030608', description: 'Very dark, almost black, blue.' },
+  {
+    hex: '#0d2026',
+    description: 'This is a dark, desaturated blue, almost like a deep navy.',
+  },
+  { hex: '#1a404d', description: 'This is a dark, desaturated blue.' },
+  {
+    hex: '#266073',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep blue.' },
+  { hex: '#1a1a1a', description: 'Very dark blue, almost black.' },
+  { hex: '#333333', description: "That's a very dark blue, almost navy." },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a dark blue, almost like a deep navy.',
+  },
+  { hex: '#050506', description: 'Almost black with a hint of deep blue.' },
+  { hex: '#171a1c', description: 'Very dark blue, almost black.' },
+  { hex: '#2e3538', description: 'This is a very dark blue, almost indigo.' },
+  { hex: '#454f54', description: 'Dark, desaturated blue.' },
+  { hex: '#040506', description: 'Very dark, almost black, blue.' },
+  { hex: '#141b1f', description: 'Very dark, almost black, blue.' },
+  { hex: '#29363d', description: 'Dark blue with a slight hint of purple.' },
+  { hex: '#3d525c', description: 'This is a dark, desaturated blue.' },
+  { hex: '#040607', description: 'Very dark, almost black, blue.' },
+  {
+    hex: '#121c21',
+    description: 'This is a dark blue with a slight hint of indigo.',
+  },
+  { hex: '#243842', description: 'Dark blue with a slight hint of purple.' },
+  {
+    hex: '#365463',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  { hex: '#030607', description: 'Very dark, almost black, blue.' },
+  { hex: '#0f1d24', description: 'Dark blue with a hint of purple.' },
+  { hex: '#1f3a47', description: 'Dark blue with a slight hint of purple.' },
+  {
+    hex: '#2e576b',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  { hex: '#030608', description: 'Very dark, almost black, blue.' },
+  { hex: '#0d1e26', description: 'Dark blue with a hint of purple.' },
+  { hex: '#1a3b4d', description: 'Dark, desaturated blue.' },
+  { hex: '#265973', description: 'This is a dark, desaturated blue.' },
+  { hex: '#050505', description: 'Almost black with a hint of deep blue.' },
+  { hex: '#1a1a1a', description: 'Very dark blue, almost black.' },
+  {
+    hex: '#333333',
+    description: 'This is a very dark shade of blue, almost appearing black.',
+  },
+  {
+    hex: '#4d4d4d',
+    description:
+      'This is a dark shade of desaturated blue, almost a deep grey.',
+  },
+  { hex: '#050506', description: 'Very dark, almost black, blue.' },
+  { hex: '#171a1c', description: 'Very dark, almost black, blue.' },
+  { hex: '#2e3438', description: 'This is a very dark blue, almost navy.' },
+  {
+    hex: '#454e54',
+    description: 'This is a dark, desaturated blue, almost like a deep navy.',
+  },
+  { hex: '#040506', description: 'Very dark, almost black, blue.' },
+  {
+    hex: '#141a1f',
+    description:
+      'This is a very dark, desaturated blue, almost like a deep navy.',
+  },
+  {
+    hex: '#29353d',
+    description: 'This is a dark, desaturated blue, almost like a deep navy.',
+  },
+  {
+    hex: '#3d4f5c',
+    description: 'This is a dark, muted blue with a slight hint of cyan.',
+  },
+  { hex: '#040507', description: 'Very dark, almost black, bluish color.' },
+  {
+    hex: '#121b21',
+    description: 'This is a dark, muted blue with a slight hint of cyan.',
+  },
+  {
+    hex: '#243642',
+    description: "That's a deep, desaturated blue, almost like a dark denim.",
+  },
+  {
+    hex: '#365063',
+    description: 'This is a dark, muted blue with a slight hint of cyan.',
+  },
+  { hex: '#030507', description: 'Very dark, almost black, blue.' },
+  {
+    hex: '#0f1b24',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  {
+    hex: '#1f3647',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  {
+    hex: '#2e526b',
+    description:
+      'This is a moderate, mostly desaturated blue, similar to a dark denim.',
+  },
+  { hex: '#030608', description: 'Very dark, almost black, blue.' },
+  {
+    hex: '#0d1c26',
+    description: 'This is a dark, muted blue, almost like a deep navy.',
+  },
+  {
+    hex: '#1a374d',
+    description: 'This is a dark, muted blue with a slight purplish tint.',
+  },
+  {
+    hex: '#265373',
+    description:
+      'This is a moderate, desaturated blue, like a dark, muted denim.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep blue.' },
+  {
+    hex: '#1a1a1a',
+    description: 'This is a very dark shade of blue, almost appearing black.',
+  },
+  { hex: '#333333', description: 'Very dark blue, almost navy.' },
+  {
+    hex: '#4d4d4d',
+    description: "That's a dark shade of blue, almost like a deep navy.",
+  },
+  { hex: '#050506', description: 'Very dark blue, almost black.' },
+  { hex: '#171a1c', description: 'Very dark blue, almost black.' },
+  { hex: '#2e3338', description: 'This is a very dark blue, almost navy.' },
+  {
+    hex: '#454d54',
+    description: "That's a dark, desaturated blue, almost like a deep navy.",
+  },
+  { hex: '#040506', description: 'Very dark blue, almost black.' },
+  { hex: '#141a1f', description: 'Dark blue with a hint of gray.' },
+  {
+    hex: '#29333d',
+    description: 'This is a dark, desaturated blue, almost like a deep navy.',
+  },
+  {
+    hex: '#3d4d5c',
+    description: 'It is a dark, desaturated blue, almost like a deep navy.',
+  },
+  { hex: '#040507', description: 'Very dark blue, almost black.' },
+  {
+    hex: '#121a21',
+    description: 'This is a dark, desaturated blue, almost like a deep navy.',
+  },
+  { hex: '#243342', description: 'Dark, desaturated blue.' },
+  {
+    hex: '#364d63',
+    description: "That's a dark, muted blue with a slight hint of indigo.",
+  },
+  { hex: '#030507', description: 'Very dark blue, almost black.' },
+  {
+    hex: '#0f1a24',
+    description: 'This is a dark, muted blue with a hint of indigo.',
+  },
+  {
+    hex: '#1f3347',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  {
+    hex: '#2e4d6b',
+    description: 'This is a moderate dark blue with a slight hint of purple.',
+  },
+  { hex: '#030508', description: 'This is a very dark blue, almost black.' },
+  {
+    hex: '#0d1a26',
+    description:
+      'This is a dark, desaturated blue, almost like a deep, inky navy.',
+  },
+  {
+    hex: '#1a334d',
+    description: 'This is a dark, desaturated blue, almost like a deep navy.',
+  },
+  {
+    hex: '#264d73',
+    description:
+      'This is a moderate, desaturated blue, similar to a dark denim.',
+  },
+  { hex: '#050505', description: 'Very dark, almost black blue.' },
+  { hex: '#1a1a1a', description: 'Very dark, almost black blue.' },
+  {
+    hex: '#333333',
+    description:
+      'This is a very dark shade of blue, almost appearing as a deep, naval indigo.',
+  },
+  {
+    hex: '#4d4d4d',
+    description: "It's a very dark shade of blue, almost navy.",
+  },
+  { hex: '#050506', description: 'Very dark, almost black, blue.' },
+  { hex: '#17191c', description: 'Very dark, almost black, blue.' },
+  {
+    hex: '#2e3238',
+    description:
+      'This is a very dark blue, almost indistinguishable from black.',
+  },
+  {
+    hex: '#454b54',
+    description:
+      'This is a very dark shade of blue, almost appearing as a deep, desaturated navy. It has only 30% lightness and low saturation so it almost looks gray-blue.',
+  },
+  { hex: '#040506', description: 'Very deep, almost black, navy blue.' },
+  {
+    hex: '#14191f',
+    description: "That's a dark, desaturated blue, almost like a deep navy.",
+  },
+  {
+    hex: '#29313d',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  {
+    hex: '#3d4a5c',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  { hex: '#040507', description: 'Very dark, almost black, blue.' },
+  {
+    hex: '#121821',
+    description: 'This is a dark, muted blue with a slight indigo undertone.',
+  },
+  {
+    hex: '#243042',
+    description: "That's a deep, muted blue, almost like a dark denim.",
+  },
+  {
+    hex: '#364963',
+    description: 'This is a dark, muted blue with a hint of indigo.',
+  },
+  { hex: '#030507', description: 'Very dark, almost black, blue.' },
+  { hex: '#0f1824', description: 'Dark, muted blue with a hint of purple.' },
+  {
+    hex: '#1f3047',
+    description: 'This is a dark, muted blue with a slight purplish tint.',
+  },
+  {
+    hex: '#2e476b',
+    description: 'This is a deep, muted blue, almost like a dark denim.',
+  },
+  { hex: '#030508', description: 'Very dark, almost black, blue.' },
+  {
+    hex: '#0d1726',
+    description: 'This is a dark, desaturated blue, almost like a deep indigo.',
+  },
+  {
+    hex: '#1a2f4d',
+    description:
+      'This is a dark, desaturated blue with a slight purplish tint.',
+  },
+  {
+    hex: '#264673',
+    description: 'This is a dark, desaturated blue, almost like a deep indigo.',
+  },
+  { hex: '#050505', description: 'Very dark blue, almost black.' },
+  { hex: '#1a1a1a', description: 'Very dark blue, almost black.' },
+  { hex: '#333333', description: 'This is a very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'Dark blue, almost navy.' },
+  { hex: '#050506', description: 'Very dark, almost black blue.' },
+  { hex: '#17191c', description: 'Very dark, almost black, blue.' },
+  { hex: '#2e3138', description: 'This is a very dark blue, almost navy.' },
+  {
+    hex: '#454a54',
+    description: 'This is a dark, muted blue, almost like a deep navy.',
+  },
+  { hex: '#040506', description: 'Very dark, almost black, blue.' },
+  { hex: '#14181f', description: 'Very dark, desaturated blue, almost black.' },
+  {
+    hex: '#29303d',
+    description: "That's a dark, desaturated blue, almost like a deep navy.",
+  },
+  {
+    hex: '#3d475c',
+    description: "That's a dark, muted blue with a slight hint of purple.",
+  },
+  { hex: '#040507', description: 'Very dark, almost black, blue.' },
+  { hex: '#121721', description: 'Very dark, muted blue.' },
+  { hex: '#242e42', description: 'Dark blue with a hint of indigo.' },
+  {
+    hex: '#364563',
+    description: 'This is a deep, muted blue, almost like a dark denim.',
+  },
+  { hex: '#030407', description: 'Very dark, almost black, blue.' },
+  {
+    hex: '#0f1624',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  { hex: '#1f2c47', description: 'Dark blue with a hint of indigo.' },
+  { hex: '#2e426b', description: 'Dark blue with a slight hint of purple.' },
+  { hex: '#030408', description: 'Very dark, almost black blue.' },
+  { hex: '#0d1526', description: 'Dark blue with a hint of purple.' },
+  { hex: '#1a2b4d', description: 'Dark blue with a hint of indigo.' },
+  {
+    hex: '#264073',
+    description: 'This is a dark, muted blue with a slight purplish tint.',
+  },
+  { hex: '#050505', description: 'Very dark, nearly black blue.' },
+  { hex: '#1a1a1a', description: 'Very dark blue, almost black.' },
+  {
+    hex: '#333333',
+    description:
+      'This is a very dark shade of blue, almost appearing black. It is a very deep and desaturated blue color that can be barely distinguished from black. The color is so deep, that is very close to black with a slight hint of blue.',
+  },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a dark blue, almost like a deep navy.',
+  },
+  { hex: '#050506', description: 'Very dark, almost black, blue.' },
+  { hex: '#17181c', description: 'Very dark, almost black, blue.' },
+  { hex: '#2e3038', description: 'This is a very dark grayish blue.' },
+  { hex: '#454954', description: 'This is a very dark grayish blue.' },
+  { hex: '#040506', description: 'Very dark blue, almost black.' },
+  { hex: '#14171f', description: 'Very dark, muted blue, almost navy.' },
+  {
+    hex: '#292e3d',
+    description: 'This is a dark, muted blue, almost like a deep indigo.',
+  },
+  {
+    hex: '#3d455c',
+    description: "That's a dark, desaturated blue, almost like a deep navy.",
+  },
+  { hex: '#040407', description: 'Very dark, almost black, blue.' },
+  {
+    hex: '#121621',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  {
+    hex: '#242b42',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  {
+    hex: '#364163',
+    description:
+      'This is a dark, desaturated blue, almost like a deep midnight blue.',
+  },
+  { hex: '#030407', description: 'very dark, almost black, blue' },
+  {
+    hex: '#0f1424',
+    description: 'This is a dark, muted blue with a hint of purple.',
+  },
+  {
+    hex: '#1f2947',
+    description: 'This is a dark, muted blue with a slight purplish tint.',
+  },
+  {
+    hex: '#2e3d6b',
+    description: 'This is a dark, muted blue with a slight purplish tint.',
+  },
+  { hex: '#030408', description: 'Very dark, almost black blue.' },
+  { hex: '#0d1326', description: 'Very dark, muted blue, almost navy.' },
+  {
+    hex: '#1a264d',
+    description: 'This is a dark, desaturated blue, almost like a deep navy.',
+  },
+  {
+    hex: '#263973',
+    description: 'This is a dark, desaturated blue, almost like a deep indigo.',
+  },
+  { hex: '#050505', description: 'Very dark, almost black blue.' },
+  {
+    hex: '#1a1a1a',
+    description: 'This is a very dark shade of blue, almost appearing black.',
+  },
+  {
+    hex: '#333333',
+    description:
+      'This is a very dark shade of blue, almost appearing as a deep, navy black.',
+  },
+  {
+    hex: '#4d4d4d',
+    description:
+      'This is a very dark shade of blue, almost appearing as a deep, naval blue.',
+  },
+  { hex: '#050506', description: 'Very dark, almost black, blue.' },
+  { hex: '#17181c', description: 'Very dark, almost black, blue.' },
+  {
+    hex: '#2e3038',
+    description: 'This is a very dark, almost black, shade of blue.',
+  },
+  { hex: '#454754', description: 'This is a very dark, almost black, blue.' },
+  { hex: '#040406', description: 'Very dark, almost black, blue.' },
+  { hex: '#14161f', description: 'Very dark, muted blue.' },
+  { hex: '#292c3d', description: 'Dark blue with a slight hint of purple.' },
+  {
+    hex: '#3d425c',
+    description: "That's a deep, muted blue, almost like a dark denim.",
+  },
+  { hex: '#040407', description: 'Very dark, almost black, blue.' },
+  { hex: '#121421', description: "It's a very dark, almost black, blue." },
+  {
+    hex: '#242942',
+    description: 'This is a dark, muted blue with a hint of purple.',
+  },
+  {
+    hex: '#363d63',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  { hex: '#030407', description: 'Very dark, almost black, blue.' },
+  { hex: '#0f1324', description: 'Dark, muted blue with a hint of purple.' },
+  {
+    hex: '#1f2547',
+    description: 'This is a dark, muted blue with a hint of purple.',
+  },
+  {
+    hex: '#2e386b',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  { hex: '#030308', description: 'Very dark, almost black, blue.' },
+  {
+    hex: '#0d1126',
+    description: 'This is a dark, desaturated blue, almost like a deep indigo.',
+  },
+  {
+    hex: '#1a224d',
+    description: 'This is a dark, desaturated blue, almost like a deep indigo.',
+  },
+  {
+    hex: '#263373',
+    description:
+      'This is a muted medium-dark blue with a slight purplish tint.',
+  },
+  { hex: '#050505', description: 'Very dark grey, almost black.' },
+  { hex: '#1a1a1a', description: 'Very dark grey, almost black.' },
+  {
+    hex: '#333333',
+    description: 'This is a very dark shade of blue, almost appearing black.',
+  },
+  { hex: '#4d4d4d', description: 'This is a very dark gray, almost black.' },
+  { hex: '#050506', description: 'Very dark, almost black, blue.' },
+  { hex: '#17171c', description: 'Very dark, almost black blue.' },
+  { hex: '#2e2f38', description: 'This is a very dark, nearly black, blue.' },
+  {
+    hex: '#454654',
+    description: "That's a dark, muted blue with a slight hint of purple.",
+  },
+  { hex: '#040406', description: 'Very dark, almost black, navy blue.' },
+  { hex: '#14151f', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#292b3d',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  {
+    hex: '#3d405c',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  { hex: '#040407', description: 'Very dark, almost black blue.' },
+  {
+    hex: '#121321',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  {
+    hex: '#242642',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  {
+    hex: '#363963',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  { hex: '#030307', description: 'Very dark, almost black, blue.' },
+  {
+    hex: '#0f1124',
+    description: 'This is a dark, muted blue with a slight purple tint.',
+  },
+  {
+    hex: '#1f2247',
+    description: 'This is a dark, muted blue with a slight hint of purple.',
+  },
+  {
+    hex: '#2e336b',
+    description: 'This is a deep, muted blue with a slight hint of purple.',
+  },
+  { hex: '#030308', description: 'Very dark, almost black, slate blue.' },
+  { hex: '#0d0f26', description: 'Dark, muted blue-violet, almost black.' },
+  {
+    hex: '#1a1e4d',
+    description: "That's a dark, muted blue with a hint of purple.",
+  },
+  {
+    hex: '#262d73',
+    description: 'This is a dark, muted blue with a slight purplish tint.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep blue.' },
+  { hex: '#1a1a1a', description: 'Very dark blue, almost black.' },
+  {
+    hex: '#333333',
+    description: "That's a very dark blue, almost like a deep navy.",
+  },
+  { hex: '#4d4d4d', description: 'Dark navy blue, almost black.' },
+  { hex: '#050506', description: 'Very dark blue, almost black.' },
+  { hex: '#17171c', description: 'Very dark blue, almost black.' },
+  { hex: '#2e2e38', description: 'Very dark blue, almost black.' },
+  { hex: '#454554', description: 'This is a very dark blue, almost indigo.' },
+  { hex: '#040406', description: 'Very dark blue, almost black.' },
+  { hex: '#14141f', description: 'Very deep, almost-black blue.' },
+  { hex: '#29293d', description: "That's a dark, muted, olive green." },
+  {
+    hex: '#3d3d5c',
+    description:
+      'This is a muted olive green with a slight yellow undertone. It is quite dark.',
+  },
+  { hex: '#040407', description: 'Very dark blue, almost black.' },
+  { hex: '#121221', description: 'This is a very dark blue, almost indigo.' },
+  { hex: '#242442', description: "That's a dark, muted, yellowish brown." },
+  {
+    hex: '#363663',
+    description: 'This is a dark, muted blue with a hint of purple.',
+  },
+  {
+    hex: '#030307',
+    description:
+      'This is a dark, muted shade of orange, almost like a deep, chocolate brown.',
+  },
+  { hex: '#0f0f24', description: 'Very dark, muted yellow-green.' },
+  {
+    hex: '#1f1f47',
+    description:
+      'This is a dark, muted, olive green. It has low brightness which makes it a deep shade of green with a slight yellow undertone.',
+  },
+  { hex: '#2e2e6b', description: 'This is a muted golden brown color.' },
+  { hex: '#030308', description: 'This is a shade of dark yellow.' },
+  {
+    hex: '#0d0d26',
+    description: 'This is a dark, muted blue with a slight purple tint.',
+  },
+  { hex: '#1a1a4d', description: 'This is a deep, muted golden yellow.' },
+  { hex: '#262673', description: 'This color is a muted, dark yellow.' },
+  { hex: '#050505', description: 'This is black.' },
+  { hex: '#1a1a1a', description: 'Very dark navy blue, almost black.' },
+  { hex: '#333333', description: 'Very dark olive green, almost black.' },
+  { hex: '#4d4d4d', description: 'This is a dark gray, almost black.' },
+  { hex: '#050506', description: 'Very dark, almost black, bluish gray.' },
+  { hex: '#17171c', description: 'Very dark olive green, almost black.' },
+  { hex: '#2f2e38', description: 'This is a very dark, nearly black blue.' },
+  { hex: '#464554', description: "That's a dark olive green." },
+  { hex: '#040406', description: 'Very dark, almost black, bluish purple.' },
+  {
+    hex: '#15141f',
+    description: 'This is a dark olive green with low saturation.',
+  },
+  { hex: '#2b293d', description: 'This is a dark, muted olive green.' },
+  { hex: '#403d5c', description: "That's a deep, muted olive green." },
+  { hex: '#040407', description: 'Very dark, almost black, bluish color.' },
+  { hex: '#131221', description: 'Very dark olive green, almost black.' },
+  { hex: '#262442', description: 'This is a deep, muted olive green.' },
+  {
+    hex: '#393663',
+    description: 'Dark slate blue with a slight hint of purple.',
+  },
+  { hex: '#030307', description: 'This is a dark olive green.' },
+  { hex: '#110f24', description: 'Very dark, muted olive green.' },
+  { hex: '#221f47', description: 'This is a deep, muted olive green.' },
+  {
+    hex: '#332e6b',
+    description:
+      'This is a muted olive green with a slight yellow undertone. It is a medium-dark shade of green.',
+  },
+  { hex: '#030308', description: 'Very dark, almost black, bluish purple.' },
+  { hex: '#0f0d26', description: 'Very dark olive green, almost black.' },
+  { hex: '#1e1a4d', description: 'This is a deep, muted olive green.' },
+  {
+    hex: '#2d2673',
+    description:
+      'This is a dark, moderately saturated blue with a hint of purple.',
+  },
+  { hex: '#050505', description: 'Very dark navy, almost black.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark blue, almost navy.' },
+  { hex: '#4d4d4d', description: "That's a dark gray with a hint of warmth." },
+  { hex: '#050506', description: 'Almost black with a hint of yellow.' },
+  {
+    hex: '#18171c',
+    description: 'Very dark, almost black, barely noticeable green.',
+  },
+  { hex: '#302e38', description: 'Very dark, almost black, green.' },
+  { hex: '#474554', description: "That's a dark, muted, yellowish brown." },
+  { hex: '#040406', description: 'This is a very dark yellow, almost black.' },
+  {
+    hex: '#16141f',
+    description: 'Deep, muted yellow-brown, almost like dark mustard.',
+  },
+  { hex: '#2c293d', description: 'This is a dark, muted yellow-green.' },
+  { hex: '#423d5c', description: 'This is a deep, muted yellow-green.' },
+  { hex: '#040407', description: 'This is a dark, desaturated yellow-green.' },
+  { hex: '#141221', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#292442',
+    description: 'This is a dark, muted purple with a slight blue tint.',
+  },
+  {
+    hex: '#3d3663',
+    description: 'This is a dark, muted purple with a hint of blue.',
+  },
+  {
+    hex: '#040307',
+    description: 'Very dark desaturated purple, almost black.',
+  },
+  { hex: '#130f24', description: 'Dark purplish blue, almost indigo.' },
+  { hex: '#251f47', description: 'Deep, muted purple with a hint of blue' },
+  { hex: '#382e6b', description: 'Deep purple with a slight greyish tint.' },
+  { hex: '#030308', description: 'Nearly black with a hint of dark blue.' },
+  {
+    hex: '#110d26',
+    description: 'Dark slate blue with a slight purplish tint',
+  },
+  { hex: '#221a4d', description: 'Dark blue with a hint of purple.' },
+  {
+    hex: '#332673',
+    description: 'This is a deep, desaturated blue, almost like a dark denim.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of reddish hue.' },
+  { hex: '#1a1a1a', description: 'Almost black with a hint of red.' },
+  { hex: '#333333', description: 'Very dark navy blue, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a dark shade of red, almost maroon.',
+  },
+  { hex: '#050506', description: 'Almost black with a slight blue tint.' },
+  { hex: '#18171c', description: 'Very dark red, almost black.' },
+  { hex: '#302e38', description: 'Very dark reddish-purple, almost black.' },
+  {
+    hex: '#494554',
+    description:
+      'This is a very dark shade of red, almost appearing as a deep, nearly-black crimson.',
+  },
+  { hex: '#050406', description: 'Very dark reddish-purple, almost black.' },
+  { hex: '#17141f', description: 'Very dark reddish-purple, almost black.' },
+  {
+    hex: '#2e293d',
+    description:
+      'This is a dark shade of pink, almost appearing as a deep maroon.',
+  },
+  {
+    hex: '#453d5c',
+    description: 'This is a dark and muted purple-pink color.',
+  },
+  { hex: '#040407', description: 'Almost black with a slight purple tint.' },
+  { hex: '#161221', description: 'Very dark purple, almost black.' },
+  {
+    hex: '#2b2442',
+    description: 'This is a dark, muted purple with a hint of red.',
+  },
+  {
+    hex: '#413663',
+    description:
+      'This is a dark pinkish-purple color, similar to a muted plum.',
+  },
+  { hex: '#040307', description: 'Almost black with a slight purple tint.' },
+  { hex: '#140f24', description: 'Very dark purple, almost black.' },
+  {
+    hex: '#291f47',
+    description: 'This is a dark reddish-purple, almost indigo color.',
+  },
+  { hex: '#3d2e6b', description: 'This is a deep, muted olive green.' },
+  { hex: '#040308', description: 'Almost black with a slight purple tint.' },
+  { hex: '#130d26', description: 'Very dark olive green, nearly black.' },
+  { hex: '#261a4d', description: 'This is a dark olive green.' },
+  {
+    hex: '#392673',
+    description: 'This is a deep, muted pink with a hint of purple.',
+  },
+  { hex: '#050505', description: 'This is black.' },
+  { hex: '#1a1a1a', description: 'Very dark blue, almost black.' },
+  {
+    hex: '#333333',
+    description:
+      'This is a very dark shade of navy blue, almost appearing black.',
+  },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a shade of dark gray, almost black.',
+  },
+  { hex: '#050506', description: 'Very dark olive green, almost black.' },
+  { hex: '#19171c', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#312e38',
+    description:
+      'This is a very dark, almost black, purple shade. It has a faint hint of purple that can barely be noticed. The color is so dark that it will not make a huge difference compared to black in most cases.',
+  },
+  {
+    hex: '#4a4554',
+    description:
+      "This is a very dark, almost black, purple shade. It's a deep, muted lavender with a slight greyish tone.",
+  },
+  { hex: '#050406', description: 'Very dark, almost black, purple.' },
+  { hex: '#18141f', description: 'Very dark, muted purple, almost black.' },
+  {
+    hex: '#30293d',
+    description: 'This is a dark, muted purple with a slight blue tint.',
+  },
+  {
+    hex: '#473d5c',
+    description: 'This is a deep, muted purple with a slight greyish tone.',
+  },
+  { hex: '#050407', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#171221',
+    description: 'This is a dark, muted purple with a hint of blue.',
+  },
+  {
+    hex: '#2e2442',
+    description: 'This is a dark, muted purple with a hint of blue.',
+  },
+  {
+    hex: '#453663',
+    description: 'This is a deep, muted purple with a slight grayish tone.',
+  },
+  { hex: '#040307', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#160f24',
+    description:
+      'This is a dark, muted purple with a slight blue tint, almost like a deep indigo.',
+  },
+  {
+    hex: '#2c1f47',
+    description: 'This is a dark, muted purple with a hint of blue.',
+  },
+  {
+    hex: '#422e6b',
+    description:
+      'This is a muted, medium-dark indigo with a slight purplish tint.',
+  },
+  { hex: '#040308', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#150d26',
+    description: 'This is a dark, muted purple, almost indigo.',
+  },
+  {
+    hex: '#2a1a4d',
+    description: 'This is a dark, muted purple with strong blue undertones.',
+  },
+  {
+    hex: '#402673',
+    description: 'This is a muted, medium-dark purple with bluish undertones.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of navy blue.' },
+  { hex: '#1a1a1a', description: 'Very dark blue, almost black.' },
+  { hex: '#333333', description: 'Very dark navy blue, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description:
+      'This is a very dark shade of navy blue, almost appearing black.',
+  },
+  { hex: '#050506', description: 'Very dark, almost black, purple.' },
+  { hex: '#19171c', description: 'Very dark, almost black, purple.' },
+  { hex: '#322e38', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#4b4554',
+    description: 'This is a very dark, almost black, shade of purple.',
+  },
+  { hex: '#050406', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#19141f',
+    description: 'Very dark, muted purple-blue, almost black.',
+  },
+  { hex: '#31293d', description: 'This is a dark, muted shade of violet.' },
+  {
+    hex: '#4a3d5c',
+    description: 'This is a dark, muted shade of lavender with a hint of blue.',
+  },
+  { hex: '#050407', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#181221',
+    description: 'Very dark, muted purple-blue, almost black.',
+  },
+  {
+    hex: '#302442',
+    description:
+      'This is a dark, muted shade of lavender with strong blue undertones.',
+  },
+  {
+    hex: '#493663',
+    description:
+      'This is a muted, medium-dark lavender with a slight blue tint.',
+  },
+  { hex: '#050307', description: 'Very dark, almost black, purple.' },
+  { hex: '#180f24', description: 'Very dark, muted purple, almost black.' },
+  {
+    hex: '#301f47',
+    description: 'This is a dark, muted shade of violet with a hint of blue.',
+  },
+  {
+    hex: '#472e6b',
+    description: 'This is a deep, muted blue with a hint of purple.',
+  },
+  {
+    hex: '#050308',
+    description: 'This is a dark olive green, almost verging on black.',
+  },
+  {
+    hex: '#170d26',
+    description: 'This is a dark, muted shade of purple, almost indigo.',
+  },
+  {
+    hex: '#2f1a4d',
+    description: 'This is a dark, desaturated blue with a hint of purple.',
+  },
+  {
+    hex: '#462673',
+    description: 'This is a dark, desaturated blue with a slight purple tint.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep blue.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  {
+    hex: '#333333',
+    description: 'This is a very dark shade of gray, almost black.',
+  },
+  { hex: '#4d4d4d', description: "It's a dark shade of gray, almost black." },
+  { hex: '#050506', description: 'Very dark, almost black, purple.' },
+  { hex: '#1a171c', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#332e38',
+    description: 'This is a very dark shade of lavender, almost indigo.',
+  },
+  { hex: '#4d4554', description: 'Very dark, almost black, purple.' },
+  { hex: '#050406', description: 'Very dark, almost black, purple.' },
+  { hex: '#1a141f', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#33293d',
+    description: 'This is a dark, desaturated purple, almost like a deep plum.',
+  },
+  {
+    hex: '#4d3d5c',
+    description: 'This is a dark, muted lavender with a hint of blue.',
+  },
+  {
+    hex: '#050407',
+    description: 'This is a very dark shade of purple, almost black.',
+  },
+  {
+    hex: '#1a1221',
+    description: 'This is a dark, muted lavender with a hint of blue.',
+  },
+  {
+    hex: '#332442',
+    description: 'This is a dark, muted lavender with a hint of blue.',
+  },
+  {
+    hex: '#4d3663',
+    description: 'This is a dark, muted lavender color with a hint of blue.',
+  },
+  { hex: '#050307', description: 'This is a very dark, almost black, purple.' },
+  {
+    hex: '#1a0f24',
+    description:
+      'This is a dark, muted lavender color, almost like a deep periwinkle. It is almost black.',
+  },
+  {
+    hex: '#331f47',
+    description: 'This is a dark, muted purple with a hint of blue.',
+  },
+  {
+    hex: '#4d2e6b',
+    description:
+      'This is a muted, medium-dark purple with a slight blue undertone.',
+  },
+  {
+    hex: '#050308',
+    description: 'This is a very dark and desaturated purple, almost black.',
+  },
+  {
+    hex: '#1a0d26',
+    description:
+      'This is a dark, desaturated purple, almost like a deep indigo.',
+  },
+  {
+    hex: '#331a4d',
+    description:
+      'This is a dark, desaturated blue with a slight purplish tint.',
+  },
+  {
+    hex: '#4d2673',
+    description:
+      'This is a moderate, desaturated violet with a purple-blue tone.',
+  },
+  {
+    hex: '#050505',
+    description: 'Almost black with a hint of deep navy blue.',
+  },
+  { hex: '#1a1a1a', description: 'Very dark navy blue, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'Very dark navy blue, almost black.' },
+  { hex: '#050506', description: 'Very dark, almost black, navy blue.' },
+  { hex: '#1a171c', description: 'Very dark, almost black, purple.' },
+  { hex: '#342e38', description: 'Very dark, almost black, purple.' },
+  { hex: '#4e4554', description: 'Dark, muted purple-blue, almost navy.' },
+  { hex: '#050406', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#1a141f',
+    description: 'Very dark, muted purple-blue, almost black.',
+  },
+  {
+    hex: '#35293d',
+    description:
+      'This is a dark, muted purplish-blue, almost like a deep indigo. It has hue value of 275 degree which is between blue (240) and magenta (300), saturation of 20% which means that it is a grayish color and lightness of 20% which tells us that it is dark color.',
+  },
+  {
+    hex: '#4f3d5c',
+    description: "That's a dark, muted lavender with a hint of blue.",
+  },
+  { hex: '#050407', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#1b1221',
+    description:
+      'This is a very dark, almost black, purple shade with a hint of blue.',
+  },
+  {
+    hex: '#362442',
+    description: 'This is a dark, muted purple with a hint of blue.',
+  },
+  {
+    hex: '#503663',
+    description: "That's a dark, muted lavender with a hint of blue.",
+  },
+  { hex: '#050307', description: 'Very dark, almost black, purple.' },
+  { hex: '#1b0f24', description: 'Very dark, muted purple, almost black.' },
+  { hex: '#361f47', description: 'Deep, muted purple-blue, almost indigo.' },
+  {
+    hex: '#522e6b',
+    description: 'This is a dark, muted lavender with a hint of blue.',
+  },
+  { hex: '#060308', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#1c0d26',
+    description: 'Very dark, muted purple-blue, almost black.',
+  },
+  {
+    hex: '#371a4d',
+    description: 'Dark, desaturated purple-blue, almost like a deep indigo.',
+  },
+  {
+    hex: '#532673',
+    description: 'This is a muted, medium-dark purple with bluish undertones.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of dark blue.' },
+  { hex: '#1a1a1a', description: 'Very dark shade of purple, almost black.' },
+  {
+    hex: '#333333',
+    description: 'This is a very dark shade of purple, almost black.',
+  },
+  { hex: '#4d4d4d', description: 'Dark gray with a slight purple tint.' },
+  { hex: '#050506', description: 'Very dark purple, almost black.' },
+  { hex: '#1a171c', description: 'Very dark, almost black, purple.' },
+  { hex: '#352e38', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#4f4554',
+    description: 'This is a very dark shade of purple, almost black.',
+  },
+  { hex: '#050406', description: 'Very dark, almost black, purple.' },
+  { hex: '#1b141f', description: 'Very dark, muted purple, almost black.' },
+  {
+    hex: '#36293d',
+    description: 'This is a dark, muted purple with a slight blue tint.',
+  },
+  {
+    hex: '#523d5c',
+    description: 'This is a deep, muted purple with a slight grey tint.',
+  },
+  { hex: '#060407', description: 'Very dark, nearly black purple.' },
+  { hex: '#1c1221', description: 'Very dark, muted purple, almost black.' },
+  {
+    hex: '#382442',
+    description: 'This is a deep, muted purple, almost indigo.',
+  },
+  {
+    hex: '#543663',
+    description:
+      'This is a dark, muted shade of purple with a slight blue tint.',
+  },
+  { hex: '#060307', description: 'Very dark, nearly black purple.' },
+  { hex: '#1d0f24', description: 'Deep, muted purple, almost indigo.' },
+  {
+    hex: '#3a1f47',
+    description:
+      "This is a dark, muted purple with slight indigo undertones. It's like a deep, desaturated lavender with a hint of blue. The color is somewhat reminiscent of a dark orchid or a faded indigo dye. It has a moody, mysterious feel, leanin towards the cooler end of the color spectrum.",
+  },
+  {
+    hex: '#572e6b',
+    description:
+      'This is a muted, medium-dark purple with a slight grey undertone due to desaturation.',
+  },
+  { hex: '#060308', description: 'Very dark purple, almost black.' },
+  {
+    hex: '#1e0d26',
+    description: 'This is a dark, muted purple, almost indigo.',
+  },
+  {
+    hex: '#3c1a4d',
+    description:
+      'This is a dark, moderately saturated purple with strong blue undertones, similar to indigo.',
+  },
+  {
+    hex: '#592673',
+    description: 'This is a muted, medium-dark purple with bluish undertones.',
+  },
+  { hex: '#050505', description: 'Almost black with a slight purple tint.' },
+  { hex: '#1a1a1a', description: 'Very dark purple, almost black.' },
+  { hex: '#333333', description: 'Very dark purple, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a very dark shade of purple, almost black.',
+  },
+  { hex: '#050506', description: 'Very dark purple, almost black.' },
+  { hex: '#1b171c', description: 'Very dark purple, almost black.' },
+  { hex: '#362e38', description: 'Very dark purple, almost black.' },
+  {
+    hex: '#504554',
+    description: 'This is a very dark shade of purple, almost black.',
+  },
+  { hex: '#060406', description: 'Very dark purple, almost black.' },
+  {
+    hex: '#1c141f',
+    description: 'Deep purplish-blue, almost indigo, very dark and muted.',
+  },
+  {
+    hex: '#38293d',
+    description: 'This is a dark, muted purple with a slight pink undertone.',
+  },
+  {
+    hex: '#543d5c',
+    description:
+      'This is a muted shade of lavender with a slight greyish tone.',
+  },
+  { hex: '#060407', description: 'Very dark purple, almost black.' },
+  {
+    hex: '#1d1221',
+    description: 'Deep, muted purple with a hint of blue, very dark.',
+  },
+  {
+    hex: '#3b2442',
+    description:
+      'This is a dark, muted shade of purple with a hint of magenta.',
+  },
+  {
+    hex: '#583663',
+    description:
+      'This is a muted, dark lavender with a slight purple-pink undertone.',
+  },
+  { hex: '#060307', description: 'Very dark purple, almost black.' },
+  {
+    hex: '#1f0f24',
+    description: 'This is a dark, muted purple with a slight blue tint.',
+  },
+  {
+    hex: '#3d1f47',
+    description: 'This is a dark, muted purple with a hint of pink.',
+  },
+  {
+    hex: '#5c2e6b',
+    description:
+      'This is a muted, medium-dark purple with a slight pink undertone.',
+  },
+  { hex: '#060308', description: 'Very dark purple, almost black.' },
+  {
+    hex: '#200d26',
+    description:
+      'This is a dark, muted purple with a slight pink undertone, almost like a deep plum with low saturation.',
+  },
+  {
+    hex: '#401a4d',
+    description: 'This is a dark, muted pink with purplish undertones.',
+  },
+  {
+    hex: '#602673',
+    description:
+      'This is a muted, medium-dark purple with slight pink undertones.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of dark blue.' },
+  { hex: '#1a1a1a', description: 'Very dark purple, almost black.' },
+  { hex: '#333333', description: 'Very dark gray with a slight hint of blue.' },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a very dark shade of gray, almost black.',
+  },
+  { hex: '#050506', description: 'Very dark purple, almost black.' },
+  { hex: '#1b171c', description: 'Very dark, almost black, purple.' },
+  { hex: '#362e38', description: 'Very dark, muted purple-blue.' },
+  { hex: '#524554', description: "That's a very dark, almost black purple." },
+  { hex: '#060406', description: 'Very dark, almost black, purple.' },
+  { hex: '#1d141f', description: 'Very dark, muted purple, almost black.' },
+  {
+    hex: '#3a293d',
+    description: 'This is a dark, muted purple with a hint of blue.',
+  },
+  {
+    hex: '#573d5c',
+    description: 'This is a muted, dark lavender with a hint of gray.',
+  },
+  { hex: '#060407', description: 'Very dark, almost black, purple.' },
+  { hex: '#1f1221', description: 'Very dark, muted purple, almost black.' },
+  {
+    hex: '#3d2442',
+    description: 'This is a dark, muted lavender with a hint of blue.',
+  },
+  {
+    hex: '#5c3663',
+    description: 'This is a muted, medium-dark purple with a hint of blue.',
+  },
+  { hex: '#060307', description: 'Very dark, nearly black, purple.' },
+  { hex: '#200f24', description: 'Very dark, muted purple, almost black.' },
+  {
+    hex: '#411f47',
+    description: 'This is a dark, muted lavender with strong blue undertones.',
+  },
+  {
+    hex: '#612e6b',
+    description:
+      'This is a muted, medium-dark purple with slight blue undertones.',
+  },
+  { hex: '#070308', description: 'Very dark purple, almost black.' },
+  { hex: '#220d26', description: 'Deep, muted purple, almost indigo.' },
+  {
+    hex: '#441a4d',
+    description: 'This is a dark, muted lavender with a hint of purple.',
+  },
+  {
+    hex: '#662673',
+    description: 'This is a muted, medium-dark purple with bluish undertones.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep blue.' },
+  { hex: '#1a1a1a', description: 'Very dark blue, almost black.' },
+  { hex: '#333333', description: 'Very dark blue, almost black.' },
+  { hex: '#4d4d4d', description: 'Very dark blue, almost indigo.' },
+  { hex: '#060506', description: 'Nearly black with a slight purple tint.' },
+  { hex: '#1c171c', description: 'Very dark purple, almost black.' },
+  { hex: '#372e38', description: 'Very dark purple, almost black.' },
+  { hex: '#534554', description: 'This is a very dark purple, almost black.' },
+  { hex: '#060406', description: 'Very dark, almost black, purple.' },
+  { hex: '#1e141f', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#3c293d',
+    description: 'This is a dark, muted purple with a hint of blue.',
+  },
+  {
+    hex: '#593d5c',
+    description: 'This is a dark, muted lavender color with a hint of blue.',
+  },
+  { hex: '#060407', description: 'Very dark, almost black, purple.' },
+  { hex: '#201221', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#402442',
+    description: 'This is a dark, muted violet with a hint of blue.',
+  },
+  {
+    hex: '#603663',
+    description:
+      'This is a muted shade of lavender with strong gray undertones.',
+  },
+  { hex: '#070307', description: 'Very dark purple, almost black.' },
+  {
+    hex: '#220f24',
+    description:
+      'Very dark, nearly black purple with a hint of blue. It has desaturated purple hue that is barely noticeable.',
+  },
+  {
+    hex: '#441f47',
+    description:
+      'This is a dark, muted shade of purple with a hint of blue. It is not very bright. The color is similar to the color of grapes.',
+  },
+  {
+    hex: '#662e6b',
+    description:
+      'This is a muted, medium-dark purple with strong blue undertones.',
+  },
+  { hex: '#070308', description: 'Very dark purple, almost black.' },
+  { hex: '#240d26', description: 'Very dark purple, almost black.' },
+  {
+    hex: '#481a4d',
+    description: 'This is a dark, moderately saturated violet.',
+  },
+  {
+    hex: '#6c2673',
+    description: 'This is a muted, medium-dark purple with bluish undertones.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep blue.' },
+  { hex: '#1a1a1a', description: 'Very dark purple, almost black.' },
+  {
+    hex: '#333333',
+    description: 'This is a very dark shade of purple, almost black.',
+  },
+  {
+    hex: '#4d4d4d',
+    description: "That's a dark, desaturated purple, almost a very deep gray.",
+  },
+  { hex: '#060506', description: 'Very dark purple, almost black.' },
+  { hex: '#1c171c', description: 'Very dark purple, almost black.' },
+  { hex: '#382e38', description: 'Very dark purplish-gray, almost black.' },
+  {
+    hex: '#544554',
+    description: 'This is a very dark, almost black, shade of purple.',
+  },
+  { hex: '#060406', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#1f141f',
+    description:
+      'This is a dark, desaturated purple, almost a deep eggplant shade.',
+  },
+  { hex: '#3d293d', description: 'This is a dark, muted lavender color.' },
+  { hex: '#5c3d5c', description: 'This is a deep, muted lavender color.' },
+  { hex: '#070407', description: 'Very dark, almost black, purple.' },
+  { hex: '#211221', description: 'Very dark, muted purple, almost black.' },
+  { hex: '#422442', description: 'This is a dark, muted lavender color.' },
+  {
+    hex: '#633663',
+    description: 'This is a muted, dark lavender with a hint of gray.',
+  },
+  { hex: '#070307', description: 'Very dark, almost black, purple.' },
+  { hex: '#240f24', description: 'This is a dark, muted lavender color.' },
+  { hex: '#471f47', description: 'This is a dark, muted lavender color.' },
+  {
+    hex: '#6b2e6b',
+    description:
+      'This is a muted, medium-dark purple with slight red undertones.',
+  },
+  { hex: '#080308', description: 'Very dark purple, almost black.' },
+  { hex: '#260d26', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#4d1a4d',
+    description: 'This is a dark, muted pink with a hint of purple.',
+  },
+  {
+    hex: '#732673',
+    description: 'This is a muted pinkish-purple, like a dark pastel.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of deep blue.' },
+  { hex: '#1a1a1a', description: 'Very dark blurple (blue + purple).' },
+  { hex: '#333333', description: 'Very dark purple, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a shade of dark grey, almost black.',
+  },
+  { hex: '#060506', description: 'Very dark, almost black, purple.' },
+  { hex: '#1c171c', description: 'Very dark purple, almost black.' },
+  { hex: '#382e37', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#544553',
+    description:
+      'This is a very dark and desaturated shade of purple, almost appearing as a deep gray with a slight violet tint but not easily distinguishable.',
+  },
+  { hex: '#060406', description: 'Very dark, almost black, purple.' },
+  { hex: '#1f141e', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#3d293c',
+    description: 'This is a dark, muted violet with a hint of blue.',
+  },
+  {
+    hex: '#5c3d59',
+    description:
+      'This is a muted, mid-toned violet with a slight greyish tint.',
+  },
+  { hex: '#070406', description: 'Very dark, almost black, purple.' },
+  { hex: '#211220', description: 'Deep, muted purple with a dark tone.' },
+  {
+    hex: '#422440',
+    description: 'This is a dark, muted pink with slight purple undertones.',
+  },
+  {
+    hex: '#633660',
+    description: 'This is a muted, mid-toned violet with a hint of blue.',
+  },
+  { hex: '#070307', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#240f22',
+    description: 'Dark, muted purple with a slight blue tint.',
+  },
+  {
+    hex: '#471f44',
+    description: 'Dark, muted purple with a slight blue tint.',
+  },
+  {
+    hex: '#6b2e66',
+    description: 'This is a muted, medium-dark lavender with a hint of blue.',
+  },
+  { hex: '#080307', description: 'Very dark, nearly black purple.' },
+  { hex: '#260d24', description: 'Dark, muted purple, almost indigo.' },
+  { hex: '#4d1a48', description: 'Dark, desaturated pinkish purple.' },
+  {
+    hex: '#73266c',
+    description: 'This is a muted, mid-toned violet with a hint of blue.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of red.' },
+  { hex: '#1a1a1a', description: 'Very dark purple, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'Dark grey with a slight purple tint.' },
+  { hex: '#060505', description: 'Very dark reddish-purple, almost black.' },
+  { hex: '#1c171b', description: 'Very dark reddish-purple, almost black.' },
+  { hex: '#382e36', description: 'Very dark reddish-purple, almost black.' },
+  { hex: '#544552', description: 'This is a very dark, almost black, purple.' },
+  { hex: '#060406', description: 'Very dark, almost black, purple.' },
+  { hex: '#1f141d', description: 'Dark reddish-pink, almost maroon.' },
+  { hex: '#3d293a', description: 'This is a deep, muted plum color.' },
+  {
+    hex: '#5c3d57',
+    description:
+      'This is a deep, muted plum purple with a slight grayish tone.',
+  },
+  { hex: '#070406', description: 'Very dark, almost black, reddish-purple.' },
+  { hex: '#21121f', description: 'Dark, muted pink with a hint of purple.' },
+  { hex: '#42243d', description: 'This is a deep, muted plum color.' },
+  {
+    hex: '#63365c',
+    description: 'This is a muted shade of pink with a slight purple tint.',
+  },
+  { hex: '#070306', description: 'Very dark, nearly black, purple.' },
+  {
+    hex: '#240f20',
+    description: 'This is a dark, muted pink with purple undertones.',
+  },
+  {
+    hex: '#471f41',
+    description: 'This is a dark, muted pink with purple undertones.',
+  },
+  {
+    hex: '#6b2e61',
+    description: 'This is a muted pinkish-purple with a slight grey tint.',
+  },
+  { hex: '#080307', description: 'Very dark, nearly black, purple.' },
+  {
+    hex: '#260d22',
+    description: 'This is a dark, muted pink with purple undertones.',
+  },
+  {
+    hex: '#4d1a44',
+    description: 'This is a dark, desaturated pink with a hint of purple.',
+  },
+  {
+    hex: '#732666',
+    description: 'This is a muted pinkish-purple with a slight greyish tone.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of red.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description:
+      'This is a very dark shade of pink, almost appearing as a deep gray.',
+  },
+  { hex: '#060505', description: 'Very dark reddish-gray, almost black.' },
+  { hex: '#1c171b', description: 'Very dark purple, almost black.' },
+  { hex: '#382e36', description: 'Very dark reddish-gray, almost black.' },
+  {
+    hex: '#544550',
+    description:
+      "That's a dark, desaturated pink, almost a deep grey with a hint of red.",
+  },
+  { hex: '#060406', description: 'Very dark reddish-purple, almost black.' },
+  {
+    hex: '#1f141c',
+    description:
+      'This is a very dark shade of pink, almost appearing as a deep reddish-gray.',
+  },
+  { hex: '#3d2938', description: 'This is a deep, muted plum color.' },
+  { hex: '#5c3d54', description: "That's a deep, muted plum color." },
+  { hex: '#070406', description: 'Very dark, almost black, purple.' },
+  { hex: '#21121d', description: 'Dark, desaturated purple, almost black.' },
+  { hex: '#42243b', description: 'This is a deep, muted plum color.' },
+  { hex: '#633658', description: "That's a deep, muted plum color." },
+  { hex: '#070306', description: 'Very dark purple, almost black.' },
+  { hex: '#240f1f', description: 'This is a deep, muted plum color.' },
+  {
+    hex: '#471f3d',
+    description: 'This is a dark, desaturated pink with a hint of purple.',
+  },
+  {
+    hex: '#6b2e5c',
+    description:
+      'This is a deep, muted plum purple with a slight greyish tone.',
+  },
+  {
+    hex: '#080306',
+    description: 'This is a very dark shade of magenta, almost black.',
+  },
+  { hex: '#260d20', description: 'Very dark, desaturated pink, almost gray.' },
+  {
+    hex: '#4d1a40',
+    description:
+      'This is a deep, muted plum purple with a slight pink undertone.',
+  },
+  {
+    hex: '#732660',
+    description:
+      'This color is a muted, medium-dark plum with strong red undertones.',
+  },
+  { hex: '#050505', description: 'Almost black with a slight hint of purple.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark, almost black, shade of red.' },
+  { hex: '#4d4d4d', description: "That's a dark shade of purple." },
+  {
+    hex: '#060505',
+    description: 'Extremely dark reddish-purple, almost black.',
+  },
+  { hex: '#1c171a', description: 'Very dark, almost black, purple.' },
+  { hex: '#382e35', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#54454f',
+    description:
+      'This is a deep, almost black, shade of red with a slight purple tint.',
+  },
+  { hex: '#060405', description: 'Very dark, almost black, purple.' },
+  { hex: '#1f141b', description: 'Very deep, almost black, purple.' },
+  {
+    hex: '#3d2936',
+    description: 'This is a dark, muted pink with purple undertones.',
+  },
+  {
+    hex: '#5c3d52',
+    description: 'This is a deep, muted pink with a hint of purple.',
+  },
+  { hex: '#070406', description: 'Very dark, nearly black, purple.' },
+  { hex: '#21121c', description: 'Dark, muted pink with a hint of purple.' },
+  { hex: '#422438', description: 'This is a deep, muted plum color.' },
+  {
+    hex: '#633654',
+    description: 'This is a muted plum purple with a slight greyish tone.',
+  },
+  { hex: '#070306', description: 'Very dark, nearly black, purple.' },
+  {
+    hex: '#240f1d',
+    description: 'This is a dark, muted pink with purple undertones.',
+  },
+  {
+    hex: '#471f3a',
+    description: 'This is a dark, muted pink with purple undertones.',
+  },
+  {
+    hex: '#6b2e57',
+    description: 'This is a muted plum purple with a slight greyish tone.',
+  },
+  { hex: '#080306', description: 'Very dark, nearly black, purple.' },
+  {
+    hex: '#260d1e',
+    description: 'This is a dark, muted pink with purple undertones.',
+  },
+  {
+    hex: '#4d1a3c',
+    description: 'This is a dark, muted pink with purple undertones.',
+  },
+  {
+    hex: '#732659',
+    description:
+      'This color is a muted, medium-dark pink with purple undertones.',
+  },
+  { hex: '#050505', description: 'Almost black with a hint of red.' },
+  { hex: '#1a1a1a', description: 'Very dark shade of red, almost black.' },
+  { hex: '#333333', description: 'Very dark shade of red, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description:
+      'This is a very dark shade of reddish-pink, almost appearing as a deep burgundy.',
+  },
+  { hex: '#060505', description: 'Nearly black with a slight purple tint.' },
+  { hex: '#1c171a', description: 'Very dark, nearly black, reddish hue.' },
+  {
+    hex: '#382e34',
+    description: "That's a very dark olive green, almost brown.",
+  },
+  { hex: '#54454e', description: "That's a dark olive green." },
+  { hex: '#060405', description: 'Very dark, almost black, reddish-purple.' },
+  { hex: '#1f141a', description: 'Very dark, desaturated pink.' },
+  { hex: '#3d2935', description: "That's a dark, muted yellow-green." },
+  {
+    hex: '#5c3d4f',
+    description: 'This is a deep, muted pink with a hint of purple.',
+  },
+  {
+    hex: '#070405',
+    description: 'This is a very dark, nearly black, reddish purple.',
+  },
+  { hex: '#21121b', description: "That's a dark, muted yellow-green." },
+  { hex: '#422436', description: 'This is a deep, muted plum purple.' },
+  { hex: '#633650', description: 'This is a muted yellow-green shade.' },
+  { hex: '#070305', description: 'This is a dark yellow.' },
+  {
+    hex: '#240f1b',
+    description: 'Very dark, muted pink with a hint of purple.',
+  },
+  { hex: '#471f36', description: 'Deep, muted pink with a hint of purple.' },
+  { hex: '#6b2e52', description: 'This is a muted yellow-green, like olive.' },
+  { hex: '#080306', description: 'This is a dark yellow.' },
+  { hex: '#260d1c', description: 'Dark olive green.' },
+  { hex: '#4d1a37', description: 'This is a dark, muted yellow-green.' },
+  {
+    hex: '#732653',
+    description: 'This color is a deep, muted pink with purple undertones.',
+  },
+  { hex: '#050505', description: 'This is black.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark olive green, almost black.' },
+  { hex: '#4d4d4d', description: "That's a dark olive green" },
+  { hex: '#060505', description: 'This is a very dark shade of yellow-green.' },
+  { hex: '#1c171a', description: 'Very dark, almost black, purple.' },
+  { hex: '#382e33', description: 'Very dark, almost black, purple.' },
+  {
+    hex: '#54454d',
+    description:
+      'This is a deep, almost black shade with a hint of red-violet.',
+  },
+  { hex: '#060405', description: 'Very dark, almost black, purple.' },
+  { hex: '#1f141a', description: 'Deep, muted purple-magenta, almost black.' },
+  { hex: '#3d2933', description: 'This is a dark muted yellow-green.' },
+  {
+    hex: '#5c3d4d',
+    description: 'This is a muted yellow-green, like a dark olive.',
+  },
+  { hex: '#070405', description: 'Very dark, nearly black, purple.' },
+  {
+    hex: '#21121a',
+    description: 'Very dark, muted reddish-purple, almost black.',
+  },
+  { hex: '#422433', description: "It's a dark, muted yellow-green." },
+  {
+    hex: '#63364d',
+    description: 'This is a muted, reddish-purple color, similar to plum.',
+  },
+  { hex: '#070305', description: 'This is a dark yellow.' },
+  { hex: '#240f1a', description: 'This is a dark yellow-green or olive hue.' },
+  { hex: '#471f33', description: 'This is a dark olive green.' },
+  {
+    hex: '#6b2e4d',
+    description: 'This is a muted olive green with a slight hint of yellow.',
+  },
+  { hex: '#080305', description: 'This is a dark moderate yellow.' },
+  { hex: '#260d1a', description: 'This is a dark olive green.' },
+  {
+    hex: '#4d1a33',
+    description: "That's a dark yellow-green, like a muted olive.",
+  },
+  {
+    hex: '#73264d',
+    description: 'This is a muted yellow-green or olive, quite dark.',
+  },
+  { hex: '#050505', description: 'This is black.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'This is a dark gray with a hint of green.' },
+  { hex: '#060505', description: 'Very dark green, almost black.' },
+  { hex: '#1c1719', description: 'Very dark green, almost black.' },
+  { hex: '#382e32', description: 'Very dark purple, almost black.' },
+  {
+    hex: '#54454b',
+    description: "That's a dark olive green with a slight hint of brightness.",
+  },
+  { hex: '#060405', description: 'Extremely dark purple, almost black.' },
+  { hex: '#1f1419', description: 'This is a dark olive green.' },
+  { hex: '#3d2931', description: 'This is a deep, muted plum color.' },
+  { hex: '#5c3d4a', description: "That's a deep, muted plum color." },
+  { hex: '#070405', description: 'Very dark purple, almost black.' },
+  {
+    hex: '#211218',
+    description: 'Very dark, muted pink with a hint of purple.',
+  },
+  { hex: '#422430', description: 'Deep, muted plum purple.' },
+  { hex: '#633649', description: "That's a deep, muted plum color." },
+  { hex: '#070305', description: 'Very dark purple, almost black.' },
+  { hex: '#240f18', description: 'Very dark, nearly black, purple.' },
+  {
+    hex: '#471f30',
+    description:
+      'This is a deep, muted green with a slight yellow undertone. Like a dark forest green.',
+  },
+  { hex: '#6b2e47', description: 'This is a deep, muted plum color.' },
+  { hex: '#080305', description: 'Extremely dark purple, almost black.' },
+  { hex: '#260d17', description: 'Very dark, almost black, purple.' },
+  { hex: '#4d1a2f', description: 'This is a dark yellowish green.' },
+  { hex: '#732646', description: 'This color is a muted olive green.' },
+  { hex: '#050505', description: 'Almost black with a hint of red.' },
+  { hex: '#1a1a1a', description: 'Very dark red, almost black.' },
+  { hex: '#333333', description: 'Very dark red, almost black.' },
+  { hex: '#4d4d4d', description: 'Very dark red, almost black.' },
+  { hex: '#060505', description: 'Almost black with a hint of red.' },
+  { hex: '#1c1719', description: 'Very dark olive green, almost black.' },
+  { hex: '#382e31', description: 'Very dark reddish-gray, almost black.' },
+  {
+    hex: '#54454a',
+    description: 'This is a very dark red, almost reddish-black.',
+  },
+  { hex: '#060405', description: 'This is a very dark yellow, almost brown.' },
+  {
+    hex: '#1f1418',
+    description: 'Very dark, muted pink with a hint of purple.',
+  },
+  {
+    hex: '#3d2930',
+    description: "That's a deep, muted purple with a slight reddish tint.",
+  },
+  {
+    hex: '#5c3d47',
+    description: 'This is a muted olive green with a slight yellow undertone.',
+  },
+  { hex: '#070405', description: 'Very dark, nearly black, reddish hue.' },
+  { hex: '#211217', description: 'This is a dark, muted olive green.' },
+  { hex: '#42242e', description: 'This is a dark, muted olive green.' },
+  {
+    hex: '#633645',
+    description: "That's a deep, muted purple with a hint of red.",
+  },
+  { hex: '#070304', description: 'This is a dark yellow or a yellowish brown' },
+  { hex: '#240f16', description: 'This is a dark olive green.' },
+  { hex: '#471f2c', description: 'This is a dark, muted olive green.' },
+  { hex: '#6b2e42', description: 'This color is a deep, muted olive green.' },
+  { hex: '#080304', description: 'This is a dark yellow.' },
+  {
+    hex: '#260d15',
+    description: 'This is a dark olive green with low brightness.',
+  },
+  { hex: '#4d1a2a', description: 'This is a dark olive green.' },
+  { hex: '#732640', description: 'This is a muted olive green.' },
+  { hex: '#050505', description: 'Almost black with a hint of deep blue.' },
+  { hex: '#1a1a1a', description: 'Very dark shade of red, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: 'Very dark gray, almost black.' },
+  { hex: '#060505', description: 'Extremely dark purple, almost black.' },
+  { hex: '#1c1718', description: 'Very dark purple, almost black.' },
+  { hex: '#382e30', description: 'Very dark purple, almost black.' },
+  { hex: '#544549', description: "That's a dark, muted yellow." },
+  { hex: '#060405', description: 'Very dark, almost black purple.' },
+  { hex: '#1f1417', description: 'Very dark, almost black, purple.' },
+  { hex: '#3d292e', description: 'This is a dark, muted, olive green.' },
+  { hex: '#5c3d45', description: "That's a deep, muted plum color." },
+  { hex: '#070404', description: 'Extremely dark purple, almost black.' },
+  { hex: '#211216', description: "That's a dark, muted gold." },
+  { hex: '#42242b', description: "That's a dark, muted gold." },
+  {
+    hex: '#633641',
+    description: 'This is a muted goldenrod or dark mustard color.',
+  },
+  { hex: '#070304', description: 'Extremely dark, nearly black, purple.' },
+  {
+    hex: '#240f14',
+    description:
+      '69 degree is close to yellow, 40% is quite saturated, 10% is very dark. So it is a dark mustard yellow color.',
+  },
+  { hex: '#471f29', description: 'This is a dark, muted gold.' },
+  {
+    hex: '#6b2e3d',
+    description: 'This is a muted golden yellow, like a faded sunflower.',
+  },
+  { hex: '#080304', description: 'Extremely dark purple, almost black.' },
+  { hex: '#260d13', description: 'This is a dark, muted yellow.' },
+  { hex: '#4d1a26', description: 'This is a dark, muted gold.' },
+  {
+    hex: '#732639',
+    description:
+      'This color is a deep, muted purple with a slightly reddish tint.',
+  },
+  { hex: '#050505', description: 'This is black.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: 'This is a dark gray with a slight green tint.',
+  },
+  { hex: '#060505', description: 'This is a very dark green, almost black.' },
+  { hex: '#1c1718', description: 'Very dark green, almost black.' },
+  { hex: '#382e30', description: 'This is a very dark green, almost black.' },
+  {
+    hex: '#544547',
+    description: 'This is a dark olive green with low saturation.',
+  },
+  { hex: '#060404', description: 'This is a very dark green, almost black.' },
+  { hex: '#1f1416', description: 'This is a dark, muted olive green.' },
+  { hex: '#3d292c', description: 'This is a dark olive green.' },
+  { hex: '#5c3d42', description: 'This is a dark, muted olive green.' },
+  { hex: '#070404', description: 'This is a dark green color, almost black.' },
+  { hex: '#211214', description: 'This is a dark, muted olive green.' },
+  { hex: '#422429', description: 'This is a dark, muted olive green.' },
+  {
+    hex: '#63363d',
+    description: 'This is a muted olive green with a slight yellow undertone.',
+  },
+  { hex: '#070304', description: 'Extremely dark red, almost black.' },
+  { hex: '#240f13', description: 'This is a dark olive green.' },
+  { hex: '#471f25', description: 'This is a dark olive green.' },
+  {
+    hex: '#6b2e38',
+    description: 'This is a muted olive green with a slight yellow undertone.',
+  },
+  { hex: '#080303', description: 'Very dark reddish-pink, almost black.' },
+  { hex: '#260d11', description: 'Very dark reddish-purple, almost black.' },
+  {
+    hex: '#4d1a22',
+    description:
+      'This is a dark, muted pink with strong red undertones, like a deep blush.',
+  },
+  {
+    hex: '#732633',
+    description: 'This is a muted olive green with a hint of darkness.',
+  },
+  { hex: '#050505', description: 'This is black.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark olive green, almost black.' },
+  {
+    hex: '#4d4d4d',
+    description: "That's a dark olive green with a strong earthy tone.",
+  },
+  { hex: '#060505', description: 'Nearly black with a hint of reddish tint.' },
+  { hex: '#1c1717', description: 'Very dark red, almost black.' },
+  { hex: '#382e2f', description: 'Very dark olive green, almost black.' },
+  {
+    hex: '#544546',
+    description: "That's a dark, muted pink, almost a deep mauve.",
+  },
+  { hex: '#060404', description: 'Almost black with a slight purple tint.' },
+  { hex: '#1f1415', description: 'Very dark olive green, almost black.' },
+  { hex: '#3d292b', description: "That's a deep, muted plum color." },
+  {
+    hex: '#5c3d40',
+    description: 'This is a muted olive green with a slight yellow undertone.',
+  },
+  { hex: '#070404', description: 'This is a very dark shade of green.' },
+  { hex: '#211213', description: 'Very dark, nearly black, reddish purple.' },
+  { hex: '#422426', description: "That's a deep, muted plum color." },
+  { hex: '#633639', description: 'This is a muted olive green.' },
+  { hex: '#070303', description: 'Almost black with a subtle purple tint.' },
+  { hex: '#240f11', description: 'Very dark pink, almost reddish black.' },
+  {
+    hex: '#471f22',
+    description: 'This is a muted olive green with low brightness',
+  },
+  {
+    hex: '#6b2e33',
+    description: 'This is a deep, muted plum purple with a hint of red.',
+  },
+  {
+    hex: '#080303',
+    description: 'This is a dark green with a slight yellowish tint.',
+  },
+  {
+    hex: '#260d0f',
+    description: 'This is a dark olive green with low brightness.',
+  },
+  { hex: '#4d1a1e', description: 'This is a deep, muted olive green.' },
+  {
+    hex: '#73262d',
+    description: 'This is a muted olive green with a slight yellow undertone.',
+  },
+  { hex: '#050505', description: 'This is black.' },
+  { hex: '#1a1a1a', description: 'Very dark gray, almost black.' },
+  { hex: '#333333', description: 'Very dark gray, almost black.' },
+  { hex: '#4d4d4d', description: "That's a dark gray with a hint of green." },
+  { hex: '#060505', description: 'Very dark olive green, almost black.' },
+  { hex: '#1c1717', description: 'Very dark olive green, almost black.' },
+  {
+    hex: '#382e2e',
+    description: 'This is a very dark olive green, almost brown.',
+  },
+  { hex: '#544545', description: 'This is a very dark red, almost black.' },
+  { hex: '#060404', description: 'This is a very dark green, almost black.' },
+  {
+    hex: '#1f1414',
+    description: 'This is a very dark olive green, almost brown.',
+  },
+  { hex: '#3d2929', description: 'Very dark red, almost black.' },
+  { hex: '#5c3d3d', description: 'This is a dark, muted olive green.' },
+  { hex: '#070404', description: 'This is a dark shade of olive green.' },
+  {
+    hex: '#211212',
+    description: 'This is a dark olive green with low saturation.',
+  },
+  { hex: '#422424', description: 'This is a dark, muted olive green.' },
+  {
+    hex: '#633636',
+    description: 'This is a muted olive green with a slight yellow undertone.',
+  },
+  { hex: '#070303', description: 'This is a dark green color.' },
+  { hex: '#240f0f', description: "That's a dark olive green." },
+  { hex: '#471f1f', description: 'This is a dark, muted red.' },
+  {
+    hex: '#6b2e2e',
+    description:
+      'This color is a muted olive green with a slight brown undertone.',
+  },
+  { hex: '#080303', description: 'Almost black with a slight red tint.' },
+  {
+    hex: '#260d0d',
+    description: 'This is a dark olive green with low brightness.',
+  },
+  {
+    hex: '#4d1a1a',
+    description: 'This is a dark red color with slight brightness.',
+  },
+  { hex: '#732626', description: 'This is a muted olive green.' },
 ];
 
 export const hexList = colors.map((color) => color.hex);

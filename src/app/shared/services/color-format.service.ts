@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class ColorFormatService {
   private normalizedHex(hex: string): string {
+    if (hex == undefined) return '000000';
     hex = hex.replace('#', '');
     if (hex.length === 3) {
       return hex

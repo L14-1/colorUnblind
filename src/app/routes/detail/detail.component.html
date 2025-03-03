@@ -6,7 +6,20 @@
   [style.background-color]="'#' + rawHex()"
 >
   {{ description() }}
+  <i-tabler
+    (mouseenter)="op.show($event)"
+    (mouseleave)="op.hide()"
+    name="ai"
+    [appContrastedText]="'#' + rawHex()"
+  ></i-tabler>
 </div>
+
+<p-popover [style]="{ width: '95%' }" #op>
+  <p class="ai">
+    AI can make mistake. For a better understanding of this color, complete this
+    information with the "details" tab.
+  </p>
+</p-popover>
 
 <p-accordion [(value)]="activeAccordion">
   <p-accordion-panel value="0">
