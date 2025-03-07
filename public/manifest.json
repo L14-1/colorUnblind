@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "color Unblind",
+  "version": "3.0.1",
+  "description": "An AI powered color picker extension providing a description for the choosen color.",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_security_policy": {
+    "script-src": "self",
+    "object-src": "self'"
+  },
+  "icons": {
+    "240": "./icons/240x240.png"
+  }
+}

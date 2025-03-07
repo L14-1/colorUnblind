@@ -1,5 +1,13 @@
 import { Location } from '@angular/common';
-import { booleanAttribute, Component, inject, input } from '@angular/core';
+import {
+  booleanAttribute,
+  Component,
+  ElementRef,
+  HostListener,
+  inject,
+  input,
+  Renderer2,
+} from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { provideTablerIcons, TablerIconComponent } from 'angular-tabler-icons';
 import {
@@ -30,4 +38,16 @@ export class HeaderComponent {
   public readonly customButton = input(false, { transform: booleanAttribute });
 
   public location = inject(Location);
+  private readonly renderer = inject(Renderer2);
+  private readonly el = inject(ElementRef);
+
+  @HostListener('window:scroll') onScroll() {
+    this.renderer.setStyle(
+      this.el.nativeElement,
+      'box-shadow',
+      window.scrollY > 0
+        ? 'rgba(0, 0, 0, 0.24) 0px 3px 8px'
+        : 'rgba(0, 0, 0, 0) 0px 0px 0px',
+    );
+  }
 }

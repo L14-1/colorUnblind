@@ -1,0 +1,13 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  .coffee {
+    transition: opacity 0.4s ease;
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+}

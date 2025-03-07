@@ -15,7 +15,9 @@ export class CtaButtonComponent {
 
   @HostBinding('style.border')
   get border() {
-    return this.isViewing() ? 'white 2px solid' : 'black 2px solid';
+    return this.isViewing()
+      ? 'var(--background-color) 0.125rem solid'
+      : 'var(--text-color) 0.125rem solid';
   }
 
   ngAfterViewInit(): void {

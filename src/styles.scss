@@ -3,6 +3,20 @@
 
 :root {
   --p-popover-arrow-offset: calc(100% - 1.25rem);
+
+  --text-color: #121212;
+  --background-color: #fff;
+  --inverted-text-color: #fff;
+  --inverted-background-color: #121212;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #fff;
+    --background-color: #121212;
+    --inverted-text-color: #121212;
+    --inverted-background-color: #fff;
+  }
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -77,5 +91,8 @@ h6 {
 
 html {
   width: 420px;
-  border: 2px solid black;
+  color: var(--p-text-color);
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }

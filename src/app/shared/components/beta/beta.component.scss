@@ -1,10 +1,11 @@
 :host {
   display: block;
   padding: 0.1rem 0.2rem;
-  outline: 1px solid black;
+  outline: 1px solid currentColor;
   border-radius: 0.2rem 0;
   font-size: 0.7rem;
   line-height: 0.9;
-  background-color: white;
+  background-color: var(--background-color);
   width: fit-content;
+  color: inherit;
 }

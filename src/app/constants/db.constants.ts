@@ -1,3 +1,3 @@
-export const dbName = 'colorUnblindDb';
+export const DB_NAME = 'colorUnblindDb';
 
-export const dbStore = 'colors';
+export const DB_STORE = 'colors';

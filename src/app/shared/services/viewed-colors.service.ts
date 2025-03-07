@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { NgxIndexedDBService } from 'ngx-indexed-db';
 import { lastValueFrom, Observable } from 'rxjs';
-import { dbStore } from '../../constants/db.constants';
+import { DB_STORE } from '../../constants/db.constants';
 import { ViewedColor } from '../../models/viewed-color.model';
 
 @Injectable({
@@ -16,11 +16,11 @@ export class ViewedColorsService {
    */
   public async save(color: string): Promise<ViewedColor> {
     const colorAlreadyInDb: ViewedColor | undefined = await lastValueFrom(
-      this.dbService.getByIndex(dbStore, 'hex', color),
+      this.dbService.getByIndex(DB_STORE, 'hex', color),
     );
     if (colorAlreadyInDb) {
       return await lastValueFrom(
-        this.dbService.update(dbStore, {
+        this.dbService.update(DB_STORE, {
           id: colorAlreadyInDb.id,
           hex: color,
           at: [new Date().getTime(), ...colorAlreadyInDb.at],
@@ -28,7 +28,7 @@ export class ViewedColorsService {
       );
     } else {
       return await lastValueFrom(
-        this.dbService.add(dbStore, {
+        this.dbService.add(DB_STORE, {
           hex: color,
           at: [new Date().getTime()],
         }),
@@ -40,7 +40,7 @@ export class ViewedColorsService {
    * Returns all the saved colors.
    */
   public getAll(): Observable<ViewedColor[]> {
-    return this.dbService?.getAll(dbStore) ?? [];
+    return this.dbService?.getAll(DB_STORE) ?? [];
   }
 
   /**
@@ -48,7 +48,7 @@ export class ViewedColorsService {
    * @param id The id of the color we want to delete from db.
    */
   public delete(id: number): Observable<ViewedColor[]> {
-    return this.dbService.delete(dbStore, id);
+    return this.dbService.delete(DB_STORE, id);
   }
 
   /**
@@ -56,6 +56,6 @@ export class ViewedColorsService {
    */
   public deleteAll(colors: ViewedColor[]): Observable<number[]> {
     const keys = colors.map((color) => color.id ?? 0);
-    return this.dbService.bulkDelete(dbStore, keys);
+    return this.dbService.bulkDelete(DB_STORE, keys);
   }
 }

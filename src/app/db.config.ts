@@ -1,12 +1,12 @@
 import { DBConfig } from 'ngx-indexed-db';
-import { dbName, dbStore } from './constants/db.constants';
+import { DB_NAME, DB_STORE } from './constants/db.constants';
 
-const dbConfig: DBConfig = {
-  name: dbName,
+const DB_CONFIG: DBConfig = {
+  name: DB_NAME,
   version: 1,
   objectStoresMeta: [
     {
-      store: dbStore,
+      store: DB_STORE,
       storeConfig: { keyPath: 'id', autoIncrement: true },
       storeSchema: [
         { name: 'hex', keypath: 'hex', options: { unique: true } },
@@ -16,4 +16,4 @@ const dbConfig: DBConfig = {
   ],
 };
 
-export default dbConfig;
+export default DB_CONFIG;
