@@ -5,7 +5,11 @@
   [appContrastedText]="'#' + rawHex()"
   [style.background-color]="'#' + rawHex()"
 >
-  {{ description() }}
+  @if (descriptionIsLoading()) {
+    <app-skeleton [appContrastedText]="'#' + rawHex()" [lines]="3" />
+  } @else {
+    {{ description() }}
+  }
   <i-tabler
     (mouseenter)="op.show($event)"
     (mouseleave)="op.hide()"

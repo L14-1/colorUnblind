@@ -8,14 +8,16 @@ import {
 import { provideIndexedDb } from 'ngx-indexed-db';
 import { providePrimeNG } from 'primeng/config';
 
+import { provideHttpClient } from '@angular/common/http';
 import Aura from '@primeng/themes/aura';
 import { routes } from './app.routes';
-import DB_CONFIG from './db.config';
 import { SCROLL_CONFIG } from './constants/scroll-config.constant';
+import DB_CONFIG from './db.config';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
+    provideHttpClient(),
     provideRouter(
       routes,
       withComponentInputBinding(),
