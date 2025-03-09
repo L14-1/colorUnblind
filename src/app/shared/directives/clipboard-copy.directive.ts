@@ -14,7 +14,7 @@ export class ClipboardCopyDirective {
     navigator.clipboard.writeText(this.contentToCopy());
     this.originalInnerHtml = target.innerHTML;
     target.innerHTML =
-      "<div style='white-space: nowrap; text-align: center; width: 100%'>Copié ! 🎉</div>";
+      "<div style='white-space: nowrap; text-align: center; width: 100%'>Saved ! 🎉</div>";
     setTimeout(() => {
       target.innerHTML = this.originalInnerHtml ?? '';
       this.originalInnerHtml = undefined;

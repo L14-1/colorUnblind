@@ -15,6 +15,7 @@ import { SkeletonComponent } from '../../shared/components/skeleton/skeleton.com
 import { ContrastedTextDirective } from '../../shared/directives/contrasted-text.directive';
 import { ColorFormatService } from '../../shared/services/color-format.service';
 import { ColorPaletteService } from '../../shared/services/color-palette.service';
+import { InMemoryDescriptionsService } from '../../shared/services/in-memory-descriptions.service';
 import { ColorCodesComponent } from './components/color-codes/color-codes.component';
 import { ColorDetailComponent } from './components/color-detail/color-detail.component';
 import { PaletteComponent } from './components/palette/palette.component';
@@ -41,6 +42,7 @@ import { DetailService } from './services/detail.service';
 })
 export class DetailComponent {
   public readonly rawHex = input('', { alias: 'hexvalue' });
+  private readonly inMemoryDescriptions = inject(InMemoryDescriptionsService);
   private readonly detailService = inject(DetailService);
   private readonly colorFormatService = inject(ColorFormatService);
   private readonly colorPaletteService = inject(ColorPaletteService);
@@ -77,35 +79,44 @@ export class DetailComponent {
     return this.colorFormatService.hexToHsl(this.rawHex());
   });
 
-  ngOnChanges(): void {
+  async ngOnChanges() {
     this.descriptionIsLoading.set(true);
     this.activeAccordion.set('0');
-    this.detailService.getColorDescription(this.rawHex()).subscribe({
-      next: (data) => {
-        this.description.set(data.description);
-        this.descriptionIsLoading.set(false);
-      },
-      error: (e: HttpErrorResponse) => {
-        switch (e.status) {
-          case HttpStatusCode.TooManyRequests:
-            this.description.set(
-              'You have reached your daily maximum request limit.',
-            );
-            break;
-
-          case HttpStatusCode.InternalServerError:
-            this.description.set(
-              'An error occurred while trying to describe this color. Please try again later.',
-            );
-            break;
-
-          default:
-            this.description.set(
-              'An unexpected error occurred. Please try again.',
-            );
-        }
-        this.descriptionIsLoading.set(false);
-      },
-    });
+    const existingDescription = await this.inMemoryDescriptions.get(
+      this.rawHex(),
+    );
+    if (existingDescription) {
+      this.description.set(existingDescription.description);
+      this.descriptionIsLoading.set(false);
+    } else {
+      this.detailService.getColorDescription(this.rawHex()).subscribe({
+        next: (data) => {
+          if (data.isAiGenerated) {
+            this.inMemoryDescriptions.save(this.rawHex(), data.description);
+          }
+          this.description.set(data.description);
+          this.descriptionIsLoading.set(false);
+        },
+        error: (e: HttpErrorResponse) => {
+          switch (e.status) {
+            case HttpStatusCode.TooManyRequests:
+              this.description.set(
+                'You have reached your daily maximum request limit.',
+              );
+              break;
+            case HttpStatusCode.InternalServerError:
+              this.description.set(
+                'An error occurred while trying to describe this color. Please try again later.',
+              );
+              break;
+            default:
+              this.description.set(
+                'An unexpected error occurred. Please try again.',
+              );
+          }
+          this.descriptionIsLoading.set(false);
+        },
+      });
+    }
   }
 }
