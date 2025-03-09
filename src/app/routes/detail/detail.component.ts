@@ -8,16 +8,17 @@ import {
 } from 'angular-tabler-icons/icons';
 import { AccordionModule } from 'primeng/accordion';
 
-import { hexDetailed, hexList } from '../../constants/descriptions.constant';
-import { HeaderComponent } from '../../shared/components/header/header.component';
+import { HttpErrorResponse, HttpStatusCode } from '@angular/common/http';
 import { PopoverModule } from 'primeng/popover';
+import { HeaderComponent } from '../../shared/components/header/header.component';
+import { SkeletonComponent } from '../../shared/components/skeleton/skeleton.component';
 import { ContrastedTextDirective } from '../../shared/directives/contrasted-text.directive';
 import { ColorFormatService } from '../../shared/services/color-format.service';
-import { ColorHelpersService } from '../../shared/services/color-helpers.service';
 import { ColorPaletteService } from '../../shared/services/color-palette.service';
 import { ColorCodesComponent } from './components/color-codes/color-codes.component';
 import { ColorDetailComponent } from './components/color-detail/color-detail.component';
 import { PaletteComponent } from './components/palette/palette.component';
+import { DetailService } from './services/detail.service';
 
 @Component({
   selector: 'app-detail',
@@ -30,6 +31,7 @@ import { PaletteComponent } from './components/palette/palette.component';
     ColorDetailComponent,
     ColorCodesComponent,
     PaletteComponent,
+    SkeletonComponent,
   ],
   providers: [
     provideTablerIcons({ IconContrast2, IconClipboard, IconPalette, IconAi }),
@@ -39,16 +41,13 @@ import { PaletteComponent } from './components/palette/palette.component';
 })
 export class DetailComponent {
   public readonly rawHex = input('', { alias: 'hexvalue' });
+  private readonly detailService = inject(DetailService);
   private readonly colorFormatService = inject(ColorFormatService);
   private readonly colorPaletteService = inject(ColorPaletteService);
-  private readonly colorHelperService = inject(ColorHelpersService);
 
+  public description = signal('');
+  public descriptionIsLoading = signal(false);
   public activeAccordion = signal('0');
-
-  public description = computed(() => {
-    const closest = this.colorHelperService.findClosestHSL(this.hsl(), hexList);
-    return closest ? hexDetailed[closest] : '';
-  });
 
   public complementary = computed(() => {
     const { h, s, l } = this.colorFormatService.hexToHsl(this.rawHex());
@@ -79,6 +78,34 @@ export class DetailComponent {
   });
 
   ngOnChanges(): void {
+    this.descriptionIsLoading.set(true);
     this.activeAccordion.set('0');
+    this.detailService.getColorDescription(this.rawHex()).subscribe({
+      next: (data) => {
+        this.description.set(data.description);
+        this.descriptionIsLoading.set(false);
+      },
+      error: (e: HttpErrorResponse) => {
+        switch (e.status) {
+          case HttpStatusCode.TooManyRequests:
+            this.description.set(
+              'You have reached your daily maximum request limit.',
+            );
+            break;
+
+          case HttpStatusCode.InternalServerError:
+            this.description.set(
+              'An error occurred while trying to describe this color. Please try again later.',
+            );
+            break;
+
+          default:
+            this.description.set(
+              'An unexpected error occurred. Please try again.',
+            );
+        }
+        this.descriptionIsLoading.set(false);
+      },
+    });
   }
 }
