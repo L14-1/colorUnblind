@@ -4,7 +4,7 @@ import { Component, HostBinding, input } from '@angular/core';
   selector: 'app-saturation-gradient',
   imports: [],
   templateUrl: './saturation-gradient.component.html',
-  styleUrl: './saturation-gradient.component.scss',
+  styleUrl: '../lightness-gradient/lightness-gradient.component.scss',
 })
 export class SaturationGradientComponent {
   public readonly hsl = input.required<{

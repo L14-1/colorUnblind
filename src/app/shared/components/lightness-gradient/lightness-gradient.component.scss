@@ -1,5 +1,7 @@
 :host {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   position: relative;
   height: 2rem;
   width: 100%;
@@ -12,5 +14,35 @@
     background-color: transparent;
     outline: 1px solid var(--text-color);
     transform: translateX(-50%);
+  }
+  .help-tick {
+    opacity: 0;
+    height: 100%;
+    width: 1px;
+    background-color: var(--text-color);
+    position: relative;
+    transition:
+      height 0.4s ease-in-out,
+      opacity 0.2s ease-in-out;
+    .name {
+      position: absolute;
+      top: calc(-55%);
+      left: 0;
+      font-size: 0.65rem;
+      white-space: nowrap;
+      transform: translateX(-0.2rem);
+      transition: all 0.4s ease-in-out;
+      &-right {
+        left: unset;
+        right: 0;
+        transform: translateX(0.8rem);
+      }
+    }
+  }
+  &:hover {
+    .help-tick {
+      opacity: 1;
+      height: 120%;
+    }
   }
 }
