@@ -1,1 +1,17 @@
-<div class="indicator" [style.left]="'calc(' + huePercentage() + ')'"></div>
+<div
+  class="hue-selected-indicator"
+  [style.left]="'calc(' + huePercentage() + ')'"
+></div>
+
+@for (color of colors; track $index) {
+  <div
+    class="color-indicator"
+    (mouseover)="$event.preventDefault()"
+    [class.aside-tick]="asideTicks().includes(color.position)"
+    [class.main-tick]="mainTickToShow() === color.position"
+  >
+    <div class="name">{{ color.name }}</div>
+  </div>
+}
+
+<div class="mask" (mousemove)="onMaskHover($event)"></div>
