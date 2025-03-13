@@ -1,0 +1,21 @@
+@for (alternative of alternatives(); track alternative.library) {
+  <div class="card">
+    <div class="title">
+      <a [href]="alternative.url" target="_blank">
+        <span>{{ alternative.library }}</span> <i-tabler name="external-link" />
+      </a>
+    </div>
+    <div class="description">
+      <button class="name" [appClipboardCopy]="alternative.name">
+        <span>{{ alternative.name }}</span> <i-tabler name="copy" />
+      </button>
+      @if (alternative.systemCode) {
+        <button class="code" [appClipboardCopy]="alternative.systemCode">
+          <span>{{ alternative.systemCode }}</span>
+          <i-tabler name="copy" />
+        </button>
+      }
+    </div>
+    <app-color [hex]="alternative.hex" class="color" />
+  </div>
+}

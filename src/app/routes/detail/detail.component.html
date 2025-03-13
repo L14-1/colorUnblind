@@ -54,6 +54,17 @@
   <p-accordion-panel value="2">
     <p-accordion-header>
       <div style="display: flex; align-items: center; gap: 0.5rem">
+        <i-tabler name="layers-selected-bottom" />
+        <span>Alternatives</span>
+      </div>
+    </p-accordion-header>
+    <p-accordion-content>
+      <app-alternatives [hex]="rawHex()" />
+    </p-accordion-content>
+  </p-accordion-panel>
+  <p-accordion-panel value="3">
+    <p-accordion-header>
+      <div style="display: flex; align-items: center; gap: 0.5rem">
         <i-tabler name="palette" />
         <span>Palette</span>
       </div>

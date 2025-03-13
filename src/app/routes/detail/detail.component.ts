@@ -4,6 +4,7 @@ import {
   IconAi,
   IconClipboard,
   IconContrast2,
+  IconLayersSelectedBottom,
   IconPalette,
 } from 'angular-tabler-icons/icons';
 import { AccordionModule } from 'primeng/accordion';
@@ -20,6 +21,7 @@ import { ColorCodesComponent } from './components/color-codes/color-codes.compon
 import { ColorDetailComponent } from './components/color-detail/color-detail.component';
 import { PaletteComponent } from './components/palette/palette.component';
 import { DetailService } from './services/detail.service';
+import { AlternativesComponent } from './components/alternatives/alternatives.component';
 
 @Component({
   selector: 'app-detail',
@@ -31,11 +33,18 @@ import { DetailService } from './services/detail.service';
     TablerIconComponent,
     ColorDetailComponent,
     ColorCodesComponent,
+    AlternativesComponent,
     PaletteComponent,
     SkeletonComponent,
   ],
   providers: [
-    provideTablerIcons({ IconContrast2, IconClipboard, IconPalette, IconAi }),
+    provideTablerIcons({
+      IconContrast2,
+      IconClipboard,
+      IconPalette,
+      IconAi,
+      IconLayersSelectedBottom,
+    }),
   ],
   templateUrl: './detail.component.html',
   styleUrl: './detail.component.scss',
