@@ -1,0 +1,94 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  .card {
+    padding: 0.6rem 0.6rem 0.6rem 1.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .title {
+      position: absolute;
+      top: -0.65rem;
+      left: 0.75rem;
+      background-color: var(--p-popover-background);
+      padding: 0 0.5rem;
+      font-size: 0.8rem;
+      a {
+        display: flex;
+        gap: 0.5rem;
+        color: var(--text-color);
+        text-decoration: none;
+        i-tabler {
+          width: 1.2rem;
+          height: 1.2rem;
+          transform: translateY(-0.1rem);
+        }
+        &:hover {
+          font-weight: 600;
+          text-decoration: underline;
+          text-underline-offset: 0.25rem;
+        }
+      }
+    }
+    .color {
+      width: 3rem;
+      height: 3rem;
+      border: none;
+      border-radius: 0.2rem;
+      outline: 2px solid var(--text-color);
+      overflow: hidden;
+    }
+    .description {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      button {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 0 8px;
+        border-radius: 2px;
+        width: fit-content;
+        transition: all 0.2s ease;
+        i-tabler {
+          opacity: 0;
+          transition: opacity 0.2s ease;
+        }
+        &:hover {
+          background-color: color-mix(
+            in srgb,
+            var(--text-color) 5%,
+            transparent
+          );
+          i-tabler {
+            opacity: 1;
+          }
+        }
+      }
+      .name {
+        font-size: 1rem;
+        font-weight: 500;
+        i-tabler {
+          width: 0.9rem;
+          height: 0.9rem;
+        }
+      }
+      .code {
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+        i-tabler {
+          width: 0.8rem;
+          height: 0.8rem;
+        }
+      }
+    }
+  }
+}
