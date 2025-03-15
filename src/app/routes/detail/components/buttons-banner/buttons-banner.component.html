@@ -1,0 +1,10 @@
+<button (click)="toggleFavorite(hex())" [class.is-fav]="isFavorite()">
+  @if (!isFavorite()) {
+    <span class="text">Add to favorites</span>
+    <i-tabler name="heart-plus" />
+  } @else {
+    <span class="text">Remove</span>
+    <i-tabler class="filled" name="heart-filled" />
+    <i-tabler class="slashed" name="heart-off" />
+  }
+</button>

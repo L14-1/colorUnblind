@@ -18,6 +18,10 @@
   ></i-tabler>
 </div>
 
+<div class="color-displayer" [style.background-color]="'#' + rawHex()"></div>
+
+<app-buttons-banner [hex]="rawHex()" />
+
 <p-popover [style]="{ width: '95%' }" #op>
   <p class="ai">
     AI can make mistake. For a better understanding of this color, complete this
@@ -25,7 +29,7 @@
   </p>
 </p-popover>
 
-<p-accordion [(value)]="activeAccordion" multiple="true">
+<p-accordion [(value)]="activeAccordions" multiple="true">
   <p-accordion-panel value="0">
     <p-accordion-header>
       <div style="display: flex; align-items: center; gap: 0.5rem">

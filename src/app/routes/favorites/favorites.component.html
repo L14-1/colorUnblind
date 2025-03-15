@@ -1,0 +1,14 @@
+<app-header notForHome customButton>
+  <div style="width: 40px"></div>
+</app-header>
+
+<div class="content">
+  <span>Your favorites colors !</span><br />
+  <small>(saved locally)</small>
+</div>
+
+<section class="colors">
+  @for (color of favorites(); track color.id) {
+    <app-color [hex]="color.hex ? '#' + color.hex : ''" />
+  }
+</section>

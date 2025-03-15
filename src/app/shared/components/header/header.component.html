@@ -4,7 +4,7 @@
   </button>
 } @else {
   <button pButton severity="secondary" text [routerLink]="'/infos'">
-    <i-tabler pButtonIcon name="info-square-rounded" />
+    <i-tabler pButtonIcon name="adjustments-cog" />
   </button>
 }
 <h1 [routerLink]="'/'">
@@ -15,7 +15,7 @@
 @if (customButton()) {
   <ng-content />
 } @else {
-  <button pButton severity="secondary" text [routerLink]="'/stats'">
-    <i-tabler pButtonIcon name="history" />
+  <button pButton severity="secondary" text [routerLink]="'/favorites'">
+    <i-tabler pButtonIcon name="heart-spark" />
   </button>
 }

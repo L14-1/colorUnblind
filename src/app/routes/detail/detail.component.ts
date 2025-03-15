@@ -17,11 +17,12 @@ import { ContrastedTextDirective } from '../../shared/directives/contrasted-text
 import { ColorFormatService } from '../../shared/services/color-format.service';
 import { ColorPaletteService } from '../../shared/services/color-palette.service';
 import { InMemoryDescriptionsService } from '../../shared/services/in-memory-descriptions.service';
+import { AlternativesComponent } from './components/alternatives/alternatives.component';
+import { ButtonsBannerComponent } from './components/buttons-banner/buttons-banner.component';
 import { ColorCodesComponent } from './components/color-codes/color-codes.component';
 import { ColorDetailComponent } from './components/color-detail/color-detail.component';
 import { PaletteComponent } from './components/palette/palette.component';
 import { DetailService } from './services/detail.service';
-import { AlternativesComponent } from './components/alternatives/alternatives.component';
 
 @Component({
   selector: 'app-detail',
@@ -31,6 +32,7 @@ import { AlternativesComponent } from './components/alternatives/alternatives.co
     PopoverModule,
     AccordionModule,
     TablerIconComponent,
+    ButtonsBannerComponent,
     ColorDetailComponent,
     ColorCodesComponent,
     AlternativesComponent,
@@ -58,7 +60,7 @@ export class DetailComponent {
 
   public description = signal('');
   public descriptionIsLoading = signal(false);
-  public activeAccordion = signal('0');
+  public activeAccordions = signal(['0']);
 
   public complementary = computed(() => {
     const { h, s, l } = this.colorFormatService.hexToHsl(this.rawHex());
@@ -90,7 +92,7 @@ export class DetailComponent {
 
   async ngOnChanges() {
     this.descriptionIsLoading.set(true);
-    this.activeAccordion.set('0');
+    this.activeAccordions.set(['0']);
     const existingDescription = await this.inMemoryDescriptions.get(
       this.rawHex(),
     );
