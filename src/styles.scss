@@ -10,15 +10,6 @@
   --inverted-background-color: #121212;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: #fff;
-    --background-color: #121212;
-    --inverted-text-color: #121212;
-    --inverted-background-color: #fff;
-  }
-}
-
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -97,4 +88,11 @@ html {
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+.colorunblind-dark {
+  --text-color: #fff;
+  --background-color: #121212;
+  --inverted-text-color: #121212;
+  --inverted-background-color: #fff;
 }

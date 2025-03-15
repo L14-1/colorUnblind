@@ -1,0 +1,19 @@
+<app-header notForHome customButton>
+  <div style="width: 40px"></div>
+</app-header>
+
+<section class="content">
+  <div class="selectable">
+    <div class="icon-text">
+      <i-tabler name="sun-moon" />
+      <span>Theme</span>
+    </div>
+    <p-select
+      size="small"
+      [options]="themes()"
+      optionLabel="name"
+      [(ngModel)]="selectedTheme"
+      (ngModelChange)="changeTheme()"
+    />
+  </div>
+</section>

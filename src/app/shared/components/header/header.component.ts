@@ -3,6 +3,7 @@ import {
   booleanAttribute,
   Component,
   ElementRef,
+  HostListener,
   inject,
   input,
   Renderer2,
@@ -35,18 +36,20 @@ import { BetaComponent } from '../beta/beta.component';
 export class HeaderComponent {
   public readonly notForHome = input(false, { transform: booleanAttribute });
   public readonly customButton = input(false, { transform: booleanAttribute });
+  public readonly hideShadow = input(false, { transform: booleanAttribute });
 
   public location = inject(Location);
   private readonly renderer = inject(Renderer2);
   private readonly el = inject(ElementRef);
 
-  // @HostListener('window:scroll') onScroll() {
-  //   this.renderer.setStyle(
-  //     this.el.nativeElement,
-  //     'box-shadow',
-  //     window.scrollY > 0
-  //       ? 'rgba(0, 0, 0, 0.24) 0px 3px 8px'
-  //       : 'rgba(0, 0, 0, 0) 0px 0px 0px',
-  //   );
-  // }
+  @HostListener('window:scroll') onScroll() {
+    if (this.hideShadow()) return;
+    this.renderer.setStyle(
+      this.el.nativeElement,
+      'box-shadow',
+      window.scrollY > 0
+        ? 'rgba(0, 0, 0, 0.24) 0px 3px 8px'
+        : 'rgba(0, 0, 0, 0) 0px 0px 0px',
+    );
+  }
 }

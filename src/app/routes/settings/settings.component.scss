@@ -1,0 +1,17 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1.5rem;
+  .icon-text {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-weight: 500;
+  }
+  .selectable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

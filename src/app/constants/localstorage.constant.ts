@@ -1,0 +1,1 @@
+export const PREFERED_THEME = 'PREFERED_THEME';
