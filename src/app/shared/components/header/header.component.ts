@@ -3,7 +3,6 @@ import {
   booleanAttribute,
   Component,
   ElementRef,
-  HostListener,
   inject,
   input,
   Renderer2,
@@ -11,10 +10,10 @@ import {
 import { RouterLink } from '@angular/router';
 import { provideTablerIcons, TablerIconComponent } from 'angular-tabler-icons';
 import {
+  IconAdjustmentsCog,
   IconChevronLeft,
-  IconHistory,
-  IconInfoSquareRounded,
-  IconTrash,
+  IconHeartCog,
+  IconHeartSpark,
 } from 'angular-tabler-icons/icons';
 import { ButtonModule } from 'primeng/button';
 import { BetaComponent } from '../beta/beta.component';
@@ -25,9 +24,9 @@ import { BetaComponent } from '../beta/beta.component';
   providers: [
     provideTablerIcons({
       IconChevronLeft,
-      IconHistory,
-      IconInfoSquareRounded,
-      IconTrash,
+      IconHeartSpark,
+      IconAdjustmentsCog,
+      IconHeartCog,
     }),
   ],
   templateUrl: './header.component.html',
@@ -41,13 +40,13 @@ export class HeaderComponent {
   private readonly renderer = inject(Renderer2);
   private readonly el = inject(ElementRef);
 
-  @HostListener('window:scroll') onScroll() {
-    this.renderer.setStyle(
-      this.el.nativeElement,
-      'box-shadow',
-      window.scrollY > 0
-        ? 'rgba(0, 0, 0, 0.24) 0px 3px 8px'
-        : 'rgba(0, 0, 0, 0) 0px 0px 0px',
-    );
-  }
+  // @HostListener('window:scroll') onScroll() {
+  //   this.renderer.setStyle(
+  //     this.el.nativeElement,
+  //     'box-shadow',
+  //     window.scrollY > 0
+  //       ? 'rgba(0, 0, 0, 0.24) 0px 3px 8px'
+  //       : 'rgba(0, 0, 0, 0) 0px 0px 0px',
+  //   );
+  // }
 }

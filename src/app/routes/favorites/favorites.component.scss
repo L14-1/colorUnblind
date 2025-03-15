@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .content {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #7c7c7c;
+    small {
+      font-size: 0.8rem;
+    }
+  }
+
+  .colors {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    app-color {
+      width: 10%;
+      aspect-ratio: 1 / 1;
+    }
+  }
+}

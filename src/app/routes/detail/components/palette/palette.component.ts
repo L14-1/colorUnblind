@@ -1,7 +1,7 @@
 import { Component, computed, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { provideTablerIcons, TablerIconComponent } from 'angular-tabler-icons';
-import { IconEye } from 'angular-tabler-icons/icons';
+import { IconEyeSpark } from 'angular-tabler-icons/icons';
 import { ButtonModule } from 'primeng/button';
 import { IColorDetail } from '../../../../interfaces/color-detail.interface';
 import { ClipboardCopyDirective } from '../../../../shared/directives/clipboard-copy.directive';
@@ -15,7 +15,7 @@ import { ColorPaletteService } from '../../../../shared/services/color-palette.s
     RouterLink,
     ClipboardCopyDirective,
   ],
-  providers: [provideTablerIcons({ IconEye })],
+  providers: [provideTablerIcons({ IconEyeSpark })],
   templateUrl: './palette.component.html',
   styleUrl: './palette.component.scss',
 })
