@@ -1,23 +1,38 @@
-import { Directive, HostListener, input } from '@angular/core';
+import { Directive, HostListener, inject, input } from '@angular/core';
+import { MessageService } from 'primeng/api';
 
 @Directive({
   selector: '[appClipboardCopy]',
 })
 export class ClipboardCopyDirective {
   public readonly contentToCopy = input('', { alias: 'appClipboardCopy' });
-  private originalInnerHtml: string | undefined = undefined;
+  private readonly messageService = inject(MessageService);
 
   @HostListener('click', ['$event.target'])
   onClick(target: HTMLElement) {
-    if (this.originalInnerHtml) return;
-    if (!this.contentToCopy()) console.warn('Nothing to copy was provided');
-    navigator.clipboard.writeText(this.contentToCopy());
-    this.originalInnerHtml = target.innerHTML;
-    target.innerHTML =
-      "<div style='white-space: nowrap; text-align: center; width: 100%'>Copied ! 🎉</div>";
-    setTimeout(() => {
-      target.innerHTML = this.originalInnerHtml ?? '';
-      this.originalInnerHtml = undefined;
-    }, 1000);
+    if (!this.contentToCopy()) {
+      this.messageService.add({
+        severity: 'error',
+        summary: 'Clipboard',
+        detail: `Nothing to copy was provided !`,
+        closable: false,
+      });
+    }
+    try {
+      navigator.clipboard.writeText(this.contentToCopy());
+      this.messageService.add({
+        severity: 'contrast',
+        summary: 'Copied to clipboard ! 🎉',
+        detail: `'${this.contentToCopy()}' was successfully copied to clipboard !`,
+        closable: false,
+      });
+    } catch (e) {
+      this.messageService.add({
+        severity: 'Error',
+        summary: 'Clipboard',
+        detail: `An error occured while trying to copy to clipboard ...`,
+        closable: false,
+      });
+    }
   }
 }
