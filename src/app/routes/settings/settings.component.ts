@@ -1,7 +1,9 @@
 import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { provideTablerIcons, TablerIconComponent } from 'angular-tabler-icons';
-import { IconSunMoon } from 'angular-tabler-icons/icons';
+import { IconInfoSquareRounded, IconSunMoon } from 'angular-tabler-icons/icons';
+import { ButtonDirective } from 'primeng/button';
 import { Select } from 'primeng/select';
 import { PREFERED_THEME } from '../../constants/localstorage.constant';
 import { HeaderComponent } from '../../shared/components/header/header.component';
@@ -9,8 +11,15 @@ import { ColorThemeService } from '../../shared/services/color-theme.service';
 
 @Component({
   selector: 'app-settings',
-  imports: [HeaderComponent, TablerIconComponent, FormsModule, Select],
-  providers: [provideTablerIcons({ IconSunMoon })],
+  imports: [
+    HeaderComponent,
+    TablerIconComponent,
+    FormsModule,
+    Select,
+    ButtonDirective,
+    RouterLink,
+  ],
+  providers: [provideTablerIcons({ IconSunMoon, IconInfoSquareRounded })],
   templateUrl: './settings.component.html',
   styleUrl: './settings.component.scss',
 })
