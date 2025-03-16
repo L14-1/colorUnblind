@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { PREFERED_THEME } from './constants/localstorage.constant';
 import { ColorThemeService } from './shared/services/color-theme.service';
 import { Toast } from 'primeng/toast';
+import { SettingsService } from './shared/services/settings.service';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +12,11 @@ import { Toast } from 'primeng/toast';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
+  private readonly settingsService = inject(SettingsService);
   private readonly colorSchemeService = inject(ColorThemeService);
 
   ngOnInit(): void {
+    this.settingsService.getUserSettings();
     const htmlEl = document.getElementsByTagName('html')[0];
     this.colorSchemeService.init(htmlEl);
 

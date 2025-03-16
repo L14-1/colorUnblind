@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { HeaderComponent } from '../../shared/components/header/header.component';
 import { PreviouslyViewedColorsComponent } from '../../shared/components/previously-viewed-colors/previously-viewed-colors.component';
 import { EyedropperService } from '../../shared/services/eyedropper.service';
+
+import { ORIGINS } from '../../constants/origins.constant';
 import { ViewedColorsService } from '../../shared/services/viewed-colors.service';
 import { CtaButtonComponent } from './components/cta-button/cta-button.component';
 
@@ -29,7 +31,9 @@ export class HomeComponent {
       let picked = await this.eyedropperService.openEyedropper();
       if (picked) {
         await this.colorService.save(picked);
-        this.router.navigate(['detail', picked.replace('#', '')]);
+        this.router.navigate(['detail', picked.replace('#', '')], {
+          queryParams: { origin: ORIGINS.PICKER },
+        });
       }
       this.isViewing.set(false);
     } catch {

@@ -1,4 +1,6 @@
 .content {
+  --p-toggleswitch-checked-background: var(--p-text-hover-color);
+  --p-toggleswitch-checked-hover-background: var(--p-text-color);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;

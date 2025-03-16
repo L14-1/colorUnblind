@@ -10,13 +10,16 @@ import {
 import { AccordionModule } from 'primeng/accordion';
 
 import { HttpErrorResponse, HttpStatusCode } from '@angular/common/http';
+import { MessageService } from 'primeng/api';
 import { PopoverModule } from 'primeng/popover';
+import { ORIGINS } from '../../constants/origins.constant';
 import { HeaderComponent } from '../../shared/components/header/header.component';
 import { SkeletonComponent } from '../../shared/components/skeleton/skeleton.component';
 import { ContrastedTextDirective } from '../../shared/directives/contrasted-text.directive';
 import { ColorFormatService } from '../../shared/services/color-format.service';
 import { ColorPaletteService } from '../../shared/services/color-palette.service';
 import { InMemoryDescriptionsService } from '../../shared/services/in-memory-descriptions.service';
+import { SettingsService } from '../../shared/services/settings.service';
 import { AlternativesComponent } from './components/alternatives/alternatives.component';
 import { ButtonsBannerComponent } from './components/buttons-banner/buttons-banner.component';
 import { ColorCodesComponent } from './components/color-codes/color-codes.component';
@@ -53,6 +56,9 @@ import { DetailService } from './services/detail.service';
 })
 export class DetailComponent {
   public readonly rawHex = input('', { alias: 'hexvalue' });
+  public readonly origin = input<ORIGINS>();
+  private readonly messageService = inject(MessageService);
+  private readonly settingsService = inject(SettingsService);
   private readonly inMemoryDescriptions = inject(InMemoryDescriptionsService);
   private readonly detailService = inject(DetailService);
   private readonly colorFormatService = inject(ColorFormatService);
@@ -91,8 +97,39 @@ export class DetailComponent {
   });
 
   async ngOnChanges() {
+    this.handleFirstOpenedAccordion();
+    this.handleAutoCopy();
+    await this.loadDescription();
+  }
+
+  private handleFirstOpenedAccordion() {
+    if (
+      this.origin() !== ORIGINS.PALETTE &&
+      this.origin() !== ORIGINS.ALTERNATIVE
+    ) {
+      this.activeAccordions.set(['1']);
+    }
+  }
+
+  private handleAutoCopy() {
+    if (this.settingsService.autoCopyOff()) return;
+    if (this.origin() === ORIGINS.PICKER) {
+      try {
+        navigator.clipboard.writeText(`#${this.rawHex()}`);
+        this.messageService.add({
+          severity: 'success',
+          summary: 'Copied to clipboard ! 🎉',
+          detail: `'#${this.rawHex()}' was successfully copied to clipboard !`,
+          closable: false,
+        });
+      } catch (e) {
+        return;
+      }
+    }
+  }
+
+  private async loadDescription() {
     this.descriptionIsLoading.set(true);
-    this.activeAccordions.set(['0']);
     const existingDescription = await this.inMemoryDescriptions.get(
       this.rawHex(),
     );
@@ -111,14 +148,22 @@ export class DetailComponent {
         error: (e: HttpErrorResponse) => {
           switch (e.status) {
             case HttpStatusCode.TooManyRequests:
-              this.description.set(
-                'You have reached your daily maximum request limit.',
-              );
+              this.description.set('');
+              this.messageService.add({
+                severity: 'error',
+                summary: 'Limit reached',
+                detail: `You have reached your daily maximum request limit.`,
+                closable: false,
+              });
               break;
             case HttpStatusCode.InternalServerError:
-              this.description.set(
-                'An error occurred while trying to describe this color. Please try again later.',
-              );
+              this.description.set('');
+              this.messageService.add({
+                severity: 'error',
+                summary: 'Unexpected error',
+                detail: `An error occurred while trying to describe this color. Please try again later.`,
+                closable: false,
+              });
               break;
             default:
               this.description.set(

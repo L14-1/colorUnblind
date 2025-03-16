@@ -17,6 +17,14 @@
     />
   </div>
 
+  <div class="selectable">
+    <div class="icon-text">
+      <i-tabler name="clipboard" />
+      <span>Auto-copy</span>
+    </div>
+    <p-toggleswitch [ngModel]="autoCopy()" (ngModelChange)="toggleAutoCopy()" />
+  </div>
+
   <button pButton severity="secondary" [routerLink]="['/about']">
     <i-tabler name="info-square-rounded" />
     <span>About</span>

@@ -1,5 +1,6 @@
 <button
   [routerLink]="['/detail', hex().replace('#', '')]"
+  [queryParams]="{ origin: this.origin() }"
   class="color"
   [style.background]="hex()"
 >

@@ -7,6 +7,7 @@ import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { ColorComponent } from '../../shared/components/color/color.component';
 import { HeaderComponent } from '../../shared/components/header/header.component';
 import { FavoritesService } from '../../shared/services/favorites.service';
+import { ORIGINS } from '../../constants/origins.constant';
 
 @Component({
   selector: 'app-favorites',
@@ -18,6 +19,7 @@ import { FavoritesService } from '../../shared/services/favorites.service';
 export class FavoritesComponent {
   private readonly favoritesService = inject(FavoritesService);
   private readonly confirmationService = inject(ConfirmationService);
+  public readonly origins = ORIGINS;
 
   public favorites = toSignal(this.favoritesService.getAll());
 
