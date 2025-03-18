@@ -107,7 +107,7 @@ export class DetailComponent {
       this.origin() !== ORIGINS.PALETTE &&
       this.origin() !== ORIGINS.ALTERNATIVE
     ) {
-      this.activeAccordions.set(['1']);
+      this.activeAccordions.set([this.settingsService.selectedMenu().position]);
     }
   }
 

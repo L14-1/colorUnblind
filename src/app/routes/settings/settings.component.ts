@@ -4,10 +4,13 @@ import { RouterLink } from '@angular/router';
 import { provideTablerIcons, TablerIconComponent } from 'angular-tabler-icons';
 import {
   IconClipboard,
+  IconFileDescription,
   IconInfoSquareRounded,
+  IconLayoutNavbarExpand,
   IconSunMoon,
 } from 'angular-tabler-icons/icons';
 import { ButtonDirective } from 'primeng/button';
+import { MultiSelectModule } from 'primeng/multiselect';
 import { Select } from 'primeng/select';
 import { ToggleSwitch } from 'primeng/toggleswitch';
 import {
@@ -25,22 +28,30 @@ import { SettingsService } from '../../shared/services/settings.service';
     TablerIconComponent,
     FormsModule,
     Select,
+    MultiSelectModule,
     ToggleSwitch,
     ButtonDirective,
     RouterLink,
   ],
   providers: [
-    provideTablerIcons({ IconSunMoon, IconInfoSquareRounded, IconClipboard }),
+    provideTablerIcons({
+      IconSunMoon,
+      IconInfoSquareRounded,
+      IconClipboard,
+      IconFileDescription,
+      IconLayoutNavbarExpand,
+    }),
   ],
   templateUrl: './settings.component.html',
   styleUrl: './settings.component.scss',
 })
 export class SettingsComponent {
-  private readonly settingsService = inject(SettingsService);
   private readonly colorSchemeService = inject(ColorThemeService);
+  public readonly settingsService = inject(SettingsService);
 
   public selectedTheme = signal({ name: 'System' });
   public autoCopyOff = this.settingsService.autoCopyOff;
+  public selectedMenu = this.settingsService.selectedMenu;
 
   public autoCopy = computed(() => {
     return !this.autoCopyOff();
@@ -50,6 +61,13 @@ export class SettingsComponent {
     { name: 'System' },
     { name: 'Light' },
     { name: 'Dark' },
+  ]);
+
+  public tools = signal([
+    { name: 'Details', position: '0' },
+    { name: 'Codes', position: '1' },
+    { name: 'Alternatives', position: '2' },
+    { name: 'Palette', position: '3' },
   ]);
 
   ngOnInit(): void {

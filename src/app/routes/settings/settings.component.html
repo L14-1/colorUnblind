@@ -25,6 +25,30 @@
     <p-toggleswitch [ngModel]="autoCopy()" (ngModelChange)="toggleAutoCopy()" />
   </div>
 
+  <div class="selectable">
+    <div class="icon-text">
+      <i-tabler name="file-description" />
+      <span>Pro description</span>
+    </div>
+    <p-toggleswitch />
+  </div>
+
+  <div class="selectable">
+    <div class="icon-text">
+      <i-tabler name="layout-navbar-expand" />
+      <span>Default menu</span>
+    </div>
+    <p-select
+      size="small"
+      [filter]="false"
+      [options]="tools()"
+      [(ngModel)]="selectedMenu"
+      optionLabel="name"
+      (ngModelChange)="settingsService.setNewSelectedMenu()"
+      class="fixed-size"
+    />
+  </div>
+
   <button pButton severity="secondary" [routerLink]="['/about']">
     <i-tabler name="info-square-rounded" />
     <span>About</span>
