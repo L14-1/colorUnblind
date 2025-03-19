@@ -137,42 +137,47 @@ export class DetailComponent {
       this.description.set(existingDescription.description);
       this.descriptionIsLoading.set(false);
     } else {
-      this.detailService.getColorDescription(this.rawHex()).subscribe({
-        next: (data) => {
-          if (data.isAiGenerated) {
-            this.inMemoryDescriptions.save(this.rawHex(), data.description);
-          }
-          this.description.set(data.description);
-          this.descriptionIsLoading.set(false);
-        },
-        error: (e: HttpErrorResponse) => {
-          switch (e.status) {
-            case HttpStatusCode.TooManyRequests:
-              this.description.set('');
-              this.messageService.add({
-                severity: 'error',
-                summary: 'Limit reached',
-                detail: `You have reached your daily maximum request limit.`,
-                closable: false,
-              });
-              break;
-            case HttpStatusCode.InternalServerError:
-              this.description.set('');
-              this.messageService.add({
-                severity: 'error',
-                summary: 'Unexpected error',
-                detail: `An error occurred while trying to describe this color. Please try again later.`,
-                closable: false,
-              });
-              break;
-            default:
-              this.description.set(
-                'An unexpected error occurred. Please try again.',
-              );
-          }
-          this.descriptionIsLoading.set(false);
-        },
-      });
+      this.detailService
+        .getColorDescription(
+          this.rawHex(),
+          this.settingsService.proDescription(),
+        )
+        .subscribe({
+          next: (data) => {
+            if (data.isAiGenerated) {
+              this.inMemoryDescriptions.save(this.rawHex(), data.description);
+            }
+            this.description.set(data.description);
+            this.descriptionIsLoading.set(false);
+          },
+          error: (e: HttpErrorResponse) => {
+            switch (e.status) {
+              case HttpStatusCode.TooManyRequests:
+                this.description.set('');
+                this.messageService.add({
+                  severity: 'error',
+                  summary: 'Limit reached',
+                  detail: `You have reached your daily maximum request limit.`,
+                  closable: false,
+                });
+                break;
+              case HttpStatusCode.InternalServerError:
+                this.description.set('');
+                this.messageService.add({
+                  severity: 'error',
+                  summary: 'Unexpected error',
+                  detail: `An error occurred while trying to describe this color. Please try again later.`,
+                  closable: false,
+                });
+                break;
+              default:
+                this.description.set(
+                  'An unexpected error occurred. Please try again.',
+                );
+            }
+            this.descriptionIsLoading.set(false);
+          },
+        });
     }
   }
 }

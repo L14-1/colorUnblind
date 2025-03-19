@@ -51,6 +51,7 @@ export class SettingsComponent {
 
   public selectedTheme = signal({ name: 'System' });
   public autoCopyOff = this.settingsService.autoCopyOff;
+  public proDescription = this.settingsService.proDescription;
   public selectedMenu = this.settingsService.selectedMenu;
 
   public autoCopy = computed(() => {

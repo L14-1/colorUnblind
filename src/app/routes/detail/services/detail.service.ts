@@ -12,10 +12,14 @@ export class DetailService {
   private readonly http = inject(HttpClient);
   private readonly apiUrl = environment.apiUrl;
 
-  public getColorDescription(hexColor: string): Observable<HexDescribedDTO> {
-    return this.http.get<HexDescribedDTO>(
-      `${this.apiUrl}/description/${hexColor}`,
-    );
+  public getColorDescription(
+    hexColor: string,
+    proDescription: boolean,
+  ): Observable<HexDescribedDTO> {
+    return this.http.post<HexDescribedDTO>(`${this.apiUrl}/description/`, {
+      hexColor,
+      proDescription,
+    });
   }
 
   public getColorAlternatives(

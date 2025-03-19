@@ -30,7 +30,10 @@
       <i-tabler name="file-description" />
       <span>Pro description</span>
     </div>
-    <p-toggleswitch />
+    <p-toggleswitch
+      [(ngModel)]="proDescription"
+      (ngModelChange)="settingsService.setProDescription()"
+    />
   </div>
 
   <div class="selectable">
