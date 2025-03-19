@@ -6,6 +6,7 @@ import { ButtonModule } from 'primeng/button';
 import { IColorDetail } from '../../../../interfaces/color-detail.interface';
 import { ClipboardCopyDirective } from '../../../../shared/directives/clipboard-copy.directive';
 import { ColorPaletteService } from '../../../../shared/services/color-palette.service';
+import { ORIGINS } from '../../../../constants/origins.constant';
 
 @Component({
   selector: 'app-palette',
@@ -24,6 +25,7 @@ export class PaletteComponent {
   public readonly analogous = input.required<IColorDetail[]>();
   public readonly triadic = input.required<IColorDetail[]>();
   public readonly tetradic = input.required<IColorDetail[]>();
+  public readonly origins = ORIGINS;
 
   public readonly inputHex = input.required<string>();
   private readonly colorPaletteService = inject(ColorPaletteService);

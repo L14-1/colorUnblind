@@ -1,0 +1,59 @@
+<app-header notForHome customButton>
+  <div style="width: 40px"></div>
+</app-header>
+
+<section class="content">
+  <div class="selectable">
+    <div class="icon-text">
+      <i-tabler name="sun-moon" />
+      <span>Theme</span>
+    </div>
+    <p-select
+      size="small"
+      [options]="themes()"
+      optionLabel="name"
+      [(ngModel)]="selectedTheme"
+      (ngModelChange)="changeTheme()"
+    />
+  </div>
+
+  <div class="selectable">
+    <div class="icon-text">
+      <i-tabler name="clipboard" />
+      <span>Auto-copy</span>
+    </div>
+    <p-toggleswitch [ngModel]="autoCopy()" (ngModelChange)="toggleAutoCopy()" />
+  </div>
+
+  <div class="selectable">
+    <div class="icon-text">
+      <i-tabler name="file-description" />
+      <span>Pro description</span>
+    </div>
+    <p-toggleswitch
+      [(ngModel)]="proDescription"
+      (ngModelChange)="settingsService.setProDescription()"
+    />
+  </div>
+
+  <div class="selectable">
+    <div class="icon-text">
+      <i-tabler name="layout-navbar-expand" />
+      <span>Default menu</span>
+    </div>
+    <p-select
+      size="small"
+      [filter]="false"
+      [options]="tools()"
+      [(ngModel)]="selectedMenu"
+      optionLabel="name"
+      (ngModelChange)="settingsService.setNewSelectedMenu()"
+      class="fixed-size"
+    />
+  </div>
+
+  <button pButton severity="secondary" [routerLink]="['/about']">
+    <i-tabler name="info-square-rounded" />
+    <span>About</span>
+  </button>
+</section>

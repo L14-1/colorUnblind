@@ -11,6 +11,7 @@ import { provideTablerIcons } from 'angular-tabler-icons';
 import { IconEye } from 'angular-tabler-icons/icons';
 import { ViewedColorsService } from '../../services/viewed-colors.service';
 import { ColorComponent } from '../color/color.component';
+import { ORIGINS } from '../../../constants/origins.constant';
 
 @Component({
   selector: 'app-previously-viewed-colors',
@@ -21,6 +22,7 @@ import { ColorComponent } from '../color/color.component';
 })
 export class PreviouslyViewedColorsComponent {
   public showAll = input(false, { transform: booleanAttribute });
+  public readonly origins = ORIGINS;
 
   private readonly colorService = inject(ViewedColorsService);
 

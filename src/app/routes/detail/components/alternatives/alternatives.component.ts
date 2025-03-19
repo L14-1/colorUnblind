@@ -1,10 +1,11 @@
 import { Component, inject, input, signal } from '@angular/core';
 import { provideTablerIcons, TablerIconComponent } from 'angular-tabler-icons';
 import { IconCopy, IconExternalLink } from 'angular-tabler-icons/icons';
+import { ORIGINS } from '../../../../constants/origins.constant';
 import { HexAlternativeDTO } from '../../../../models/hex-alternative.model';
 import { ColorComponent } from '../../../../shared/components/color/color.component';
-import { DetailService } from '../../services/detail.service';
 import { ClipboardCopyDirective } from '../../../../shared/directives/clipboard-copy.directive';
+import { DetailService } from '../../services/detail.service';
 
 @Component({
   selector: 'app-alternatives',
@@ -15,6 +16,7 @@ import { ClipboardCopyDirective } from '../../../../shared/directives/clipboard-
 })
 export class AlternativesComponent {
   public hex = input<string>();
+  public readonly origins = ORIGINS;
   private readonly detailService = inject(DetailService);
 
   public alternatives = signal<HexAlternativeDTO[]>([]);

@@ -8,6 +8,7 @@
         pButton
         severity="secondary"
         [routerLink]="['/detail', color.replace('#', '')]"
+        [queryParams]="{ origin: origins.PALETTE }"
       >
         <i-tabler name="eye-spark" />
       </button>

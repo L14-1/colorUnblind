@@ -5,7 +5,6 @@ import {
   IconHeartOff,
   IconHeartPlus,
 } from 'angular-tabler-icons/icons';
-import { ButtonDirective } from 'primeng/button';
 import { FavoritesService } from '../../../../shared/services/favorites.service';
 
 @Component({

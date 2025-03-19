@@ -9,6 +9,9 @@
 
 <section class="colors">
   @for (color of favorites(); track color.id) {
-    <app-color [hex]="color.hex ? '#' + color.hex : ''" />
+    <app-color
+      [hex]="color.hex ? '#' + color.hex : ''"
+      [origin]="origins.FAVORITES"
+    />
   }
 </section>

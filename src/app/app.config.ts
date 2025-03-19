@@ -10,6 +10,7 @@ import { providePrimeNG } from 'primeng/config';
 
 import { provideHttpClient } from '@angular/common/http';
 import Aura from '@primeng/themes/aura';
+import { MessageService } from 'primeng/api';
 import { routes } from './app.routes';
 import { SCROLL_CONFIG } from './constants/scroll-config.constant';
 import DB_CONFIG from './db.config';
@@ -24,10 +25,14 @@ export const appConfig: ApplicationConfig = {
       withInMemoryScrolling(SCROLL_CONFIG),
     ),
     provideIndexedDb(DB_CONFIG),
+    MessageService,
     provideAnimationsAsync(),
     providePrimeNG({
       theme: {
         preset: Aura,
+        options: {
+          darkModeSelector: '.colorunblind-dark',
+        },
       },
     }),
   ],
