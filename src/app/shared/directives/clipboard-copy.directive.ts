@@ -22,8 +22,8 @@ export class ClipboardCopyDirective {
       navigator.clipboard.writeText(this.contentToCopy());
       this.messageService.add({
         severity: 'success',
-        summary: 'Copied to clipboard ! 🎉',
-        detail: `'${this.contentToCopy()}' was successfully copied to clipboard !`,
+        summary: 'Copied ! 🎉',
+        detail: `'${this.contentToCopy()}' copied to clipboard !`,
         closable: false,
       });
     } catch (e) {

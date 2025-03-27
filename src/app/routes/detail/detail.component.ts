@@ -9,6 +9,7 @@ import {
 } from 'angular-tabler-icons/icons';
 import { AccordionModule } from 'primeng/accordion';
 
+import { Clipboard } from '@angular/cdk/clipboard';
 import { HttpErrorResponse, HttpStatusCode } from '@angular/common/http';
 import { MessageService } from 'primeng/api';
 import { PopoverModule } from 'primeng/popover';
@@ -63,6 +64,7 @@ export class DetailComponent {
   private readonly detailService = inject(DetailService);
   private readonly colorFormatService = inject(ColorFormatService);
   private readonly colorPaletteService = inject(ColorPaletteService);
+  private readonly clipboard = inject(Clipboard);
 
   public description = signal('');
   public descriptionIsLoading = signal(false);
@@ -115,13 +117,15 @@ export class DetailComponent {
     if (this.settingsService.autoCopyOff()) return;
     if (this.origin() === ORIGINS.PICKER) {
       try {
-        navigator.clipboard.writeText(`#${this.rawHex()}`);
-        this.messageService.add({
-          severity: 'success',
-          summary: 'Copied to clipboard ! 🎉',
-          detail: `'#${this.rawHex()}' was successfully copied to clipboard !`,
-          closable: false,
-        });
+        let copied = this.clipboard.copy(`#${this.rawHex()}`);
+        if (copied) {
+          this.messageService.add({
+            severity: 'success',
+            summary: 'Copied ! 🎉',
+            detail: `'#${this.rawHex()}' copied to clipboard !`,
+            closable: false,
+          });
+        }
       } catch (e) {
         return;
       }
