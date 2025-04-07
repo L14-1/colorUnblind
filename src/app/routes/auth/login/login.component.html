@@ -1,0 +1,48 @@
+<h2>Log in</h2>
+
+<section class="form" [formGroup]="form">
+  <p-floatlabel variant="in">
+    <input
+      class="input"
+      pInputText
+      id="in_label"
+      formControlName="email"
+      autocomplete="off"
+      [class.ng-invalid]="
+        form.controls.email.invalid && form.controls.email.touched
+      "
+    />
+    <label for="in_label">Email</label>
+  </p-floatlabel>
+  <p-floatlabel variant="in">
+    <p-password
+      class="input"
+      id="password_label"
+      formControlName="password"
+      promptLabel="Choose a password that contains :"
+      weakLabel="Too simple"
+      mediumLabel="Average complexity"
+      strongLabel="Complex password"
+      [toggleMask]="true"
+      [class.ng-invalid]="
+        form.controls.password.invalid && form.controls.password.touched
+      "
+    >
+      <ng-template #header>
+        <div class="font-semibold text-xm mb-4">Pick a password</div>
+      </ng-template>
+      <ng-template #footer>
+        <ul class="list">
+          <li>At least one lowercase</li>
+          <li>At least one uppercase</li>
+          <li>At least one numeric</li>
+          <li>Minimum 8 characters</li>
+        </ul>
+      </ng-template>
+    </p-password>
+    <label for="password_label">Password</label>
+  </p-floatlabel>
+  <p-button severity="contrast" [disabled]="!form.valid" (click)="login()"
+    >Login</p-button
+  >
+</section>

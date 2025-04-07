@@ -4,6 +4,7 @@ import { FavoritesComponent } from './routes/favorites/favorites.component';
 import { HomeComponent } from './routes/home/home.component';
 
 import { AboutComponent } from './routes/about/about.component';
+import { AuthComponent } from './routes/auth/auth.component';
 import { SettingsComponent } from './routes/settings/settings.component';
 
 export const routes: Routes = [
@@ -12,5 +13,6 @@ export const routes: Routes = [
   { path: 'favorites', component: FavoritesComponent },
   { path: 'detail/:hexvalue', component: DetailComponent },
   { path: 'settings', component: SettingsComponent },
+  { path: 'auth', component: AuthComponent },
   { path: '**', redirectTo: '' },
 ];
