@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, inject, signal } from '@angular/core';
 import {
   FormControl,
@@ -9,9 +10,7 @@ import { Button } from 'primeng/button';
 import { FloatLabel } from 'primeng/floatlabel';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
-import { JWT_TOKENS } from '../../../constants/localstorage.constant';
 import { AuthService } from '../auth.service';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -27,15 +26,12 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   private readonly authService = inject(AuthService);
-  private readonly router = inject(Router);
+  public location = inject(Location);
   public isLoading = signal(false);
 
   public form = new FormGroup({
     email: new FormControl<string>('', [Validators.required, Validators.email]),
-    password: new FormControl<string>('null', [
-      Validators.required,
-      // Validators.pattern(/((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,64})/g),
-    ]),
+    password: new FormControl<string>('', [Validators.required]),
   });
 
   public login() {
@@ -48,8 +44,7 @@ export class LoginComponent {
     this.authService.login({ email, password }).subscribe({
       next: (tokens) => {
         this.isLoading.set(false);
-        // Redirect to last detail page || dashboard;
-        this.router.navigate(['/']);
+        this.location.back();
       },
       error: (error) => {
         this.isLoading.set(false);

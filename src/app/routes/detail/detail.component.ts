@@ -2,6 +2,7 @@ import { Component, computed, inject, input, signal } from '@angular/core';
 import { provideTablerIcons, TablerIconComponent } from 'angular-tabler-icons';
 import {
   IconAi,
+  IconAlertSquareRounded,
   IconClipboard,
   IconContrast2,
   IconLayersSelectedBottom,
@@ -27,6 +28,9 @@ import { ColorCodesComponent } from './components/color-codes/color-codes.compon
 import { ColorDetailComponent } from './components/color-detail/color-detail.component';
 import { PaletteComponent } from './components/palette/palette.component';
 import { DetailService } from './services/detail.service';
+import { AuthService } from '../auth/auth.service';
+import { Message } from 'primeng/message';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-detail',
@@ -42,6 +46,8 @@ import { DetailService } from './services/detail.service';
     AlternativesComponent,
     PaletteComponent,
     SkeletonComponent,
+    Message,
+    RouterLink,
   ],
   providers: [
     provideTablerIcons({
@@ -50,6 +56,7 @@ import { DetailService } from './services/detail.service';
       IconPalette,
       IconAi,
       IconLayersSelectedBottom,
+      IconAlertSquareRounded,
     }),
   ],
   templateUrl: './detail.component.html',
@@ -58,6 +65,8 @@ import { DetailService } from './services/detail.service';
 export class DetailComponent {
   public readonly rawHex = input('', { alias: 'hexvalue' });
   public readonly origin = input<ORIGINS>();
+  public readonly isLoggedIn = inject(AuthService).loggedIn;
+  public readonly isPro = inject(AuthService).isPro;
   private readonly messageService = inject(MessageService);
   private readonly settingsService = inject(SettingsService);
   private readonly inMemoryDescriptions = inject(InMemoryDescriptionsService);

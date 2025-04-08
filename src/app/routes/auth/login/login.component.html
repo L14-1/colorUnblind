@@ -19,26 +19,12 @@
       class="input"
       id="password_label"
       formControlName="password"
-      promptLabel="Choose a password that contains :"
-      weakLabel="Too simple"
-      mediumLabel="Average complexity"
-      strongLabel="Complex password"
       [toggleMask]="true"
+      [feedback]="false"
       [class.ng-invalid]="
         form.controls.password.invalid && form.controls.password.touched
       "
     >
-      <ng-template #header>
-        <div class="font-semibold text-xm mb-4">Pick a password</div>
-      </ng-template>
-      <ng-template #footer>
-        <ul class="list">
-          <li>At least one lowercase</li>
-          <li>At least one uppercase</li>
-          <li>At least one numeric</li>
-          <li>Minimum 8 characters</li>
-        </ul>
-      </ng-template>
     </p-password>
     <label for="password_label">Password</label>
   </p-floatlabel>

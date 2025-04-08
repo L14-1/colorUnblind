@@ -8,11 +8,15 @@
   position: relative;
   z-index: 90;
   padding: 2rem;
-  i-tabler {
+  .ai-icon {
     position: absolute;
     bottom: 0.25rem;
     right: 0.25rem;
     opacity: 0.5;
+  }
+  a {
+    color: inherit;
+    font-weight: 600;
   }
 }
 

@@ -1,4 +1,9 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+import {
+  ApplicationConfig,
+  inject,
+  provideAppInitializer,
+  provideZoneChangeDetection,
+} from '@angular/core';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {
   provideRouter,
@@ -8,17 +13,19 @@ import {
 import { provideIndexedDb } from 'ngx-indexed-db';
 import { providePrimeNG } from 'primeng/config';
 
-import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import Aura from '@primeng/themes/aura';
 import { MessageService } from 'primeng/api';
 import { routes } from './app.routes';
 import { SCROLL_CONFIG } from './constants/scroll-config.constant';
 import DB_CONFIG from './db.config';
+import { AuthService } from './routes/auth/auth.service';
+import { authorizationInterceptor } from './interceptors/authorization.interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideHttpClient(),
+    provideHttpClient(withInterceptors([authorizationInterceptor])),
     provideRouter(
       routes,
       withComponentInputBinding(),
@@ -34,6 +41,9 @@ export const appConfig: ApplicationConfig = {
           darkModeSelector: '.colorunblind-dark',
         },
       },
+    }),
+    provideAppInitializer(() => {
+      return inject(AuthService).isUserLoggedIn();
     }),
   ],
 };

@@ -3,7 +3,7 @@ import { DetailComponent } from './routes/detail/detail.component';
 import { FavoritesComponent } from './routes/favorites/favorites.component';
 import { HomeComponent } from './routes/home/home.component';
 
-import { AboutComponent } from './routes/about/about.component';
+import { AboutComponent } from './routes/about/infos.component';
 import { AuthComponent } from './routes/auth/auth.component';
 import { SettingsComponent } from './routes/settings/settings.component';
 
