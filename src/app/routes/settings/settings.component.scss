@@ -11,6 +11,9 @@
     align-items: center;
     font-weight: 500;
   }
+  .disabled {
+    color: var(--p-form-field-disabled-color);
+  }
   .selectable {
     display: flex;
     justify-content: space-between;

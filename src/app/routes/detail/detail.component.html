@@ -8,12 +8,24 @@
   @if (descriptionIsLoading()) {
     <app-skeleton [appContrastedText]="'#' + rawHex()" [lines]="3" />
   } @else {
-    {{ description() }}
+    @if (isLoggedIn()) {
+      {{ description() }}
+    } @else {
+      <p-message severity="warn">
+        <ng-template #icon>
+          <i-tabler name="alert-square-rounded" />
+        </ng-template>
+        <span style="font-size: 0.8rem">
+          You must <a [routerLink]="['/auth']">log in</a> to use this feature.
+        </span>
+      </p-message>
+    }
   }
   <i-tabler
     (mouseenter)="op.show($event)"
     (mouseleave)="op.hide()"
     name="ai"
+    class="ai-icon"
     [appContrastedText]="'#' + rawHex()"
   ></i-tabler>
 </div>
@@ -55,7 +67,7 @@
       />
     </p-accordion-content>
   </p-accordion-panel>
-  <p-accordion-panel value="2">
+  <p-accordion-panel value="2" [disabled]="!isLoggedIn()">
     <p-accordion-header>
       <div style="display: flex; align-items: center; gap: 0.5rem">
         <i-tabler name="layers-selected-bottom" />
@@ -66,7 +78,7 @@
       <app-alternatives [hex]="rawHex()" />
     </p-accordion-content>
   </p-accordion-panel>
-  <p-accordion-panel value="3">
+  <p-accordion-panel value="3" [disabled]="!isLoggedIn()">
     <p-accordion-header>
       <div style="display: flex; align-items: center; gap: 0.5rem">
         <i-tabler name="palette" />

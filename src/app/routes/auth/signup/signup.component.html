@@ -1,0 +1,76 @@
+<section class="form" [formGroup]="form">
+  <p-floatlabel variant="in">
+    <input
+      class="input"
+      pInputText
+      id="username_label"
+      formControlName="username"
+      autocomplete="off"
+      [class.ng-invalid]="
+        form.controls.username.invalid && form.controls.username.touched
+      "
+      [class.ng-dirty]="
+        form.controls.username.invalid && form.controls.username.touched
+      "
+    />
+    <label for="username_label">Username</label>
+  </p-floatlabel>
+  <p-floatlabel variant="in">
+    <input
+      class="input"
+      pInputText
+      id="in_label"
+      formControlName="email"
+      autocomplete="off"
+      [class.ng-invalid]="
+        form.controls.email.invalid && form.controls.email.touched
+      "
+      [class.ng-dirty]="
+        form.controls.email.invalid && form.controls.email.touched
+      "
+    />
+    <label for="in_label">Email</label>
+  </p-floatlabel>
+  <p-floatlabel variant="in">
+    <p-password
+      class="input"
+      id="password_label"
+      formControlName="password"
+      [toggleMask]="true"
+      [class.ng-invalid]="
+        form.controls.password.invalid && form.controls.password.touched
+      "
+      [class.ng-dirty]="
+        form.controls.password.invalid && form.controls.password.touched
+      "
+      strongRegex="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,64}$"
+      weakLabel=" "
+      mediumLabel=" "
+      strongLabel=" "
+      autocomplete="off"
+    >
+      <ng-template #footer>
+        @if (form.controls.password.invalid) {
+          <div style="font-size: 0.7rem">
+            <p>
+              Your password must be minimum 8 characters, maximum 64, and must
+              include upper, lower, digit, and symbol.
+            </p>
+          </div>
+        }
+      </ng-template>
+    </p-password>
+    <label for="password_label">Password</label>
+  </p-floatlabel>
+
+  <p class="no-account">
+    Already have an account ? <br />
+    <a (click)="isLoginPage.set(true)"
+      >Log in <i-tabler name="arrow-right"
+    /></a>
+  </p>
+
+  <p-button severity="contrast" [disabled]="!form.valid" (click)="signup()"
+    >Sign up</p-button
+  >
+</section>

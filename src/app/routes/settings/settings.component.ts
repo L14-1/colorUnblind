@@ -3,13 +3,16 @@ import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { provideTablerIcons, TablerIconComponent } from 'angular-tabler-icons';
 import {
+  IconAlertSquareRounded,
   IconClipboard,
   IconFileDescription,
   IconInfoSquareRounded,
   IconLayoutNavbarExpand,
+  IconLogout,
   IconSunMoon,
 } from 'angular-tabler-icons/icons';
 import { ButtonDirective } from 'primeng/button';
+import { Message } from 'primeng/message';
 import { MultiSelectModule } from 'primeng/multiselect';
 import { Select } from 'primeng/select';
 import { ToggleSwitch } from 'primeng/toggleswitch';
@@ -20,6 +23,7 @@ import {
 import { HeaderComponent } from '../../shared/components/header/header.component';
 import { ColorThemeService } from '../../shared/services/color-theme.service';
 import { SettingsService } from '../../shared/services/settings.service';
+import { AuthService } from '../auth/auth.service';
 
 @Component({
   selector: 'app-settings',
@@ -32,6 +36,7 @@ import { SettingsService } from '../../shared/services/settings.service';
     ToggleSwitch,
     ButtonDirective,
     RouterLink,
+    Message,
   ],
   providers: [
     provideTablerIcons({
@@ -40,6 +45,8 @@ import { SettingsService } from '../../shared/services/settings.service';
       IconClipboard,
       IconFileDescription,
       IconLayoutNavbarExpand,
+      IconAlertSquareRounded,
+      IconLogout,
     }),
   ],
   templateUrl: './settings.component.html',
@@ -48,7 +55,9 @@ import { SettingsService } from '../../shared/services/settings.service';
 export class SettingsComponent {
   private readonly colorSchemeService = inject(ColorThemeService);
   public readonly settingsService = inject(SettingsService);
+  public readonly authService = inject(AuthService);
 
+  public isLoggedIn = this.authService.loggedIn;
   public selectedTheme = signal({ name: 'System' });
   public autoCopyOff = this.settingsService.autoCopyOff;
   public proDescription = this.settingsService.proDescription;
@@ -72,6 +81,7 @@ export class SettingsComponent {
   ]);
 
   ngOnInit(): void {
+    this.settingsService.getUserSettings();
     const theme = JSON.parse(
       localStorage.getItem(PREFERED_THEME) ?? JSON.stringify(''),
     );

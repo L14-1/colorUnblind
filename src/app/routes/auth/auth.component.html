@@ -1,0 +1,8 @@
+<app-header notForHome customButton>
+  <div style="width: 40px"></div>
+</app-header>
+@if (isLogin()) {
+  <app-login [(isLoginPage)]="isLogin" />
+} @else {
+  <app-signup [(isLoginPage)]="isLogin" />
+}

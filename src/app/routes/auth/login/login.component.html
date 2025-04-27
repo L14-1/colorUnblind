@@ -1,0 +1,37 @@
+<section class="form" [formGroup]="form">
+  <p-floatlabel variant="in">
+    <input
+      class="input"
+      pInputText
+      id="in_label"
+      formControlName="email"
+      autocomplete="off"
+      [class.ng-invalid]="
+        form.controls.email.invalid && form.controls.email.touched
+      "
+    />
+    <label for="in_label">Email</label>
+  </p-floatlabel>
+  <p-floatlabel variant="in">
+    <p-password
+      class="input"
+      id="password_label"
+      formControlName="password"
+      [toggleMask]="true"
+      [feedback]="false"
+    >
+    </p-password>
+    <label for="password_label">Password</label>
+  </p-floatlabel>
+
+  <p class="no-account">
+    Don't have an account yet ? <br />
+    <a (click)="isLoginPage.set(false)"
+      >Sign up <i-tabler name="arrow-right"
+    /></a>
+  </p>
+
+  <p-button severity="contrast" [disabled]="!form.valid" (click)="login()"
+    >Login</p-button
+  >
+</section>

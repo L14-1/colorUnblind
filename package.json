@@ -1,6 +1,6 @@
 {
   "name": "vite-ng-colorunblind",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --configuration=development",
@@ -20,6 +20,7 @@
     "@angular/router": "^19.1.0",
     "@primeng/themes": "^19.0.6",
     "angular-tabler-icons": "^3.26.0",
+    "jwt-decode": "^4.0.0",
     "ngx-indexed-db": "^19.3.2",
     "primeng": "^19.0.6",
     "rxjs": "~7.8.0",
