@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
 import { jwtDecode } from 'jwt-decode';
-import { Observable, tap } from 'rxjs';
+import { lastValueFrom, Observable, tap } from 'rxjs';
 import { environment } from '../../../environments/environment';
 import { JWT_TOKENS } from '../../constants/localstorage.constant';
 import { IAccessToken } from '../../interfaces/access-token.interface';
@@ -19,7 +19,7 @@ export class AuthService {
   public loggedIn = signal(false);
   public isPro = signal(false);
 
-  public isUserLoggedIn(): void {
+  public async isUserLoggedIn() {
     const storedTokens = localStorage.getItem(JWT_TOKENS);
     if (storedTokens) {
       const tokens: ITokensDto = JSON.parse(storedTokens);
@@ -29,7 +29,7 @@ export class AuthService {
         if (decodedtoken.exp > currentTime) {
           this.loggedIn.set(true);
         } else {
-          this.logout();
+          await lastValueFrom(this.refreshToken(tokens));
         }
       } else {
         this.logout();
@@ -39,18 +39,34 @@ export class AuthService {
     }
   }
 
-  public getToken(): string {
+  public getTokens(): ITokensDto | null {
     const tokens = localStorage.getItem(JWT_TOKENS);
     if (tokens) {
       const parsedTokens: ITokensDto = JSON.parse(tokens);
-      return parsedTokens.accessToken;
+      return parsedTokens;
     }
-    return '';
+    return null;
   }
 
   public logout(): void {
     localStorage.removeItem(JWT_TOKENS);
     this.loggedIn.set(false);
+  }
+
+  public refreshToken(tokens: ITokensDto) {
+    return this.http
+      .get<ITokensDto>(`${this.apiUrl}/auth/refresh/${tokens.refreshToken}`)
+      .pipe(
+        tap({
+          next: (newTokens) => {
+            this.loggedIn.set(true);
+            localStorage.setItem(JWT_TOKENS, JSON.stringify(newTokens));
+          },
+          error: () => {
+            this.logout();
+          },
+        }),
+      );
   }
 
   public login(credentials: ILoginDto): Observable<ITokensDto> {

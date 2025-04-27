@@ -26,22 +26,24 @@
   </div>
 
   <div class="selectable">
-    <div class="icon-text">
+    <div class="icon-text" [class.disabled]="!isLoggedIn()">
       <i-tabler name="file-description" />
       <span>Pro description</span>
     </div>
     <p-toggleswitch
+      [disabled]="!isLoggedIn()"
       [(ngModel)]="proDescription"
       (ngModelChange)="settingsService.setProDescription()"
     />
   </div>
 
   <div class="selectable">
-    <div class="icon-text">
+    <div class="icon-text" [class.disabled]="!isLoggedIn()">
       <i-tabler name="layout-navbar-expand" />
       <span>Default menu</span>
     </div>
     <p-select
+      [disabled]="!isLoggedIn()"
       size="small"
       [filter]="false"
       [options]="tools()"
@@ -52,8 +54,32 @@
     />
   </div>
 
+  @if (!isLoggedIn()) {
+    <p-message severity="warn">
+      <ng-template #icon>
+        <i-tabler name="alert-square-rounded" />
+      </ng-template>
+      <span style="font-size: 0.8rem">
+        <a [routerLink]="['/auth']" style="color: inherit; font-weight: 600"
+          >Log in</a
+        >
+        to change these settings.
+      </span>
+    </p-message>
+  }
+
   <button pButton severity="secondary" [routerLink]="['/about']">
     <i-tabler name="info-square-rounded" />
     <span>About</span>
   </button>
+  @if (isLoggedIn()) {
+    <button
+      pButton
+      severity="danger"
+      (click)="authService.logout(); settingsService.getUserSettings()"
+    >
+      <i-tabler name="logout" />
+      <span>Log out</span>
+    </button>
+  }
 </section>

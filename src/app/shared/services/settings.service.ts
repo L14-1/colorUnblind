@@ -4,13 +4,15 @@ import {
   DEFAULT_MENU,
   PRO_DESCRIPTION_ON,
 } from '../../constants/localstorage.constant';
+import { AuthService } from '../../routes/auth/auth.service';
 import { InMemoryDescriptionsService } from './in-memory-descriptions.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SettingsService {
-  private inMemoryDescription = inject(InMemoryDescriptionsService);
+  private readonly inMemoryDescription = inject(InMemoryDescriptionsService);
+  private readonly authService = inject(AuthService);
   public autoCopyOff = signal(false);
   public proDescription = signal(false);
   public selectedMenu = signal({ name: 'Codes', position: '1' });
@@ -27,7 +29,7 @@ export class SettingsService {
       ),
     );
     const storedDefaultMenu = localStorage.getItem(DEFAULT_MENU);
-    if (storedDefaultMenu) {
+    if (storedDefaultMenu && this.authService.loggedIn()) {
       const parsedStoredMenu = JSON.parse(storedDefaultMenu);
       parsedStoredMenu.position = Math.round(
         parsedStoredMenu.position,
@@ -35,6 +37,8 @@ export class SettingsService {
       if (parsedStoredMenu.position > -1 && parsedStoredMenu.position < 4) {
         this.selectedMenu.set(parsedStoredMenu);
       }
+    } else {
+      this.selectedMenu.set({ name: 'Codes', position: '1' });
     }
   }
 

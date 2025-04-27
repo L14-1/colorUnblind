@@ -1,5 +1,3 @@
-<h2>Log in</h2>
-
 <section class="form" [formGroup]="form">
   <p-floatlabel variant="in">
     <input
@@ -21,13 +19,18 @@
       formControlName="password"
       [toggleMask]="true"
       [feedback]="false"
-      [class.ng-invalid]="
-        form.controls.password.invalid && form.controls.password.touched
-      "
     >
     </p-password>
     <label for="password_label">Password</label>
   </p-floatlabel>
+
+  <p class="no-account">
+    Don't have an account yet ? <br />
+    <a (click)="isLoginPage.set(false)"
+      >Sign up <i-tabler name="arrow-right"
+    /></a>
+  </p>
+
   <p-button severity="contrast" [disabled]="!form.valid" (click)="login()"
     >Login</p-button
   >

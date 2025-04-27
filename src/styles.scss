@@ -95,4 +95,11 @@ html {
   --background-color: #121212;
   --inverted-text-color: #121212;
   --inverted-background-color: #fff;
+  .p-message-warn {
+    background-color: color-mix(in srgb, var(--p-yellow-50), transparent 5%);
+    outline-color: var(--p-yellow-200);
+    color: var(--p-yellow-600);
+    box-shadow: 0px 4px 8px 0px
+      color-mix(in srgb, var(--p-yellow-500), transparent 96%);
+  }
 }

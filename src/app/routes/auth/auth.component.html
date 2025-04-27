@@ -2,7 +2,7 @@
   <div style="width: 40px"></div>
 </app-header>
 @if (isLogin()) {
-  <app-login />
+  <app-login [(isLoginPage)]="isLogin" />
 } @else {
-  <app-signup />
+  <app-signup [(isLoginPage)]="isLogin" />
 }

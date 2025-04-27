@@ -1,0 +1,46 @@
+::ng-deep {
+  .form {
+    input,
+    button {
+      width: 300px;
+    }
+  }
+}
+
+:host {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+    .list {
+      font-size: 0.9rem;
+      margin-left: -8px;
+      padding-top: 1rem;
+    }
+  }
+  .no-account {
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    text-align: center;
+    a {
+      font-weight: 600;
+      color: var(--p-button-text-help-color);
+      cursor: pointer;
+      text-decoration: none;
+      i-tabler {
+        width: 0.75rem;
+        height: 0.75rem;
+        transform: translateY(0.15rem);
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

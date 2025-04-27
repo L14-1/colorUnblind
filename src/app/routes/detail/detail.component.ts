@@ -12,7 +12,9 @@ import { AccordionModule } from 'primeng/accordion';
 
 import { Clipboard } from '@angular/cdk/clipboard';
 import { HttpErrorResponse, HttpStatusCode } from '@angular/common/http';
+import { RouterLink } from '@angular/router';
 import { MessageService } from 'primeng/api';
+import { Message } from 'primeng/message';
 import { PopoverModule } from 'primeng/popover';
 import { ORIGINS } from '../../constants/origins.constant';
 import { HeaderComponent } from '../../shared/components/header/header.component';
@@ -22,15 +24,13 @@ import { ColorFormatService } from '../../shared/services/color-format.service';
 import { ColorPaletteService } from '../../shared/services/color-palette.service';
 import { InMemoryDescriptionsService } from '../../shared/services/in-memory-descriptions.service';
 import { SettingsService } from '../../shared/services/settings.service';
+import { AuthService } from '../auth/auth.service';
 import { AlternativesComponent } from './components/alternatives/alternatives.component';
 import { ButtonsBannerComponent } from './components/buttons-banner/buttons-banner.component';
 import { ColorCodesComponent } from './components/color-codes/color-codes.component';
 import { ColorDetailComponent } from './components/color-detail/color-detail.component';
 import { PaletteComponent } from './components/palette/palette.component';
 import { DetailService } from './services/detail.service';
-import { AuthService } from '../auth/auth.service';
-import { Message } from 'primeng/message';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-detail',
@@ -174,7 +174,7 @@ export class DetailComponent {
                   closable: false,
                 });
                 break;
-              case HttpStatusCode.InternalServerError:
+              default:
                 this.description.set('');
                 this.messageService.add({
                   severity: 'error',
@@ -182,11 +182,6 @@ export class DetailComponent {
                   detail: `An error occurred while trying to describe this color. Please try again later.`,
                   closable: false,
                 });
-                break;
-              default:
-                this.description.set(
-                  'An unexpected error occurred. Please try again.',
-                );
             }
             this.descriptionIsLoading.set(false);
           },

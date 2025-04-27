@@ -1,11 +1,13 @@
 import { Location } from '@angular/common';
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject, model, signal } from '@angular/core';
 import {
   FormControl,
   FormGroup,
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { provideTablerIcons, TablerIconComponent } from 'angular-tabler-icons';
+import { IconArrowRight } from 'angular-tabler-icons/icons';
 import { Button } from 'primeng/button';
 import { FloatLabel } from 'primeng/floatlabel';
 import { InputTextModule } from 'primeng/inputtext';
@@ -20,12 +22,15 @@ import { AuthService } from '../auth.service';
     FloatLabel,
     PasswordModule,
     Button,
+    TablerIconComponent,
   ],
+  providers: [provideTablerIcons({ IconArrowRight })],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',
 })
 export class LoginComponent {
   private readonly authService = inject(AuthService);
+  public isLoginPage = model(true);
   public location = inject(Location);
   public isLoading = signal(false);
 

@@ -19,8 +19,8 @@ import { MessageService } from 'primeng/api';
 import { routes } from './app.routes';
 import { SCROLL_CONFIG } from './constants/scroll-config.constant';
 import DB_CONFIG from './db.config';
-import { AuthService } from './routes/auth/auth.service';
 import { authorizationInterceptor } from './interceptors/authorization.interceptor';
+import { AuthService } from './routes/auth/auth.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -42,8 +42,8 @@ export const appConfig: ApplicationConfig = {
         },
       },
     }),
-    provideAppInitializer(() => {
-      return inject(AuthService).isUserLoggedIn();
+    provideAppInitializer(async () => {
+      return await inject(AuthService).isUserLoggedIn();
     }),
   ],
 };

@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "color Unblind",
-  "version": "3.0.1",
-  "description": "An AI powered color picker extension providing a description for the choosen color.",
+  "name": "Color picker - COLORUNBLIND",
+  "version": "3.1.0",
+  "description": "An AI powered color picker extension providing a description, alternatives and a palette for the choosen color.",
   "action": {
     "default_popup": "index.html"
   },
