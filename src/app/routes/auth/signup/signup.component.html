@@ -63,6 +63,17 @@
     <label for="password_label">Password</label>
   </p-floatlabel>
 
+  @if (invalidSignup()) {
+    <p-message severity="error">
+      <ng-template #icon>
+        <i-tabler name="alert-square-rounded" />
+      </ng-template>
+      <span style="font-size: 0.7rem">
+        An account already exist with this email.
+      </span>
+    </p-message>
+  }
+
   <p class="no-account">
     Already have an account ? <br />
     <a (click)="isLoginPage.set(true)"
