@@ -7,10 +7,14 @@ import {
   Validators,
 } from '@angular/forms';
 import { provideTablerIcons, TablerIconComponent } from 'angular-tabler-icons';
-import { IconArrowRight } from 'angular-tabler-icons/icons';
+import {
+  IconAlertSquareRounded,
+  IconArrowRight,
+} from 'angular-tabler-icons/icons';
 import { Button } from 'primeng/button';
 import { FloatLabel } from 'primeng/floatlabel';
 import { InputTextModule } from 'primeng/inputtext';
+import { Message } from 'primeng/message';
 import { PasswordModule } from 'primeng/password';
 import { AuthService } from '../auth.service';
 
@@ -23,8 +27,9 @@ import { AuthService } from '../auth.service';
     PasswordModule,
     Button,
     TablerIconComponent,
+    Message,
   ],
-  providers: [provideTablerIcons({ IconArrowRight })],
+  providers: [provideTablerIcons({ IconArrowRight, IconAlertSquareRounded })],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',
 })
@@ -33,6 +38,7 @@ export class LoginComponent {
   public isLoginPage = model(true);
   public location = inject(Location);
   public isLoading = signal(false);
+  public invalidLogin = signal(false);
 
   public form = new FormGroup({
     email: new FormControl<string>('', [Validators.required, Validators.email]),
@@ -43,6 +49,7 @@ export class LoginComponent {
     if (!this.form.valid) return;
     const { email, password } = this.form.value;
     if (!email || !password) return;
+    this.invalidLogin.set(false);
 
     this.isLoading.set(true);
 
@@ -53,7 +60,7 @@ export class LoginComponent {
       },
       error: (error) => {
         this.isLoading.set(false);
-        // Handle error
+        this.invalidLogin.set(true);
       },
     });
   }

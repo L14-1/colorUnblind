@@ -24,6 +24,15 @@
     <label for="password_label">Password</label>
   </p-floatlabel>
 
+  @if (invalidLogin()) {
+    <p-message severity="error">
+      <ng-template #icon>
+        <i-tabler name="alert-square-rounded" />
+      </ng-template>
+      <span style="font-size: 0.7rem"> Invalid email and/or password. </span>
+    </p-message>
+  }
+
   <p class="no-account">
     Don't have an account yet ? <br />
     <a (click)="isLoginPage.set(false)"
