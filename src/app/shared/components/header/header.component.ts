@@ -37,6 +37,7 @@ export class HeaderComponent {
   public readonly notForHome = input(false, { transform: booleanAttribute });
   public readonly customButton = input(false, { transform: booleanAttribute });
   public readonly hideShadow = input(false, { transform: booleanAttribute });
+  public readonly disabled = input(false, { transform: booleanAttribute });
 
   public location = inject(Location);
   private readonly renderer = inject(Renderer2);

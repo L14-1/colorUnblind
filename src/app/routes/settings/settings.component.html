@@ -72,14 +72,21 @@
     <i-tabler name="info-square-rounded" />
     <span>About</span>
   </button>
+
   @if (isLoggedIn()) {
-    <button
-      pButton
-      severity="danger"
-      (click)="authService.logout(); settingsService.getUserSettings()"
-    >
-      <i-tabler name="logout" />
-      <span>Log out</span>
-    </button>
+    <section class="bottom">
+      <app-user-avatar />
+
+      <div class="bottom-buttons">
+        <button
+          pButton
+          severity="danger"
+          text
+          (click)="authService.logout(); settingsService.getUserSettings()"
+        >
+          <i-tabler name="logout" />
+        </button>
+      </div>
+    </section>
   }
 </section>

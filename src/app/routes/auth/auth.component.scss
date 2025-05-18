@@ -1,4 +1,45 @@
+::ng-deep {
+  .google-button {
+    button {
+      width: 300px;
+    }
+  }
+}
+
 :host {
-  display: block;
+  display: flex;
   padding-bottom: 2rem;
+  flex-direction: column;
+  align-items: center;
+
+  p-button {
+    margin-top: 2.5rem;
+  }
+
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+
+    .spinner {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid black;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      animation: spin 1s linear infinite;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

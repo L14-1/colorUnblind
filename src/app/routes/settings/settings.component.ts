@@ -24,6 +24,7 @@ import { HeaderComponent } from '../../shared/components/header/header.component
 import { ColorThemeService } from '../../shared/services/color-theme.service';
 import { SettingsService } from '../../shared/services/settings.service';
 import { AuthService } from '../auth/auth.service';
+import { UserAvatarComponent } from './components/user-avatar/user-avatar.component';
 
 @Component({
   selector: 'app-settings',
@@ -37,6 +38,7 @@ import { AuthService } from '../auth/auth.service';
     ButtonDirective,
     RouterLink,
     Message,
+    UserAvatarComponent,
   ],
   providers: [
     provideTablerIcons({

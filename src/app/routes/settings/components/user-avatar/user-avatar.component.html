@@ -1,0 +1,5 @@
+<p-avatar shape="circle" size="large" [label]="label()" />
+<div class="details">
+    <p>{{ authService.userDetail() ? authService.userDetail()?.name : "" }}</p>
+    <span>{{ authService.userDetail() ? authService.userDetail()?.email : "" }}</span>
+</div>

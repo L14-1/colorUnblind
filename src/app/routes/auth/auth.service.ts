@@ -18,6 +18,7 @@ export class AuthService {
 
   public loggedIn = signal(false);
   public isPro = signal(false);
+  public userDetail = signal<IAccessToken | undefined>(undefined);
 
   public async isUserLoggedIn() {
     const storedTokens = localStorage.getItem(JWT_TOKENS);
@@ -25,11 +26,16 @@ export class AuthService {
       const tokens: ITokensDto = JSON.parse(storedTokens);
       const currentTime = Math.floor(Date.now() / 1000);
       if (tokens.accessToken) {
-        const decodedtoken: IAccessToken = jwtDecode(tokens.accessToken);
-        if (decodedtoken.exp > currentTime) {
-          this.loggedIn.set(true);
-        } else {
-          await lastValueFrom(this.refreshToken(tokens));
+        try {
+          const decodedtoken: IAccessToken = jwtDecode(tokens.accessToken);
+          this.userDetail.set(decodedtoken);
+          if (decodedtoken.exp > currentTime) {
+            this.loggedIn.set(true);
+          } else {
+            await lastValueFrom(this.refreshToken(tokens));
+          }
+        } catch (error) {
+          this.logout();
         }
       } else {
         this.logout();
@@ -50,6 +56,7 @@ export class AuthService {
 
   public logout(): void {
     localStorage.removeItem(JWT_TOKENS);
+    this.userDetail.set(undefined);
     this.loggedIn.set(false);
   }
 
@@ -76,6 +83,8 @@ export class AuthService {
         tap((tokens) => {
           this.loggedIn.set(true);
           localStorage.setItem(JWT_TOKENS, JSON.stringify(tokens));
+          const decodedtoken: IAccessToken = jwtDecode(tokens.accessToken);
+          this.userDetail.set(decodedtoken);
         }),
       );
   }
@@ -87,6 +96,21 @@ export class AuthService {
         tap((tokens) => {
           this.loggedIn.set(true);
           localStorage.setItem(JWT_TOKENS, JSON.stringify(tokens));
+          const decodedtoken: IAccessToken = jwtDecode(tokens.accessToken);
+          this.userDetail.set(decodedtoken);
+        }),
+      );
+  }
+
+  public googleLogin(token: string): Observable<ITokensDto> {
+    return this.http
+      .post<ITokensDto>(`${this.apiUrl}/auth/google`, { googleToken: token })
+      .pipe(
+        tap((tokens) => {
+          this.loggedIn.set(true);
+          localStorage.setItem(JWT_TOKENS, JSON.stringify(tokens));
+          const decodedtoken: IAccessToken = jwtDecode(tokens.accessToken);
+          this.userDetail.set(decodedtoken);
         }),
       );
   }

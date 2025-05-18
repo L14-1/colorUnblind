@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  .details {
+    & > * {
+      max-width: 250px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    p {
+      font-size: 0.9rem;
+      line-height: 0.9rem;
+      font-weight: bold;
+      transform: translateY(0.3rem);
+    }
+    span {
+      font-size: 0.7rem;
+      line-height: 0.7rem;
+    }
+  }
+}

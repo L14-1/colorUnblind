@@ -1,9 +1,21 @@
 @if (notForHome()) {
-  <button pButton severity="secondary" text (click)="location.back()">
+  <button
+    pButton
+    severity="secondary"
+    text
+    (click)="location.back()"
+    [disabled]="disabled()"
+  >
     <i-tabler pButtonIcon name="chevron-left" />
   </button>
 } @else {
-  <button pButton severity="secondary" text [routerLink]="'/settings'">
+  <button
+    pButton
+    severity="secondary"
+    text
+    [routerLink]="'/settings'"
+    [disabled]="disabled()"
+  >
     <i-tabler pButtonIcon name="adjustments-cog" />
   </button>
 }
@@ -15,7 +27,13 @@
 @if (customButton()) {
   <ng-content />
 } @else {
-  <button pButton severity="secondary" text [routerLink]="'/favorites'">
+  <button
+    pButton
+    severity="secondary"
+    text
+    [routerLink]="'/favorites'"
+    [disabled]="disabled()"
+  >
     <i-tabler pButtonIcon name="heart-spark" />
   </button>
 }
